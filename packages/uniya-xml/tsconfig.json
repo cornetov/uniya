@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "../../dist/uniya-xml",
+    "rootDir": "."
+  },
+  "references": [
+    { "path": "../uniya" }
+  ],
+  "include": [
+    "./*/src",
+    "./*/__tests__"
+  ]
+}

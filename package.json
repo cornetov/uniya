@@ -1,0 +1,42 @@
+{
+  "name": "uniya-set",
+  "version": "0.1.1",
+  "private": true,
+  "description": "Uniya set",
+  "homepage": "https://github.com/cornetov/uniya#readme",
+  "typings": "dist/index.d.ts",
+  "repository": "https://github.com/cornetov/uniya",
+  "main": "server.js",
+  "keywords": [
+    "uniya",
+    "xml",
+    "data",
+    "odata"
+  ],
+  "contributors": [
+    "Simon Cornetov <cornetov@gmail.com>"
+  ],
+  "license": "MIT",
+  "jest": {
+    "//": "Comment goes here",
+    "testRegex": ".*-test\\.js$",
+    "verbose": true
+  },
+  "scripts": {
+    "test": "jest",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "clean": "rm -rf coverage doc lib"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^24.0.11",
+    "@types/node": "^11.13.5",
+    "awesome-typescript-loader": "^5.2.1",
+    "jest": "^24.7.1",
+    "ts-jest": "^24.0.2",
+    "ts-node": "^8.1.0",
+    "typescript": "^3.4.3",
+    "webpack": "^4.30.0"
+  }
+}

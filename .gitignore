@@ -1,0 +1,12 @@
+.vs
+bin
+obj
+dist
+node_modules
+*.log*
+*.dt.ts
+*.map
+*.user
+packages/**/*.js
+server.d.ts
+server.js

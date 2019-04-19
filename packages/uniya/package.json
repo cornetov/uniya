@@ -1,0 +1,30 @@
+{
+  "name": "uniya",
+  "version": "0.1.1",
+  "description": "Unia set",
+  "repository": "git@github.com:cornetov/uniya.git",
+  "license": "MIT",
+  "author": {
+    "name": "Simon Cornetov",
+    "email": "cornetov@gmail.com"
+  },
+  "keywords": [
+    "uniya"
+  ],
+  "main": "index.js",
+  "typings": "src/index.d.ts",
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "//": "Comment goes here",
+    "testRegex": ".*-test\\.js$",
+    "verbose": true
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.11",
+    "typescript": "^3.4.3"
+  }
+}

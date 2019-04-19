@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "lib": [ "dom", "esnext" ],
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "downlevelIteration": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": false,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "declaration": true,
+    "composite": true,
+    "outDir": ".",
+    "rootDir": ".",
+    "baseUrl": ".",
+    "paths": {
+      "uniya": [
+        "packages/uniya/src/index.ts"
+      ],
+      "uniya-xml": [
+        "packages/uniya-xml/src/index.ts"
+      ]
+    }
+  },
+  "references": [
+    { "path": "./packages/uniya" },
+    { "path": "./packages/uniya-xml" }
+  ],
+  "include": [
+    "packages/*/src",
+    "packages/*/__tests__",
+    "./server.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
