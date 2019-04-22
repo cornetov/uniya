@@ -1,4 +1,4 @@
-﻿import { Core } from "./Core";
+﻿import { Core, IncorrectArgument } from "./Core";
 
 /**
  * @class Typed stack.
@@ -118,6 +118,9 @@ export class Stack<T> {
      */
     protected inserting(value: T): boolean {
         // for override from user code
+        if (value === undefined || value === null) {
+            throw new IncorrectArgument("value");
+        }
         return true;
     }
     /**
@@ -126,6 +129,9 @@ export class Stack<T> {
      */
     protected removing(value: T): boolean {
         // for override from user code
+        if (value === undefined || value === null) {
+            throw new IncorrectArgument("value");
+        }
         return true;
     }
     /**
@@ -133,6 +139,9 @@ export class Stack<T> {
      * @param value The inserted typed value.
      */
     protected inserted(value: T) {
+        if (value === undefined || value === null) {
+            throw new IncorrectArgument("value");
+        }
         // for override from user code
     }
     /**
@@ -140,6 +149,9 @@ export class Stack<T> {
      * @param value The inserted typed value.
      */
     protected removed(value: T) {
+        if (value === undefined || value === null) {
+            throw new IncorrectArgument("value");
+        }
         // for override from user code
     }
 }
@@ -252,7 +264,7 @@ export class Collection<T> {
      */
     public addRange(array: Collection<T> | Array<T>): void {
 
-        array.forEach((value: T, idx: number) => this.add(value));
+        array.forEach((value: T) => this.add(value));
     }
     /**
      * Remove item for this collection, if exist that returned deleted value.
@@ -337,6 +349,9 @@ export class Collection<T> {
      */
     protected inserting(value: T): boolean {
         // for override from user code
+        if (value === undefined || value === null) {
+            throw new IncorrectArgument("value");
+        }
         return true;
     }
     /**
@@ -345,6 +360,9 @@ export class Collection<T> {
      */
     protected removing(value: T): boolean {
         // for override from user code
+        if (value === undefined || value === null) {
+            throw new IncorrectArgument("value");
+        }
         return true;
     }
     /**
@@ -354,6 +372,12 @@ export class Collection<T> {
      */
     protected inserted(index: number, value: T) {
         // for override from user code
+        if (index < 0 || index > this.length) {
+            throw new IncorrectArgument("index");
+        }
+        if (value === undefined || value === null) {
+            throw new IncorrectArgument("value");
+        }
     }
     /**
      * Called on removed no null value into this collection (for overrides).
@@ -362,5 +386,11 @@ export class Collection<T> {
      */
     protected removed(index: number, value: T) {
         // for override from user code
+        if (index < 0 || index > this.length) {
+            throw new IncorrectArgument("index");
+        }
+        if (value === undefined || value === null) {
+            throw new IncorrectArgument("value");
+        }
     }
 }

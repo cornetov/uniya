@@ -1,4 +1,4 @@
-﻿# XML framework (reader and writer for XML nodes) with some extensions
+﻿# Uniya set for union system
 
 See also: TODO
 

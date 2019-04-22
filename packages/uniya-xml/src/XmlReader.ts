@@ -936,6 +936,7 @@ export abstract class XmlReader {
         // otherwise return false when it needs to be called again to get a next chunk of value
         let pos = this.getPosition();
         let s: string = "";
+        let spaces = 0;
         let quote1: number = 0;
         let quote2: number = 0;
         while (true) {
@@ -1033,16 +1034,19 @@ export abstract class XmlReader {
                     //default:
                     //    pos = ps.charPos;
                     //    break;
-                    console.log("maybe entity inline:" + this.getPosition());
+                    //console.log("maybe entity inline:" + this.getPosition());
                     s += ch;
                     continue;
                 default:
+                    if (ch === ' ') {
+                        spaces++;
+                    }
                     s += ch;
                     continue;
             }
 
             // correctly attribute?
-            if (s.length > 0) {
+            if (s.length > spaces) {
                 this._nodeType = XmlNodeType.Text;
                 this._nodeValue = s;
                 return true;
@@ -1281,6 +1285,7 @@ export abstract class XmlReader {
                         if (this.parseText()) {
                             return true;
                         }
+                        this.setPosition(this.getPosition() + 1);
                     }
                     continue;
             }

@@ -39,6 +39,9 @@
     <Content Include="packages\uniya-xml\package.json" />
     <Content Include="packages\uniya-xml\README.md" />
     <Content Include="packages\uniya-xml\tsconfig.json" />
+    <Content Include="packages\uniya-xml\__tests__\xmls\NSXAKZAB.XML" />
+    <Content Include="packages\uniya-xml\__tests__\xmls\ru.xml" />
+    <Content Include="packages\uniya-xml\__tests__\xmls\settings.xml" />
     <Content Include="packages\uniya\package.json" />
     <Content Include="packages\uniya\README.md" />
     <Content Include="packages\uniya\tsconfig.json" />
@@ -67,6 +70,7 @@
     <Folder Include="packages\uniya-xml\" />
     <Folder Include="packages\uniya-xml\src\" />
     <Folder Include="packages\uniya-xml\__tests__\" />
+    <Folder Include="packages\uniya-xml\__tests__\xmls\" />
     <Folder Include="packages\uniya\" />
     <Folder Include="packages\uniya\src\" />
     <Folder Include="packages\uniya\__tests__\" />

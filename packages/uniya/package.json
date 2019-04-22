@@ -1,8 +1,8 @@
 {
   "name": "uniya",
-  "version": "0.1.1",
-  "description": "Unia set",
-  "repository": "git@github.com:cornetov/uniya.git",
+  "version": "0.1.2",
+  "description": "Uniya set",
+  "repository": "https://github.com/cornetov/uniya",
   "license": "MIT",
   "author": {
     "name": "Simon Cornetov",

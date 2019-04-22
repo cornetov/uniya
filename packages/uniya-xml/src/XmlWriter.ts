@@ -1,4 +1,4 @@
-import { XmlNodeType, XmlArgumentError, XmlFormatError, XmlUnexpectedError, XmlNodeSet, XmlNode } from "./XmlNode";
+import { XmlNodeType, XmlArgumentError, XmlFormatError, XmlUnexpectedError } from "./XmlNode";
 
 /**
  * @class Abstract wtite XML data.

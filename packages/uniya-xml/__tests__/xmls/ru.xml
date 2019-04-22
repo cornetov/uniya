@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+    <data name="Error" xml:space="preserve">
+    <value>&#x41E;&#x448;&#x438;&#x431;&#x43A;&#x430;</value>
+    </data>
+        <data name="Summary" xml:space="preserve">
+            <value>&#x420;&#x435;&#x437;&#x44E;&#x43C;&#x435;</value>
+        </data>
+        <data name="#Register_PasswordNotMatching" xml:space="preserve">
+            <value>&#x412;&#x435;&#x435;&#x434;&#x435;&#x43D;&#x43D;&#x44B;&#x439; &#x43F;&#x430;&#x440;&#x43E;&#x43B;&#x44C; &#x43D;&#x435; &#x43F;&#x43E;&#x434;&#x442;&#x432;&#x435;&#x440;&#x436;&#x434;&#x435;&#x43D;.</value>
+        </data>
+        <data name="Contact" xml:space="preserve">
+            <value>&#x41A;&#x43E;&#x43D;&#x442;&#x430;&#x43A;&#x442;</value>
+        </data>
+        <data name="Counter" xml:space="preserve">
+            <value>&#x421;&#x447;&#x435;&#x442;&#x447;&#x438;&#x43A;</value>
+        </data>
+        <data name="Password" xml:space="preserve">
+            <value>&#x41F;&#x430;&#x440;&#x43E;&#x43B;&#x44C;</value>
+        </data>
+        <data name="Overview" xml:space="preserve">
+            <value>&#x41E;&#x431;&#x437;&#x43E;&#x440;</value>
+        </data>
+        <data name="#Login_NewAccount" xml:space="preserve">
+            <value>&#x421;&#x43E;&#x437;&#x434;&#x430;&#x442;&#x44C; &#x43D;&#x43E;&#x432;&#x44B;&#x439; &#x430;&#x43A;&#x43A;&#x430;&#x443;&#x43D;&#x442;</value>
+        </data>
+        <data name="#Login_Required" xml:space="preserve">
+            <value>&#x41F;&#x430;&#x440;&#x43E;&#x43B;&#x44C; &#x43E;&#x431;&#x44F;&#x437;&#x430;&#x442;&#x435;&#x43B;&#x435;&#x43D;</value>
+        </data>
+        <data name="Email" xml:space="preserve">
+            <value>@&#x41F;&#x43E;&#x447;&#x442;&#x430;</value>
+        </data>
+        <data name="Error" xml:space="preserve">
+            <value>&#x41E;&#x448;&#x438;&#x431;&#x43A;&#x430;</value>
+        </data>
+        <data name="Admin" xml:space="preserve">
+            <value>&#x410;&#x434;&#x43C;&#x438;&#x43D;&#x438;&#x441;&#x442;&#x440;&#x430;&#x442;&#x43E;&#x440;</value>
+        </data>
+        <data name="About" xml:space="preserve">
+            <value>&#x41C;&#x43E;&#x43B;&#x432;&#x430;</value>
+        </data>
+        <data name="Fetch" xml:space="preserve">
+            <value>&#x41F;&#x43E;&#x43B;&#x443;&#x447;&#x430;&#x442;&#x44C;</value>
+        </data>
+        <data name="Login" xml:space="preserve">
+            <value>&#x41B;&#x43E;&#x433;&#x438;&#x43D;</value>
+        </data>
+        <data name="#Login_EmailInvalid" xml:space="preserve">
+            <value>Email &#x43E;&#x448;&#x438;&#x431;&#x43E;&#x447;&#x435;&#x43D;.</value>
+        </data>
+        <data name="Register" xml:space="preserve">
+            <value>&#x420;&#x435;&#x433;&#x438;&#x441;&#x442;&#x440;&#x430;&#x446;&#x438;&#x44F;</value>
+        </data>
+        <data name="#Login_PasswordLengths" xml:space="preserve">
+            <value>&#x422;&#x435;&#x43A;&#x441;&#x442; &#x43F;&#x430;&#x440;&#x43E;&#x43B;&#x44F; &#x43D;&#x435; &#x43C;&#x435;&#x43D;&#x44C;&#x448;&#x435; 8 &#x438; &#x43D;&#x435; &#x431;&#x43E;&#x43B;&#x44C;&#x448;&#x435; 100 &#x441;&#x438;&#x43C;&#x432;&#x43E;&#x43B;&#x43E;&#x432;.</value>
+        </data>
+        <data name="#Login_EmailRequired" xml:space="preserve">
+            <value>&#x422;&#x440;&#x435;&#x431;&#x443;&#x435;&#x442;&#x441;&#x44F; &#x440;&#x435;&#x430;&#x43B;&#x44C;&#x43D;&#x44B;&#x439; e-mail.</value>
+        </data>
+        <data name="Loading" xml:space="preserve">
+            <value>&#x417;&#x430;&#x433;&#x440;&#x443;&#x437;&#x43A;&#x430;</value>
+        </data>
+        <data name="Finguru" xml:space="preserve">
+            <value>&#x424;&#x438;&#x43D;&#x433;&#x443;&#x440;&#x443;</value>
+        </data>
+        <data name="#Register_ConfirmPassword" xml:space="preserve">
+            <value>&#x41F;&#x43E;&#x434;&#x442;&#x432;&#x435;&#x440;&#x434;&#x438;&#x442;&#x435; &#x43F;&#x430;&#x440;&#x43E;&#x43B;&#x44C;</value>
+        </data>
+        <data name="Date" xml:space="preserve">
+            <value>&#x414;&#x430;&#x442;&#x430;</value>
+        </data>
+        <data name="Chat" xml:space="preserve">
+            <value>&#x427;&#x430;&#x442;</value>
+        </data>
+</root>

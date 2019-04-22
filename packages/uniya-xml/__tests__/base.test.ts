@@ -1,4 +1,5 @@
-import { XmlTextWriter, XmlNode, XmlNodeType } from "../src/index";
+import { XmlTextReader, XmlTextWriter, XmlNode, XmlNodeType } from "../src/index";
+var fs = require('fs');
 
 //const testIfCondition = mySkipCondition ? test.skip : test;
 
@@ -74,6 +75,96 @@ describe("Base XML tests >>>", () => {
         });
     });
 
+    describe('read terms from XML file using XmlTextReader...', () => {
+
+        // file data
+        const fileName = __dirname + '\\xmls\\ru.xml';
+        var data = fs.readFileSync(fileName, 'utf8');
+
+        // initialization
+        const xml = data.toString();
+        const xr = new XmlTextReader(xml);
+        let terms = new Map<string, string>();
+        let termName = "";
+
+        // read each node
+        while (xr.read()) {
+
+            switch (xr.nodeType) {
+                case XmlNodeType.Element:
+                    switch (xr.name) {
+                        case "data":
+                            if (xr.hasAttributes) {
+                                for (var [key, value] of xr.attributes) {
+                                    if (key === "name") {
+                                        termName = value;
+                                        break;
+                                    }
+                                }
+                            }
+                            break;
+                    }
+                    break;
+                case XmlNodeType.Text:
+                    if (termName.length > 0) {
+
+                        // decoding
+                        let idx = 0;
+                        let value = xr.value;
+                        while (idx < value.length) {
+                            let begin = value.indexOf('&#x', idx);
+                            if (begin !== -1) {
+                                let end = value.indexOf(';', begin);
+                                if (end !== -1) {
+                                    let code = value.substr(begin + 3, end - begin - 3);
+                                    while (code.length < 4) {
+                                        code = '0' + code;
+                                    }
+                                    value = value.substr(0, begin) + unescape('%u' + code) + value.substr(end + 1);
+                                }
+                                idx = begin;
+                            }
+                            idx++;
+                        }
+
+                        // set
+                        terms.set(termName, value);
+                        termName = "";
+                    }
+                    break;
+            }
+        }
+
+        it(`xml file ru.xml should be not empty`, () => {
+            expect(xml.length).toBeGreaterThan(20);
+        });
+        it(`xml file should be contains terms`, () => {
+            expect(terms.size).toBeGreaterThan(10);
+        });
+    });
+
+    //describe('read XML files using XmlTextReader...', () => {
+
+    //    let count = 0;
+    //    const testFolder = __dirname + '\\xmls';
+    //    var files = fs.readdirSync(testFolder);
+    //    for (let file in files) {
+
+    //        // file data
+    //        let data = fs.readFileSync(file, 'utf8');
+    //        const xml = data.toString();
+    //        if (xml.length > 0) {
+    //            let node = XmlNode.parse(xml) as XmlNode;
+    //            if (node.hasChildNodes) {
+    //                count++;
+    //            }
+    //        }
+    //    }
+    //    it(`seccess loaded ${count} xml files`, () => {
+    //        expect(count).toBeGreaterThan(0);
+    //    });
+    //});
+
     describe('write XML element: let writer = new XmlTextWriter().startElement("Header").writeElement("DocDate", "28.07.2016")...', () => {
 
         let writer = new XmlTextWriter();
@@ -124,7 +215,6 @@ describe("Base XML tests >>>", () => {
             expect(xml).toEqual(node.toXMLString());
         });
     });
-
 
     //let node = XmlNode.parse('<?xml version="1.0" encoding="utf-8"?><Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><Header standalone="no"><Description>Ë¥ë¯ í†í³¨î¯£ñ¡¥®ê¡±í²¦í¶­êž³00á¡X ð±®å´ªðº®„escription><DocDate>28.07.2016</DocDate></Header></Root>');
     //expect(node.childNodes.length).to.equal("1");

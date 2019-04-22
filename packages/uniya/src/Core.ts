@@ -42,9 +42,12 @@ export class Locale {
         //value.split("^(?i:[aeiouy]).*")
         //term: string,
         //localStorage.getItem()
-        
+        if (term.length > 0) {
 
-        return value.replace("#{", "${");
+            return value.replace("#{", "${");
+        }
+
+        return "";
     }
 }
 
@@ -105,7 +108,7 @@ export class IncorrectArgument extends Exception {
      * @param data {string} The other data of this exception.
      */
     constructor(name: string, data?: string) {
-        super(L.IncorrectArgument, data);
+        super(L.IncorrectArgument, `${name}${data}`);
     }
 }
 
@@ -121,7 +124,7 @@ export class IncorrectFormat extends Exception {
      * @param data {string} The other data of this exception.
      */
     constructor(name: string, data?: string) {
-        super(L.IncorrectFormat, data);
+        super(L.IncorrectFormat, `${name}${data}`);
     }
 }
 
@@ -137,7 +140,7 @@ export class UnexpectedName extends Exception {
      * @param data {string} The other data of this exception.
      */
     constructor(name: string, data?: string) {
-        super(L.UnexpectedName, data);
+        super(L.UnexpectedName, `${name}${data}`);
     }
 }
 
@@ -153,7 +156,7 @@ export class UnknownName extends Exception {
      * @param data {string} The other data of this exception.
      */
     constructor(name: string, data?: string) {
-        super(L.UnknownName, data);
+        super(L.UnknownName, `${name}${data}`);
     }
 }
 
@@ -169,7 +172,7 @@ export class AuthenticationFail extends Exception {
      * @param data {string} The other data of this exception.
      */
     constructor(url: string, data?: string) {
-        super(L.AuthenticationFail, data);
+        super(L.AuthenticationFail, `${url}${data}`);
     }
 }
 
@@ -185,7 +188,7 @@ export class StorageFail extends Exception {
      * @param data {string} The other data of this exception.
      */
     constructor(url: string, data?: string) {
-        super(L.StorageFail, data);
+        super(L.StorageFail, `${url}${data}`);
     }
 }
 
