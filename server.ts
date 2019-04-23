@@ -102,17 +102,33 @@ async function main() {
 
     //xml = '<?xml version="1.0" encoding="utf-8" ?><root><data name="Error" xml: space = "preserve" > <value>&#x41E;&#x448;&#x438;&#x431;&#x43A;&#x430; </value></data > <data name="Summary" xml: space = "preserve" > <value>&#x420;&#x435;&#x437;&#x44E;&#x43C;&#x435; </value></data > </root>'
 
-    fs.readFile(__dirname + '/samples/xmls/ru.xml', function (err: string, data: object) {
-        if (err) {
-            throw err;
-        }
-        //console.log(data.toString());
+    const testFolder = __dirname + '\\packages\\uniya-xml\\__tests__\\xmls';
+    let files = fs.readdirSync(testFolder);
+    for (let file of files) {
+        let data = fs.readFileSync(`${testFolder}\\${file}`, 'utf8');
+        console.log(`Start ${file}`);
+        node = XmlNode.parse(data.toString()) as XmlNode;
+        text = node.toXMLString()
+        console.log(text.substr(0, Math.min(80, text.length)));
+        //let map = readXml(data.toString());
+        //if (map !== null && map.size > 0) {
+        //    for (var [key, value] of map) {
+        //        console.log(`${key}=${value}`);
+        //    }
+        //}
+        console.log(`Finish ${file}`);
+    }
+    //fs.readFile(__dirname + '/samples/xmls/ru.xml', function (err: string, data: object) {
+    //    if (err) {
+    //        throw err;
+    //    }
+    //    //console.log(data.toString());
 
-        let map = readXml(data.toString());
-        for (var [key, value] of map) {
-            console.log(`${key}=${value}`);
-        }
-    });
+    //    let map = readXml(data.toString());
+    //    for (var [key, value] of map) {
+    //        console.log(`${key}=${value}`);
+    //    }
+    //});
 
     // fetch
     //const response = await fetch("https://localhost:44302/Terms");

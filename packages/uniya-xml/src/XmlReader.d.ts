@@ -31,6 +31,7 @@ export declare class XmlReaderOptions {
  */
 export declare abstract class XmlReader {
     private _depth;
+    private _closed;
     private _normalize;
     private _attributeIndex;
     private _options;
@@ -129,6 +130,7 @@ export declare abstract class XmlReader {
     private parseComment;
     private parseCData;
     private parseAttribute;
+    private lastQuote;
     private parseAttributes;
     private parseText;
     private parseDocTypeDeclaration;

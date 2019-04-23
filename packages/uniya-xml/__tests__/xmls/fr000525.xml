@@ -1,0 +1,3442 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type='text/xsl' href='freb.xsl'?>
+<!-- saved from url=(0014)about:internet -->
+<failedRequest url="http://localhost:6448/default.asp"
+               siteId="13"
+               appPoolId="Clr4IntegratedAppPool"
+               processId="2752"
+               verb="GET"
+               remoteUserName=""
+               userName=""
+               tokenUserName="OLEG\Олег"
+               authenticationType="anonymous"
+               activityId="{00000000-0000-0000-1500-0080000000F7}"
+               failureReason="STATUS_CODE"
+               statusCode="200"
+               triggerStatusCode="200"
+               timeTaken="32"
+               xmlns:freb="http://schemas.microsoft.com/win/2006/06/iis/freb"
+               >
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>2</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">FailedRequestsTracingModule</Data>
+  <Data Name="Notification">1</Data>
+  <Data Name="fIsPostNotificationEvent">false</Data>
+  <Data Name="NotificationStatus">0</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_END</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">BEGIN_REQUEST</freb:Description>
+  <freb:Description Data="NotificationStatus">NOTIFICATION_CONTINUE</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>1</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">RewriteModule</Data>
+  <Data Name="Notification">1</Data>
+  <Data Name="fIsPostNotification">false</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_START</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">BEGIN_REQUEST</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>2</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">RewriteModule</Data>
+  <Data Name="Notification">1</Data>
+  <Data Name="fIsPostNotificationEvent">false</Data>
+  <Data Name="NotificationStatus">0</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_END</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">BEGIN_REQUEST</freb:Description>
+  <freb:Description Data="NotificationStatus">NOTIFICATION_CONTINUE</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>1</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">ApplicationInitializationModule</Data>
+  <Data Name="Notification">1</Data>
+  <Data Name="fIsPostNotification">false</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_START</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">BEGIN_REQUEST</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>2</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">ApplicationInitializationModule</Data>
+  <Data Name="Notification">1</Data>
+  <Data Name="fIsPostNotificationEvent">false</Data>
+  <Data Name="NotificationStatus">0</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_END</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">BEGIN_REQUEST</freb:Description>
+  <freb:Description Data="NotificationStatus">NOTIFICATION_CONTINUE</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>1</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">ConfigurationValidationModule</Data>
+  <Data Name="Notification">1</Data>
+  <Data Name="fIsPostNotification">false</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_START</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">BEGIN_REQUEST</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>2</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">ConfigurationValidationModule</Data>
+  <Data Name="Notification">1</Data>
+  <Data Name="fIsPostNotificationEvent">false</Data>
+  <Data Name="NotificationStatus">0</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_END</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">BEGIN_REQUEST</freb:Description>
+  <freb:Description Data="NotificationStatus">NOTIFICATION_CONTINUE</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>1</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">IsapiFilterModule</Data>
+  <Data Name="Notification">2</Data>
+  <Data Name="fIsPostNotification">false</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_START</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">AUTHENTICATE_REQUEST</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>2</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">IsapiFilterModule</Data>
+  <Data Name="Notification">2</Data>
+  <Data Name="fIsPostNotificationEvent">false</Data>
+  <Data Name="NotificationStatus">0</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_END</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">AUTHENTICATE_REQUEST</freb:Description>
+  <freb:Description Data="NotificationStatus">NOTIFICATION_CONTINUE</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>1</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">CertificateMappingAuthenticationModule</Data>
+  <Data Name="Notification">2</Data>
+  <Data Name="fIsPostNotification">false</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_START</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">AUTHENTICATE_REQUEST</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>4</Level>
+  <Opcode>10</Opcode>
+  <Keywords>0x2</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="AuthTypeSupported">128</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>AUTH_START</Opcode>
+  <Keywords>
+   <Keyword>Authentication</Keyword>
+  </Keywords>
+  <freb:Description Data="AuthTypeSupported">MapCliCert</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{C33BBE8F-985B-4080-81E6-005F1A06B9E2}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>4</Level>
+  <Opcode>28</Opcode>
+  <Keywords>0x2</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>AUTH_END</Opcode>
+  <Keywords>
+   <Keyword>Authentication</Keyword>
+  </Keywords>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{C33BBE8F-985B-4080-81E6-005F1A06B9E2}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>2</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">CertificateMappingAuthenticationModule</Data>
+  <Data Name="Notification">2</Data>
+  <Data Name="fIsPostNotificationEvent">false</Data>
+  <Data Name="NotificationStatus">0</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_END</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">AUTHENTICATE_REQUEST</freb:Description>
+  <freb:Description Data="NotificationStatus">NOTIFICATION_CONTINUE</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>1</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">BasicAuthenticationModule</Data>
+  <Data Name="Notification">2</Data>
+  <Data Name="fIsPostNotification">false</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_START</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">AUTHENTICATE_REQUEST</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>4</Level>
+  <Opcode>10</Opcode>
+  <Keywords>0x2</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="AuthTypeSupported">2</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>AUTH_START</Opcode>
+  <Keywords>
+   <Keyword>Authentication</Keyword>
+  </Keywords>
+  <freb:Description Data="AuthTypeSupported">Basic</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{C33BBE8F-985B-4080-81E6-005F1A06B9E2}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>4</Level>
+  <Opcode>28</Opcode>
+  <Keywords>0x2</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>AUTH_END</Opcode>
+  <Keywords>
+   <Keyword>Authentication</Keyword>
+  </Keywords>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{C33BBE8F-985B-4080-81E6-005F1A06B9E2}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>2</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">BasicAuthenticationModule</Data>
+  <Data Name="Notification">2</Data>
+  <Data Name="fIsPostNotificationEvent">false</Data>
+  <Data Name="NotificationStatus">0</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_END</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">AUTHENTICATE_REQUEST</freb:Description>
+  <freb:Description Data="NotificationStatus">NOTIFICATION_CONTINUE</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>1</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">WindowsAuthenticationModule</Data>
+  <Data Name="Notification">2</Data>
+  <Data Name="fIsPostNotification">false</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_START</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">AUTHENTICATE_REQUEST</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>4</Level>
+  <Opcode>10</Opcode>
+  <Keywords>0x2</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="AuthTypeSupported">4</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>AUTH_START</Opcode>
+  <Keywords>
+   <Keyword>Authentication</Keyword>
+  </Keywords>
+  <freb:Description Data="AuthTypeSupported">NT</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{C33BBE8F-985B-4080-81E6-005F1A06B9E2}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>4</Level>
+  <Opcode>28</Opcode>
+  <Keywords>0x2</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>AUTH_END</Opcode>
+  <Keywords>
+   <Keyword>Authentication</Keyword>
+  </Keywords>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{C33BBE8F-985B-4080-81E6-005F1A06B9E2}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>2</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">WindowsAuthenticationModule</Data>
+  <Data Name="Notification">2</Data>
+  <Data Name="fIsPostNotificationEvent">false</Data>
+  <Data Name="NotificationStatus">0</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_END</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">AUTHENTICATE_REQUEST</freb:Description>
+  <freb:Description Data="NotificationStatus">NOTIFICATION_CONTINUE</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>1</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">IISCertificateMappingAuthenticationModule</Data>
+  <Data Name="Notification">2</Data>
+  <Data Name="fIsPostNotification">false</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_START</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">AUTHENTICATE_REQUEST</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>4</Level>
+  <Opcode>10</Opcode>
+  <Keywords>0x2</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="AuthTypeSupported">128</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>AUTH_START</Opcode>
+  <Keywords>
+   <Keyword>Authentication</Keyword>
+  </Keywords>
+  <freb:Description Data="AuthTypeSupported">MapCliCert</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{C33BBE8F-985B-4080-81E6-005F1A06B9E2}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>4</Level>
+  <Opcode>28</Opcode>
+  <Keywords>0x2</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>AUTH_END</Opcode>
+  <Keywords>
+   <Keyword>Authentication</Keyword>
+  </Keywords>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{C33BBE8F-985B-4080-81E6-005F1A06B9E2}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>2</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">IISCertificateMappingAuthenticationModule</Data>
+  <Data Name="Notification">2</Data>
+  <Data Name="fIsPostNotificationEvent">false</Data>
+  <Data Name="NotificationStatus">0</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_END</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">AUTHENTICATE_REQUEST</freb:Description>
+  <freb:Description Data="NotificationStatus">NOTIFICATION_CONTINUE</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>1</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">AnonymousAuthenticationModule</Data>
+  <Data Name="Notification">2</Data>
+  <Data Name="fIsPostNotification">false</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_START</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">AUTHENTICATE_REQUEST</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>4</Level>
+  <Opcode>10</Opcode>
+  <Keywords>0x2</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="AuthTypeSupported">1</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>AUTH_START</Opcode>
+  <Keywords>
+   <Keyword>Authentication</Keyword>
+  </Keywords>
+  <freb:Description Data="AuthTypeSupported">Anonymous</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{C33BBE8F-985B-4080-81E6-005F1A06B9E2}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>4</Level>
+  <Opcode>27</Opcode>
+  <Keywords>0x2</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="RequestAuthType">1</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>AUTH_REQUEST_AUTH_TYPE</Opcode>
+  <Keywords>
+   <Keyword>Authentication</Keyword>
+  </Keywords>
+  <freb:Description Data="RequestAuthType">Anonymous</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{C33BBE8F-985B-4080-81E6-005F1A06B9E2}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>4</Level>
+  <Opcode>11</Opcode>
+  <Keywords>0x2</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="AuthType">4</Data>
+  <Data Name="NTLMUsed">false</Data>
+  <Data Name="RemoteUserName"></Data>
+  <Data Name="AuthUserName"></Data>
+  <Data Name="TokenImpersonationLevel">3</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>AUTH_SUCCEEDED</Opcode>
+  <Keywords>
+   <Keyword>Authentication</Keyword>
+  </Keywords>
+  <freb:Description Data="AuthType">NT</freb:Description>
+  <freb:Description Data="TokenImpersonationLevel">ImpersonationDelegate</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{C33BBE8F-985B-4080-81E6-005F1A06B9E2}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>4</Level>
+  <Opcode>44</Opcode>
+  <Keywords>0x0</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="AuthType"></Data>
+  <Data Name="UserName"></Data>
+  <Data Name="SupportsIsInRole">true</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>USER_SET</Opcode>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{D42CF7EF-DE92-473E-8B6C-621EA663113A}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>4</Level>
+  <Opcode>28</Opcode>
+  <Keywords>0x2</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>AUTH_END</Opcode>
+  <Keywords>
+   <Keyword>Authentication</Keyword>
+  </Keywords>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{C33BBE8F-985B-4080-81E6-005F1A06B9E2}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>2</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">AnonymousAuthenticationModule</Data>
+  <Data Name="Notification">2</Data>
+  <Data Name="fIsPostNotificationEvent">false</Data>
+  <Data Name="NotificationStatus">0</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_END</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">AUTHENTICATE_REQUEST</freb:Description>
+  <freb:Description Data="NotificationStatus">NOTIFICATION_CONTINUE</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>1</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">IsapiFilterModule</Data>
+  <Data Name="Notification">2</Data>
+  <Data Name="fIsPostNotification">true</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_START</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">AUTHENTICATE_REQUEST</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>4</Level>
+  <Opcode>19</Opcode>
+  <Keywords>0x8</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>FILTER_AUTH_COMPLETE_START</Opcode>
+  <Keywords>
+   <Keyword>Filter</Keyword>
+  </Keywords>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{00237F0D-73EB-4BCF-A232-126693595847}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>4</Level>
+  <Opcode>20</Opcode>
+  <Keywords>0x8</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>FILTER_AUTH_COMPLETE_END</Opcode>
+  <Keywords>
+   <Keyword>Filter</Keyword>
+  </Keywords>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{00237F0D-73EB-4BCF-A232-126693595847}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>2</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">IsapiFilterModule</Data>
+  <Data Name="Notification">2</Data>
+  <Data Name="fIsPostNotificationEvent">true</Data>
+  <Data Name="NotificationStatus">0</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_END</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">AUTHENTICATE_REQUEST</freb:Description>
+  <freb:Description Data="NotificationStatus">NOTIFICATION_CONTINUE</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>4</Level>
+  <Opcode>10</Opcode>
+  <Keywords>0x80</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="FileName">C:\Projects\TT\X\default.asp</Data>
+  <Data Name="UserName">Олег</Data>
+  <Data Name="DomainName">OLEG</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>FILE_CACHE_ACCESS_START</Opcode>
+  <Keywords>
+   <Keyword>Cache</Keyword>
+  </Keywords>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{AC1D69F1-BF33-4CA0-9313-BCA13873E1DC}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>4</Level>
+  <Opcode>11</Opcode>
+  <Keywords>0x80</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="Successful">true</Data>
+  <Data Name="FileFromCache">false</Data>
+  <Data Name="FileAddedToCache">false</Data>
+  <Data Name="FileDirmoned">true</Data>
+  <Data Name="LastModCheckErrorIgnored">true</Data>
+  <Data Name="ErrorCode">0</Data>
+  <Data Name="LastModifiedTime">Thu, 31 Jul 2014 07:07:53 GMT</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>FILE_CACHE_ACCESS_END</Opcode>
+  <Keywords>
+   <Keyword>Cache</Keyword>
+  </Keywords>
+  <freb:Description Data="ErrorCode">Операция успешно завершена. (0x0)</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{AC1D69F1-BF33-4CA0-9313-BCA13873E1DC}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>1</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">UrlAuthorizationModule</Data>
+  <Data Name="Notification">4</Data>
+  <Data Name="fIsPostNotification">false</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_START</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">AUTHORIZE_REQUEST</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>2</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">UrlAuthorizationModule</Data>
+  <Data Name="Notification">4</Data>
+  <Data Name="fIsPostNotificationEvent">false</Data>
+  <Data Name="NotificationStatus">0</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_END</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">AUTHORIZE_REQUEST</freb:Description>
+  <freb:Description Data="NotificationStatus">NOTIFICATION_CONTINUE</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>1</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">StaticCompressionModule</Data>
+  <Data Name="Notification">16</Data>
+  <Data Name="fIsPostNotification">false</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_START</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">MAP_REQUEST_HANDLER</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>2</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">StaticCompressionModule</Data>
+  <Data Name="Notification">16</Data>
+  <Data Name="fIsPostNotificationEvent">false</Data>
+  <Data Name="NotificationStatus">0</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_END</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">MAP_REQUEST_HANDLER</freb:Description>
+  <freb:Description Data="NotificationStatus">NOTIFICATION_CONTINUE</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>1</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">HttpRedirectionModule</Data>
+  <Data Name="Notification">16</Data>
+  <Data Name="fIsPostNotification">false</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_START</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">MAP_REQUEST_HANDLER</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>2</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">HttpRedirectionModule</Data>
+  <Data Name="Notification">16</Data>
+  <Data Name="fIsPostNotificationEvent">false</Data>
+  <Data Name="NotificationStatus">0</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_END</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">MAP_REQUEST_HANDLER</freb:Description>
+  <freb:Description Data="NotificationStatus">NOTIFICATION_CONTINUE</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>1</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">IsapiModule</Data>
+  <Data Name="Notification">128</Data>
+  <Data Name="fIsPostNotification">false</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_START</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">EXECUTE_REQUEST_HANDLER</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>0</Level>
+  <Opcode>12</Opcode>
+  <Keywords>0x0</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>GENERAL_ISAPI_HANDLER</Opcode>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{D42CF7EF-DE92-473E-8B6C-621EA663113A}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>0</Level>
+  <Opcode>1</Opcode>
+  <Keywords>0x0</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>ISAPI_START</Opcode>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{2E94E6C7-EDA0-4B73-9010-2529EDCE1C27}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="ISAPI Extension" Guid="{A1C2040E-8840-4C31-BA11-9871031A19EA}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>0</Level>
+  <Opcode>1</Opcode>
+  <Keywords>0x0</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="DllName">C:\Program Files\IIS Express\asp.dll</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>CALL_ISAPI_EXTENSION</Opcode>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{ACADE3B2-B7D7-4339-956C-811B4EDB1B24}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="ASP" Guid="{06B94D9A-B15E-456E-A4EF-37C984A2CB4B}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>0</Level>
+  <Opcode>10</Opcode>
+  <Keywords>0x0</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="PhysicalPath">C:\Projects\TT\X\default.asp</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>ASP_START_REQUEST</Opcode>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{1FC299FA-3FC4-4C37-910D-DE5B911D0270}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="ASP" Guid="{06B94D9A-B15E-456E-A4EF-37C984A2CB4B}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>4</Level>
+  <Opcode>21</Opcode>
+  <Keywords>0x0</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="SessionId">CCKHEIPAHMJOFKFDAOCOHLCP</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>ASP_NEW_SESSION_CREATED</Opcode>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{1FC299FA-3FC4-4C37-910D-DE5B911D0270}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="ASP" Guid="{06B94D9A-B15E-456E-A4EF-37C984A2CB4B}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>4</Level>
+  <Opcode>26</Opcode>
+  <Keywords>0x0</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>ASP_QUEUE_REQUEST</Opcode>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{1FC299FA-3FC4-4C37-910D-DE5B911D0270}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="ASP" Guid="{06B94D9A-B15E-456E-A4EF-37C984A2CB4B}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>0</Level>
+  <Opcode>1</Opcode>
+  <Keywords>0x0</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>ASP_DEQUEUE_REQUEST</Opcode>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{1FC299FA-3FC4-4C37-910D-DE5B911D0270}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="ASP" Guid="{06B94D9A-B15E-456E-A4EF-37C984A2CB4B}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>4</Level>
+  <Opcode>49</Opcode>
+  <Keywords>0x0</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="FilePath">C:\PROJECTS\TT\X\DEFAULT.ASP</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>ASP_START_CACHE_ACCESS</Opcode>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{1FC299FA-3FC4-4C37-910D-DE5B911D0270}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="ASP" Guid="{06B94D9A-B15E-456E-A4EF-37C984A2CB4B}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>4</Level>
+  <Opcode>47</Opcode>
+  <Keywords>0x0</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="FilePath">C:\PROJECTS\TT\X\DEFAULT.ASP</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>ASP_START_COMPILE</Opcode>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{1FC299FA-3FC4-4C37-910D-DE5B911D0270}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="ASP" Guid="{06B94D9A-B15E-456E-A4EF-37C984A2CB4B}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>4</Level>
+  <Opcode>33</Opcode>
+  <Keywords>0x0</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.640Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="FilePath">C:\PROJECTS\TT\X\DEFAULT.ASP</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>ASP_READ_FILE</Opcode>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{1FC299FA-3FC4-4C37-910D-DE5B911D0270}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="ASP" Guid="{06B94D9A-B15E-456E-A4EF-37C984A2CB4B}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>4</Level>
+  <Opcode>33</Opcode>
+  <Keywords>0x0</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.656Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="FilePath">C:\PROJECTS\TT\X\TEMPLATES\LOGIN.ASP</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>ASP_READ_FILE</Opcode>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{1FC299FA-3FC4-4C37-910D-DE5B911D0270}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="ASP" Guid="{06B94D9A-B15E-456E-A4EF-37C984A2CB4B}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>4</Level>
+  <Opcode>33</Opcode>
+  <Keywords>0x0</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.656Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="FilePath">C:\PROJECTS\TT\X\TEMPLATES\DASHBOARD.ASP</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>ASP_READ_FILE</Opcode>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{1FC299FA-3FC4-4C37-910D-DE5B911D0270}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="ASP" Guid="{06B94D9A-B15E-456E-A4EF-37C984A2CB4B}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>4</Level>
+  <Opcode>48</Opcode>
+  <Keywords>0x0</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>ASP_END_COMPILE</Opcode>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{1FC299FA-3FC4-4C37-910D-DE5B911D0270}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="ASP" Guid="{06B94D9A-B15E-456E-A4EF-37C984A2CB4B}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>4</Level>
+  <Opcode>50</Opcode>
+  <Keywords>0x0</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ErrorCode">0</Data>
+  <Data Name="AccessResult">1</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>ASP_END_CACHE_ACCESS</Opcode>
+  <freb:Description Data="ErrorCode">Операция успешно завершена. (0x0)</freb:Description>
+  <freb:Description Data="AccessResult">SERVED_CACHE_MISS</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{1FC299FA-3FC4-4C37-910D-DE5B911D0270}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="ASP" Guid="{06B94D9A-B15E-456E-A4EF-37C984A2CB4B}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>4</Level>
+  <Opcode>43</Opcode>
+  <Keywords>0x0</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>ASP_START_SCRIPT_EXECUTION</Opcode>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{1FC299FA-3FC4-4C37-910D-DE5B911D0270}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="ASP" Guid="{06B94D9A-B15E-456E-A4EF-37C984A2CB4B}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>52</Opcode>
+  <Keywords>0x0</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="FilePath">C:\PROJECTS\TT\X\DEFAULT.ASP</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>ASP_SCRIPT_TRACE_START</Opcode>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{1FC299FA-3FC4-4C37-910D-DE5B911D0270}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="ASP" Guid="{06B94D9A-B15E-456E-A4EF-37C984A2CB4B}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>53</Opcode>
+  <Keywords>0x0</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="FilePath">C:\PROJECTS\TT\X\DEFAULT.ASP</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>ASP_SCRIPT_TRACE_END</Opcode>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{1FC299FA-3FC4-4C37-910D-DE5B911D0270}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="ASP" Guid="{06B94D9A-B15E-456E-A4EF-37C984A2CB4B}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>4</Level>
+  <Opcode>44</Opcode>
+  <Keywords>0x0</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>ASP_END_SCRIPT_EXECUTION</Opcode>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{1FC299FA-3FC4-4C37-910D-DE5B911D0270}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>4</Level>
+  <Opcode>17</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">IsapiModule</Data>
+  <Data Name="Notification">128</Data>
+  <Data Name="HttpStatus">200</Data>
+  <Data Name="HttpReason">OK</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>MODULE_SET_RESPONSE_SUCCESS_STATUS</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">EXECUTE_REQUEST_HANDLER</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>3</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">IsapiModule</Data>
+  <Data Name="Notification">128</Data>
+  <Data Name="fIsPostNotificationEvent">false</Data>
+  <Data Name="CompletionBytes">0</Data>
+  <Data Name="ErrorCode">0</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_COMPLETION</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">EXECUTE_REQUEST_HANDLER</freb:Description>
+  <freb:Description Data="ErrorCode">Операция успешно завершена. (0x0)</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="ISAPI Extension" Guid="{A1C2040E-8840-4C31-BA11-9871031A19EA}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>4</Level>
+  <Opcode>3</Opcode>
+  <Keywords>0x0</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_ISAPI_COMPLETION</Opcode>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{ACADE3B2-B7D7-4339-956C-811B4EDB1B24}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="ASP" Guid="{06B94D9A-B15E-456E-A4EF-37C984A2CB4B}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>0</Level>
+  <Opcode>2</Opcode>
+  <Keywords>0x0</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>ASP_DONE_PROCESSING</Opcode>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{1FC299FA-3FC4-4C37-910D-DE5B911D0270}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="ASP" Guid="{06B94D9A-B15E-456E-A4EF-37C984A2CB4B}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>0</Level>
+  <Opcode>11</Opcode>
+  <Keywords>0x0</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>ASP_END_REQUEST</Opcode>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{1FC299FA-3FC4-4C37-910D-DE5B911D0270}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="ISAPI Extension" Guid="{A1C2040E-8840-4C31-BA11-9871031A19EA}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>0</Level>
+  <Opcode>2</Opcode>
+  <Keywords>0x0</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>ISAPI_EXTENSION_DONE</Opcode>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{ACADE3B2-B7D7-4339-956C-811B4EDB1B24}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>0</Level>
+  <Opcode>2</Opcode>
+  <Keywords>0x0</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>ISAPI_END</Opcode>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{2E94E6C7-EDA0-4B73-9010-2529EDCE1C27}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>2</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">IsapiModule</Data>
+  <Data Name="Notification">128</Data>
+  <Data Name="fIsPostNotificationEvent">false</Data>
+  <Data Name="NotificationStatus">0</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_END</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">EXECUTE_REQUEST_HANDLER</freb:Description>
+  <freb:Description Data="NotificationStatus">NOTIFICATION_CONTINUE</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>1</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">DynamicCompressionModule</Data>
+  <Data Name="Notification">256</Data>
+  <Data Name="fIsPostNotification">true</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_START</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">RELEASE_REQUEST_STATE</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>2</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">DynamicCompressionModule</Data>
+  <Data Name="Notification">256</Data>
+  <Data Name="fIsPostNotificationEvent">true</Data>
+  <Data Name="NotificationStatus">0</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_END</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">RELEASE_REQUEST_STATE</freb:Description>
+  <freb:Description Data="NotificationStatus">NOTIFICATION_CONTINUE</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>1</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">RewriteModule</Data>
+  <Data Name="Notification">256</Data>
+  <Data Name="fIsPostNotification">true</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_START</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">RELEASE_REQUEST_STATE</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>2</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">RewriteModule</Data>
+  <Data Name="Notification">256</Data>
+  <Data Name="fIsPostNotificationEvent">true</Data>
+  <Data Name="NotificationStatus">0</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_END</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">RELEASE_REQUEST_STATE</freb:Description>
+  <freb:Description Data="NotificationStatus">NOTIFICATION_CONTINUE</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>1</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">CustomLoggingModule</Data>
+  <Data Name="Notification">1024</Data>
+  <Data Name="fIsPostNotification">false</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_START</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">LOG_REQUEST</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>2</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">CustomLoggingModule</Data>
+  <Data Name="Notification">1024</Data>
+  <Data Name="fIsPostNotificationEvent">false</Data>
+  <Data Name="NotificationStatus">0</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_END</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">LOG_REQUEST</freb:Description>
+  <freb:Description Data="NotificationStatus">NOTIFICATION_CONTINUE</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>1</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">DynamicIpRestrictionModule</Data>
+  <Data Name="Notification">2048</Data>
+  <Data Name="fIsPostNotification">false</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_START</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">END_REQUEST</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>2</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">DynamicIpRestrictionModule</Data>
+  <Data Name="Notification">2048</Data>
+  <Data Name="fIsPostNotificationEvent">false</Data>
+  <Data Name="NotificationStatus">0</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_END</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">END_REQUEST</freb:Description>
+  <freb:Description Data="NotificationStatus">NOTIFICATION_CONTINUE</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>1</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">HttpLoggingModule</Data>
+  <Data Name="Notification">536870912</Data>
+  <Data Name="fIsPostNotification">false</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_START</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">SEND_RESPONSE</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>2</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">HttpLoggingModule</Data>
+  <Data Name="Notification">536870912</Data>
+  <Data Name="fIsPostNotificationEvent">false</Data>
+  <Data Name="NotificationStatus">0</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_END</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">SEND_RESPONSE</freb:Description>
+  <freb:Description Data="NotificationStatus">NOTIFICATION_CONTINUE</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>1</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">IsapiModule</Data>
+  <Data Name="Notification">536870912</Data>
+  <Data Name="fIsPostNotification">false</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_START</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">SEND_RESPONSE</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>2</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">IsapiModule</Data>
+  <Data Name="Notification">536870912</Data>
+  <Data Name="fIsPostNotificationEvent">false</Data>
+  <Data Name="NotificationStatus">0</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_END</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">SEND_RESPONSE</freb:Description>
+  <freb:Description Data="NotificationStatus">NOTIFICATION_CONTINUE</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>1</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">WebMatrixSupportModule</Data>
+  <Data Name="Notification">536870912</Data>
+  <Data Name="fIsPostNotification">false</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_START</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">SEND_RESPONSE</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>2</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">WebMatrixSupportModule</Data>
+  <Data Name="Notification">536870912</Data>
+  <Data Name="fIsPostNotificationEvent">false</Data>
+  <Data Name="NotificationStatus">0</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_END</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">SEND_RESPONSE</freb:Description>
+  <freb:Description Data="NotificationStatus">NOTIFICATION_CONTINUE</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>1</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">WindowsAuthenticationModule</Data>
+  <Data Name="Notification">536870912</Data>
+  <Data Name="fIsPostNotification">false</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_START</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">SEND_RESPONSE</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>2</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">WindowsAuthenticationModule</Data>
+  <Data Name="Notification">536870912</Data>
+  <Data Name="fIsPostNotificationEvent">false</Data>
+  <Data Name="NotificationStatus">0</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_END</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">SEND_RESPONSE</freb:Description>
+  <freb:Description Data="NotificationStatus">NOTIFICATION_CONTINUE</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>1</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">BasicAuthenticationModule</Data>
+  <Data Name="Notification">536870912</Data>
+  <Data Name="fIsPostNotification">false</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_START</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">SEND_RESPONSE</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>2</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">BasicAuthenticationModule</Data>
+  <Data Name="Notification">536870912</Data>
+  <Data Name="fIsPostNotificationEvent">false</Data>
+  <Data Name="NotificationStatus">0</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_END</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">SEND_RESPONSE</freb:Description>
+  <freb:Description Data="NotificationStatus">NOTIFICATION_CONTINUE</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>1</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">ProtocolSupportModule</Data>
+  <Data Name="Notification">536870912</Data>
+  <Data Name="fIsPostNotification">false</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_START</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">SEND_RESPONSE</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>2</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">ProtocolSupportModule</Data>
+  <Data Name="Notification">536870912</Data>
+  <Data Name="fIsPostNotificationEvent">false</Data>
+  <Data Name="NotificationStatus">0</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_END</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">SEND_RESPONSE</freb:Description>
+  <freb:Description Data="NotificationStatus">NOTIFICATION_CONTINUE</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>1</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">IsapiFilterModule</Data>
+  <Data Name="Notification">536870912</Data>
+  <Data Name="fIsPostNotification">false</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_START</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">SEND_RESPONSE</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>2</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">IsapiFilterModule</Data>
+  <Data Name="Notification">536870912</Data>
+  <Data Name="fIsPostNotificationEvent">false</Data>
+  <Data Name="NotificationStatus">0</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_END</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">SEND_RESPONSE</freb:Description>
+  <freb:Description Data="NotificationStatus">NOTIFICATION_CONTINUE</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>1</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">DynamicCompressionModule</Data>
+  <Data Name="Notification">536870912</Data>
+  <Data Name="fIsPostNotification">false</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_START</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">SEND_RESPONSE</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>4</Level>
+  <Opcode>6</Opcode>
+  <Keywords>0x40</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>DYNAMIC_COMPRESSION_START</Opcode>
+  <Keywords>
+   <Keyword>Compression</Keyword>
+  </Keywords>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{E60CEE96-4472-448D-A13C-2170B18220EC}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>4</Level>
+  <Opcode>7</Opcode>
+  <Keywords>0x40</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>DYNAMIC_COMPRESSION_SUCCESS</Opcode>
+  <Keywords>
+   <Keyword>Compression</Keyword>
+  </Keywords>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{E60CEE96-4472-448D-A13C-2170B18220EC}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>9</Opcode>
+  <Keywords>0x40</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="OriginalSize">41935</Data>
+  <Data Name="CompressedSize">6714</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>DYNAMIC_COMPRESSION_DO</Opcode>
+  <Keywords>
+   <Keyword>Compression</Keyword>
+  </Keywords>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{E60CEE96-4472-448D-A13C-2170B18220EC}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>4</Level>
+  <Opcode>10</Opcode>
+  <Keywords>0x40</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>DYNAMIC_COMPRESSION_END</Opcode>
+  <Keywords>
+   <Keyword>Compression</Keyword>
+  </Keywords>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{E60CEE96-4472-448D-A13C-2170B18220EC}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>2</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">DynamicCompressionModule</Data>
+  <Data Name="Notification">536870912</Data>
+  <Data Name="fIsPostNotificationEvent">false</Data>
+  <Data Name="NotificationStatus">0</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_END</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">SEND_RESPONSE</freb:Description>
+  <freb:Description Data="NotificationStatus">NOTIFICATION_CONTINUE</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>1</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">RewriteModule</Data>
+  <Data Name="Notification">536870912</Data>
+  <Data Name="fIsPostNotification">false</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_START</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">SEND_RESPONSE</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>2</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">RewriteModule</Data>
+  <Data Name="Notification">536870912</Data>
+  <Data Name="fIsPostNotificationEvent">false</Data>
+  <Data Name="NotificationStatus">0</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_END</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">SEND_RESPONSE</freb:Description>
+  <freb:Description Data="NotificationStatus">NOTIFICATION_CONTINUE</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>1</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">CustomErrorModule</Data>
+  <Data Name="Notification">536870912</Data>
+  <Data Name="fIsPostNotification">false</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_START</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">SEND_RESPONSE</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>52</Opcode>
+  <Keywords>0x0</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="Reason">1</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>GENERAL_NOT_SEND_CUSTOM_ERROR</Opcode>
+  <freb:Description Data="Reason">SETSTATUS_SUCCESS</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{D42CF7EF-DE92-473E-8B6C-621EA663113A}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>2</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">CustomErrorModule</Data>
+  <Data Name="Notification">536870912</Data>
+  <Data Name="fIsPostNotificationEvent">false</Data>
+  <Data Name="NotificationStatus">0</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_END</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">SEND_RESPONSE</freb:Description>
+  <freb:Description Data="NotificationStatus">NOTIFICATION_CONTINUE</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>1</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">DynamicIpRestrictionModule</Data>
+  <Data Name="Notification">536870912</Data>
+  <Data Name="fIsPostNotification">false</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_START</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">SEND_RESPONSE</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>2</Opcode>
+  <Keywords>0x100</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="ModuleName">DynamicIpRestrictionModule</Data>
+  <Data Name="Notification">536870912</Data>
+  <Data Name="fIsPostNotificationEvent">false</Data>
+  <Data Name="NotificationStatus">0</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>NOTIFY_MODULE_END</Opcode>
+  <Keywords>
+   <Keyword>RequestNotifications</Keyword>
+  </Keywords>
+  <freb:Description Data="Notification">SEND_RESPONSE</freb:Description>
+  <freb:Description Data="NotificationStatus">NOTIFICATION_CONTINUE</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{002E91E3-E7AE-44AB-8E07-99230FFA6ADE}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>4</Level>
+  <Opcode>14</Opcode>
+  <Keywords>0x80</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="HttpsysCacheable">false</Data>
+  <Data Name="Reason">21</Data>
+  <Data Name="CachePolicy">0</Data>
+  <Data Name="TimeToLive">0</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>HTTPSYS_CACHEABLE</Opcode>
+  <Keywords>
+   <Keyword>Cache</Keyword>
+  </Keywords>
+  <freb:Description Data="Reason">NO_PIPELINE_ENABLE</freb:Description>
+  <freb:Description Data="CachePolicy">NO_CACHE</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{AC1D69F1-BF33-4CA0-9313-BCA13873E1DC}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>4</Level>
+  <Opcode>35</Opcode>
+  <Keywords>0x0</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>GENERAL_FLUSH_RESPONSE_START</Opcode>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{D42CF7EF-DE92-473E-8B6C-621EA663113A}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>4</Level>
+  <Opcode>47</Opcode>
+  <Keywords>0x0</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="Headers">Cache-Control: private
+Content-Type: text/html
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Server: Microsoft-IIS/8.0
+X-SourceFiles: =?UTF-8?B?QzpcUHJvamVjdHNcVFRcWFxkZWZhdWx0LmFzcA==?=
+X-Powered-By: ASP.NET
+</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>GENERAL_RESPONSE_HEADERS</Opcode>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{D42CF7EF-DE92-473E-8B6C-621EA663113A}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>49</Opcode>
+  <Keywords>0x0</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="Buffer">%1F%8B%08</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>GENERAL_RESPONSE_ENTITY_BUFFER</Opcode>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{D42CF7EF-DE92-473E-8B6C-621EA663113A}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>49</Opcode>
+  <Keywords>0x0</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="Buffer">%F1%E0%FF~%A3iUn%97%17%9E%A6[f%F6;%FAu%92%D5%DB%B3%FC&lt;[%97-M%FFIS%DF%16%D3%ED%A6%98%11%12uE%CA%8B%0B%FA%94h%A3`%F0%F8%DD%A05^%A6%EE%CAl%D5%F4H%FD%98%F4%91k%B9%CD%8A%EB%A3%A3%7F%E9/%FC%97%FE%A2%7F%E9O%FA%97%FE%9C%7F%E9/%F9%97%FE%AC%7F%E9%CFy|w%E5%BD%15R%950%B0%BF%CB%E7%FA%17%FDa S%DF%18%EA%BE%E9%DB%FF%8Ei%B5%BD%CA%96%C4%96%DE%BFf%EC%E6%15&lt;%FEk%D2%08%A2\,/%FCFx%1E%CF%EF%85%ED%DC%A8%FE%81%7F%E9%EF%F8%97%FE%A6%7F%E9%EF%FD%97%FF%D0%7F%E9%EF%FE%97%FF%E0%7F%F9%0F%F9%97%FE%A6%F4_%FA[%E8%C3%BF%FB_%FA%DB%FE%A5%BF%8B%FE%FC%DBI=%DC%F3%A0%991%D1%AF%FC%F4Q%80%0E%E9%F5O%F2%B5%D0%19%C2%AF%DD%EF%F1&lt;&gt;/%F2rF%06/%F2%1D%1E%BF&apos;%C0%D8%BE%A8%AB%F5*%06%C9&lt;*0%FE;%B0Y%84%C6G)q%EE4%9FW%E5,&apos;%C1%FF%97%FE%E2%7F%E9o%FF%97%FF %1A7%FD%9Bn}%F5%EA%F9%9D%8F%88%C5`%EB%F2EVPk%E1z%FD%83%EC_u^%91%81%19%E8%BAK&quot;%FF%F9%D9%1C%C4%9F%F5/%FD}%FF%F2%9FH%B3%F7/%FF%E14%7F%7F%1BM%E4V%BE%8C%FF?9%98%BF%F0_%FA%9B%FE%E5?%88%C6%F1%F7%FE%CB%7F%9CA%7FE/]U%F5%CC%8C%C0%FD%ADJp%A8%E7%9F%AB1%10W%FDK%7F%0F%8D%E2o%FF%97%FF%103%86&amp;%9F%D60%E9?K#%98%C2%0CL%AAwCp%F0%88%C5%DB%D0</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>GENERAL_RESPONSE_ENTITY_BUFFER</Opcode>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{D42CF7EF-DE92-473E-8B6C-621EA663113A}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>49</Opcode>
+  <Keywords>0x0</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="Buffer">%F2%17%1E%F3%09%FDJ%BF%8B%BD%A6?%F5%03P%EA%B4%AE%89(%C6n%BB%D1%DFh%DCs%BC%E83%95%CFt%BD/%F1pW%E3%94%1D</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>GENERAL_RESPONSE_ENTITY_BUFFER</Opcode>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{D42CF7EF-DE92-473E-8B6C-621EA663113A}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>49</Opcode>
+  <Keywords>0x0</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="Buffer">%A94]V-%11|%BD%9C%8D%C3V%96%CC?%FE%BB%DE%FD%E8%E8%F3*%9Dd%D3%B7}%AA}Y%87%7F%FB%AF%CD%B2f&gt;%A92%12%A2%A3%A7%E6%D7%10%C2%CDty%ADSh%06%FD%1E%94%D1%D9%F7%87%EF%D3&amp;%F25%1E&amp;</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>GENERAL_RESPONSE_ENTITY_BUFFER</Opcode>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{D42CF7EF-DE92-473E-8B6C-621EA663113A}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>49</Opcode>
+  <Keywords>0x0</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="Buffer">%CB%D7%A5%C8%CD%E3%B1%84%F8:#%F2%08*o%E0%F1%C7%E4%1Ap%FB%AB:[%AD %FB%AE5</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>GENERAL_RESPONSE_ENTITY_BUFFER</Opcode>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{D42CF7EF-DE92-473E-8B6C-621EA663113A}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>49</Opcode>
+  <Keywords>0x0</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="Buffer">%1E%F7%17%A3%F4%9A|)%F2%BA%1C%1Ex%FA%1E%1Ei%1C%FC0%CE%8E%F9S%1D%BD%B6ZE%FC%BC%94c%A5%CF&gt;Zd5&lt;%A7IE%D2%BFx%94%DA(%D7&lt;%FE%18%E8u%C0%85%BB%D4G%1D%CFcU&quot;B&amp;%F9%C3j</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>GENERAL_RESPONSE_ENTITY_BUFFER</Opcode>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{D42CF7EF-DE92-473E-8B6C-621EA663113A}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>49</Opcode>
+  <Keywords>0x0</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="Buffer">%A3PJ%F0%F8%92b%1E%E6%C6%BBc%85&amp;%0C \%D9i%B7.%BD%9E#%12%07n#Ho%CC%07uq1%0F|r%F3P,o%DE%9F%D5%D5jV]%05%11%89%FF%B81%9A%96%D4%0F%B8%C9%F0%10%FF%E1%BE5%A3%FF%F1!%80x%1E%DB%EE%CF%C9%D8e%DB%F9%F22/%ABU%8E%DF%CF%AF0%19%C5Q%BF%D54#%F7d%9B;%E1%16q%F8}J%9B%C7%A3%9A%C1v{%91/%D7%A9%F7W%D3P%06%A4%A7%12%FD%87h%B7%E1[&lt;D%B2[%D0%C0&lt;%90%FC[4%C3%F3%98%B2L%D5%F2%E2%88%9C%B7%BF%8B%E3%A1%BF%9D\%99%BF%898W&gt;%BE-%10%E2sC%87%D5%BA,%85MH%1B%BFk%B7%17%EB6%0Ft%EBM%CF%E3|%01%8F%E2%8Fd@%A8%D0%9F%B7{%99%B0&amp;&lt;n%D18&amp;&apos;%B1%87%E9%F8/%FDi%E4%DA%FC%CD%84%CA?%90%B2%A7%C7%E1#%FD%FC[H%05%91N%1A%8F%C7%B7%017%CCBx%C8#%DC%C4%01%C4%1F%86%BA%D4%13)VV.7%BD%B2%E1[&lt;?%EFX
+%E1%C9%DFJ%13%F7%B7%FDK%7F%FF%BF%FC&apos;%FE%DC%B3%D5_B%FC%EA%80%93%FE%81%7F%E9oO%FF%E5?%98~%80%D3%FEh%C2%93%82%09%FA%E8_%FA%07%FE%E5?%04%9F[2%FE%CB%7F,x%10r%F1%B7%FFK%7F%1B[C%12%13a%C7%BF/%A5O%FF%A6%7F%E9o%C6;%FF%F2%1F%FB%B3%CD%95%8F%EF%AE%07%E3%1718=%05(F%87%1A%04%8F%F6%11%F9&quot;%043%F0%B6&apos;%18%DAp%88-%88%DD;-%D5%CE|%93F%A7%CD%1A2%95%F4%CB%CF%A5%C5a$6b%CD$%A7_%06%1F&quot;%D6-Fo%1E%E6%E7%9B%9B%E1y%EC%E7%11oz%AC&quot;A%90M%09%1E%E2wH%C5.%09%A4|%F1&gt;%A0H%84%DD%06%D4%C9%FE%CE%EF%8E%E0%FD%8F%%09%A3&lt;%0Cu%061%FC%07%A83z%F5%96]%85y%D2M%0Fhf%F1%A9%AB%8B%9A%A4$5%BF%90%FFO1K&gt;K%B3i[\%0E%BA%CE%B1&apos;%06%17%DE%A8%83M%7F%98%18%DE%04%17%E6;%FA%8A2du%91ms%A2cY]}%F6%D1%FE%8E%FF%11-%B7|%F6Q%F8I%F6%EE%B3%8Fvw%E83Kx%11%EEQJ%D4|%1F%BC%F1%04%93%D4%98P%80</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>GENERAL_RESPONSE_ENTITY_BUFFER</Opcode>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{D42CF7EF-DE92-473E-8B6C-621EA663113A}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>49</Opcode>
+  <Keywords>0x0</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="Buffer">%F2%91%C3%84%89%1Aq%CA%F1&amp;%1C%F1%DCj%B5Z%09%C5%BF%BFk%BE%E1%D5%EA%1E%A5%E6%F9e]Q%A7%0C%E3f:%E1y%8FE%E4%A1E%E3%B4)i%BD%10%7F%DE%1A%F1%1Bs%92%FE%E3%09%DD{%BC%85%A7K %82R%E7%CD%1C%BF%1AN&quot;c%CA%9F%DD%1E%F0fI%F6%9F[%E4^%CD%F3sE%11b%99%E9%DB%EDiQO%CB0%C7p|IZ+%9Bl%D2%D1%DD%E7%FFW%84%C1RD%A0r%D2&apos;%EB%E6%FA%F60%FF%7FE%8C)%ECY%C7%9C%1F_e%FF/ %87%C1%93%F49%E9%A0%1A%B8%BD%CF%EB%B7l%89%E7%9B%A3fS\,%B7+%F2%85%E8wK%CE%D7%F4a%FA%E5%FA%06%BB%E5?%DF8IoX%07%C2%B3%C9%B9%C0s%E3%F7%9E%03b%FC%81aG%04%8Fo%A9%E55%B8?7M%81g%AA%E0%C1%DC%D4%1C%0Fq%83y%A5%CC%CF[%FA=%CF%EA%F3%E2%DDm%DE%C5%13%84Y%E8t%BBX\%88K%01x%B7%05%83%E71%DEl%EA%E9g%1F%CD%DBv%F5%E8%EE%DD%15%E2%E7yU%CE%C6E{%F7%FE%CE%DD%FB%F7OvO%1F%DC=??%FF%88%96%1C%DB%CF&gt;%FA%AA%A1(%9BTv%9B%D5%D6%05! %AA%D8?J%EF%DE%B2%F7[Grx%FC%A9%E1%01cf%E8%83%F7%A3%1B%1E%1F%12%B8%02%82|%FB%B7%F1&lt;nZ%F2|.%0C%90U],%B2%FAz%FB%BCZ%12%E5%BF%93M%DF%A6%AFWY]WW4Bny%94%BEo%07%88%91-|L+{%8A^%18%FD%BE8%E3%E9%EA%86%98%A6%95U%0E%CE%1D%BF_%074V %FD%1Eh%DD$%BF%DD%87%D6%DCo%DF%18%CF%D7^%A1?Y%D7%D9%A4%C0W%93b%92/g%F4~U/%B3:%170%A3%F4%17%AD%8B&amp;%A5i%C9%16%D3%AA^%918%94%C5%C5%BA%CC%D2%A6%9Aee%DE%8Co%8F%E7%ED%17%EDoK%AE%DB*`%A7%82%84%B7%DEW%966%E8 %06x[8xnTB%CF%8E?}v%FFGJ%C8{B%1D%F1%C3%D0%0C%BC%B0%C4%9A%81%88%86%CE%DF%B3%A3%AE%DA%B4%9C%92%86%1A%F4%C9&lt;[/%8A%B7%94%81l%F3%92%BA%E2%B7%DE%A3%AF%DB
+%8Ay~%A4WnE%AE%F7%D7+pE%E8%F7%FC%BD%A4c%83Z%01%BC%DB%82%C1s%A3V%F9%91k%D3}%BA2%1A%08%E6%FF%D7]%9B%FD%0FP`%B7%95%12%F3%FCH%A9%DC%8A\%EF%AFT%84[%DEW:6h%15%06x[8xnT+?rV%BAO(%F5?%0CY%BF%FF%01%B2%8E%A7%AB%08-%A7%FC%C8Y%110%FF%9F%D7+7d%A0n%EA)%C8.%B1h%BDgj%E9%BC%AAh%F1%FB&amp;%01%F0%DF+%96+ZA%E4%E5%A3%9B^%C3%F3%98%DB%F3%12$V%84%F8/%92=^A%82%04ZUt^%D5%0BZ%F9Z%12%EF%96)7%DBn%16%1F%A5V%AD%E5%F5g%1F%BD%A1%D7%D2%EB%8A%B8%81R%D5Mv%91%A7%F3%BC%CE%C7%E3%F1%ED%B4W%A0%7F%A5%0B%1E%C76av%9B%B1%E01k`
+%85%DE%E4%95%AE%AB%AC^%82k%F1;%D06%E3%85%CE%BB-h&lt;%AF%89%C7o%D7%FA}%96%B1n%A3%B1od%B5%9B%BE%F7YQ%D8j%98%197%01%F3%01%A5c%10P%97c%A3%D0%86 )%94iE%1E%FB%C5%F6~%FF%E5%D8%8B%FA%12y%96%E9%B6%DF%BE%DBV%DA%FD%F8%8A8p%FB%AA%CEV%D0;%DB%DB</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>GENERAL_RESPONSE_ENTITY_BUFFER</Opcode>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{D42CF7EF-DE92-473E-8B6C-621EA663113A}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>49</Opcode>
+  <Keywords>0x0</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="Buffer">G^%03%EF%05%A2%FE%B4.V-%FD%A9%1F%E0%ED&apos;D!%D2%D3%D9%8A%F4%1Fi%B3%EFd%97%D9kn%E6</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>GENERAL_RESPONSE_ENTITY_BUFFER</Opcode>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{D42CF7EF-DE92-473E-8B6C-621EA663113A}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>5</Level>
+  <Opcode>49</Opcode>
+  <Keywords>0x0</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="Buffer">%85%FD%7F</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>GENERAL_RESPONSE_ENTITY_BUFFER</Opcode>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{D42CF7EF-DE92-473E-8B6C-621EA663113A}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>4</Level>
+  <Opcode>36</Opcode>
+  <Keywords>0x0</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="BytesSent">7007</Data>
+  <Data Name="ErrorCode">0</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>GENERAL_FLUSH_RESPONSE_END</Opcode>
+  <freb:Description Data="ErrorCode">Операция успешно завершена. (0x0)</freb:Description>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{D42CF7EF-DE92-473E-8B6C-621EA663113A}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+ <System>
+  <Provider Name="WWW Server" Guid="{3A2A4E84-4C21-4981-AE10-3FDA0D9B0F83}"/>
+  <EventID>0</EventID>
+  <Version>1</Version>
+  <Level>0</Level>
+  <Opcode>2</Opcode>
+  <Keywords>0x0</Keywords>
+  <TimeCreated SystemTime="2014-07-31T07:30:25.672Z"/>
+  <Correlation ActivityID="{00000000-0000-0000-1500-0080000000F7}"/>
+  <Execution ProcessID="2752" ThreadID="3992"/>
+  <Computer>OLEG</Computer>
+ </System>
+ <EventData>
+  <Data Name="ContextId">{00000000-0000-0000-1500-0080000000F7}</Data>
+  <Data Name="BytesSent">7007</Data>
+  <Data Name="BytesReceived">382</Data>
+  <Data Name="HttpStatus">200</Data>
+  <Data Name="HttpSubStatus">0</Data>
+ </EventData>
+ <RenderingInfo Culture="ru-RU">
+  <Opcode>GENERAL_REQUEST_END</Opcode>
+ </RenderingInfo>
+ <ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+  <EventGuid>{D42CF7EF-DE92-473E-8B6C-621EA663113A}</EventGuid>
+ </ExtendedTracingInfo>
+</Event>
+</failedRequest>

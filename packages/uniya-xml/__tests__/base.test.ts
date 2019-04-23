@@ -143,27 +143,28 @@ describe("Base XML tests >>>", () => {
         });
     });
 
-    //describe('read XML files using XmlTextReader...', () => {
+    describe('read XML files using XmlTextReader...', () => {
 
-    //    let count = 0;
-    //    const testFolder = __dirname + '\\xmls';
-    //    var files = fs.readdirSync(testFolder);
-    //    for (let file in files) {
-
-    //        // file data
-    //        let data = fs.readFileSync(file, 'utf8');
-    //        const xml = data.toString();
-    //        if (xml.length > 0) {
-    //            let node = XmlNode.parse(xml) as XmlNode;
-    //            if (node.hasChildNodes) {
-    //                count++;
-    //            }
-    //        }
-    //    }
-    //    it(`seccess loaded ${count} xml files`, () => {
-    //        expect(count).toBeGreaterThan(0);
-    //    });
-    //});
+        let okey = 0;
+        let count = 0;
+        const testFolder = __dirname + '\\xmls';
+        var files = fs.readdirSync(testFolder);
+        for (let file of files) {
+            let data = fs.readFileSync(`${testFolder}\\${file}`, 'utf8');
+            const node = XmlNode.parse(data.toString()) as XmlNode;
+            const text = node.toXMLString();
+            if (text.length > 0 && node.hasChildNodes) {
+                okey++;
+            }
+            count++;
+            it(`success loaded ${file} xml file`, () => {
+                expect(text.length).toBeGreaterThan(40);
+            });
+        }
+        it(`success loaded ${okey} from ${count} xml files`, () => {
+            expect(count).toBe(okey);
+        });
+    });
 
     describe('write XML element: let writer = new XmlTextWriter().startElement("Header").writeElement("DocDate", "28.07.2016")...', () => {
 

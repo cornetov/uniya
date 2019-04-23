@@ -1,0 +1,15 @@
+<fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+  <entity name="account">
+    <attribute name="name" />
+    <attribute name="primarycontactid" />
+    <attribute name="telephone1" />
+    <attribute name="accountid" />
+    <order attribute="name" descending="false" />
+    <filter type="and">
+      <filter type="or">
+        <condition attribute="rus_inn" operator="eq" value="7709757795" />
+        <condition attribute="rus_inn" operator="eq" value="7736536770" />
+      </filter>
+    </filter>
+  </entity>
+</fetch>

@@ -546,13 +546,14 @@ export class XmlNode {
 
                     // document body
                     rootNode.childNodes.add(node);
-                }
-                else if (node.nodeType === XmlNodeType.DocumentType || node.nodeType === XmlNodeType.XmlDeclaration) {
+
+                } else if (node.nodeType === XmlNodeType.DocumentType || node.nodeType === XmlNodeType.XmlDeclaration) {
 
                     // XML document
                     rootNode = new XmlNode(XmlNodeType.Document);
                     rootNode.childNodes.add(node);
-                } else {
+
+                } else if (node.nodeType === XmlNodeType.Element) {
 
                     // Simple root element
                     rootNode = node;

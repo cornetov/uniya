@@ -8,41 +8,40 @@ var sourcePath = path.join(__dirname, './src');
 var outPath = path.join(__dirname, '../../dist/uniya');
 
 module.exports = {
-  context: sourcePath,
-  entry: {
-    main: './src/index.ts'
-  },
-  output: {
-    path: outPath,
-    publicPath: '/',
-    filename: 'bundle.js'
-  },
-  resolve: {
-    extensions: ['.js', '.ts', '.tsx']
-  },
-  module: {
-    loaders: [
-      // .ts, .tsx
-      {
-        test: /\.tsx?$/,
-        use: isProduction
-          ? 'awesome-typescript-loader?module=es6'
-          : [
-            'awesome-typescript-loader'
-          ]
-      }
-    ]
-  },
-  devServer: {
-    contentBase: sourcePath,
-    stats: {
-      warnings: false
+    context: sourcePath,
+    entry: {
+        main: './src/index.ts'
+    },
+    output: {
+        path: outPath,
+        publicPath: '/',
+        filename: 'bundle.js'
+    },
+    resolve: {
+        extensions: ['.js', '.ts', '.tsx']
+    },
+    module: {
+        loaders: [
+            // .ts, .tsx
+            {
+                test: /\.tsx?$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: "awesome-typescript-loader"
+                }
+            }
+        ]
+    },
+    devServer: {
+        contentBase: sourcePath,
+        stats: {
+            warnings: false
+        }
+    },
+    node: {
+        // workaround for webpack-dev-server issue
+        // https://github.com/webpack/webpack-dev-server/issues/60#issuecomment-103411179
+        fs: 'empty',
+        net: 'empty'
     }
-  },
-  node: {
-    // workaround for webpack-dev-server issue
-    // https://github.com/webpack/webpack-dev-server/issues/60#issuecomment-103411179
-    fs: 'empty',
-    net: 'empty'
-  }
 };

@@ -1,0 +1,2313 @@
+<root type="object">
+  <result type="object">
+    <ID type="object">
+      <type type="string">integer</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">true</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">false</isDynamic>
+    </ID>
+    <TITLE type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">true</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">false</isDynamic>
+      <listLabel type="string">Название компании</listLabel>
+    </TITLE>
+    <COMPANY_TYPE type="object">
+      <type type="string">crm_status</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">false</isDynamic>
+      <statusType type="string">COMPANY_TYPE</statusType>
+      <listLabel type="string">Тип компании</listLabel>
+    </COMPANY_TYPE>
+    <LOGO type="object">
+      <type type="string">file</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">false</isDynamic>
+    </LOGO>
+    <ADDRESS type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">false</isDynamic>
+      <listLabel type="string">Адрес</listLabel>
+    </ADDRESS>
+    <ADDRESS_2 type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">false</isDynamic>
+      <listLabel type="string">Улица</listLabel>
+    </ADDRESS_2>
+    <ADDRESS_CITY type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">false</isDynamic>
+      <listLabel type="string">Город</listLabel>
+    </ADDRESS_CITY>
+    <ADDRESS_POSTAL_CODE type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">false</isDynamic>
+      <listLabel type="string">Индекс</listLabel>
+    </ADDRESS_POSTAL_CODE>
+    <ADDRESS_REGION type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">false</isDynamic>
+      <listLabel type="string">Район</listLabel>
+    </ADDRESS_REGION>
+    <ADDRESS_PROVINCE type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">false</isDynamic>
+      <listLabel type="string">Область</listLabel>
+    </ADDRESS_PROVINCE>
+    <ADDRESS_COUNTRY type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">false</isDynamic>
+      <listLabel type="string">Страна</listLabel>
+    </ADDRESS_COUNTRY>
+    <ADDRESS_COUNTRY_CODE type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">false</isDynamic>
+    </ADDRESS_COUNTRY_CODE>
+    <ADDRESS_LEGAL type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">false</isDynamic>
+    </ADDRESS_LEGAL>
+    <REG_ADDRESS type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">false</isDynamic>
+      <listLabel type="string">Юридический адрес</listLabel>
+    </REG_ADDRESS>
+    <REG_ADDRESS_2 type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">false</isDynamic>
+      <listLabel type="string">Улица (юридический адрес)</listLabel>
+    </REG_ADDRESS_2>
+    <REG_ADDRESS_CITY type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">false</isDynamic>
+      <listLabel type="string">Город (юридический адрес)</listLabel>
+    </REG_ADDRESS_CITY>
+    <REG_ADDRESS_POSTAL_CODE type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">false</isDynamic>
+      <listLabel type="string">Индекс (юридический адрес)</listLabel>
+    </REG_ADDRESS_POSTAL_CODE>
+    <REG_ADDRESS_REGION type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">false</isDynamic>
+      <listLabel type="string">Район (юридический адрес)</listLabel>
+    </REG_ADDRESS_REGION>
+    <REG_ADDRESS_PROVINCE type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">false</isDynamic>
+      <listLabel type="string">Область (юридический адрес)</listLabel>
+    </REG_ADDRESS_PROVINCE>
+    <REG_ADDRESS_COUNTRY type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">false</isDynamic>
+      <listLabel type="string">Страна (юридический адрес)</listLabel>
+    </REG_ADDRESS_COUNTRY>
+    <REG_ADDRESS_COUNTRY_CODE type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">false</isDynamic>
+    </REG_ADDRESS_COUNTRY_CODE>
+    <BANKING_DETAILS type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">false</isDynamic>
+      <listLabel type="string">Банковские реквизиты</listLabel>
+    </BANKING_DETAILS>
+    <INDUSTRY type="object">
+      <type type="string">crm_status</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">false</isDynamic>
+      <statusType type="string">INDUSTRY</statusType>
+      <listLabel type="string">Сфера деятельности</listLabel>
+    </INDUSTRY>
+    <EMPLOYEES type="object">
+      <type type="string">crm_status</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">false</isDynamic>
+      <statusType type="string">EMPLOYEES</statusType>
+      <listLabel type="string">Годовой оборот</listLabel>
+    </EMPLOYEES>
+    <CURRENCY_ID type="object">
+      <type type="string">crm_currency</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">false</isDynamic>
+      <listLabel type="string">Валюта</listLabel>
+    </CURRENCY_ID>
+    <REVENUE type="object">
+      <type type="string">double</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">false</isDynamic>
+    </REVENUE>
+    <OPENED type="object">
+      <type type="string">char</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">false</isDynamic>
+    </OPENED>
+    <COMMENTS type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">false</isDynamic>
+      <listLabel type="string">Комментарий</listLabel>
+    </COMMENTS>
+    <HAS_PHONE type="object">
+      <type type="string">char</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">true</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">false</isDynamic>
+    </HAS_PHONE>
+    <HAS_EMAIL type="object">
+      <type type="string">char</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">true</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">false</isDynamic>
+    </HAS_EMAIL>
+    <ASSIGNED_BY_ID type="object">
+      <type type="string">user</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">false</isDynamic>
+      <listLabel type="string">Ответственный</listLabel>
+    </ASSIGNED_BY_ID>
+    <CREATED_BY_ID type="object">
+      <type type="string">user</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">true</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">false</isDynamic>
+      <listLabel type="string">Кем создана</listLabel>
+    </CREATED_BY_ID>
+    <MODIFY_BY_ID type="object">
+      <type type="string">user</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">true</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">false</isDynamic>
+      <listLabel type="string">Кем изменена</listLabel>
+    </MODIFY_BY_ID>
+    <DATE_CREATE type="object">
+      <type type="string">datetime</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">true</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">false</isDynamic>
+      <listLabel type="string">Дата создания</listLabel>
+    </DATE_CREATE>
+    <DATE_MODIFY type="object">
+      <type type="string">datetime</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">true</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">false</isDynamic>
+      <listLabel type="string">Дата изменения</listLabel>
+    </DATE_MODIFY>
+    <LEAD_ID type="object">
+      <type type="string">crm_lead</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">true</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">false</isDynamic>
+    </LEAD_ID>
+    <ORIGINATOR_ID type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">false</isDynamic>
+    </ORIGINATOR_ID>
+    <ORIGIN_ID type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">false</isDynamic>
+    </ORIGIN_ID>
+    <PHONE type="object">
+      <type type="string">crm_multifield</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">true</isMultiple>
+      <isDynamic type="boolean">false</isDynamic>
+      <listLabel type="string">Рабочий телефон</listLabel>
+    </PHONE>
+    <EMAIL type="object">
+      <type type="string">crm_multifield</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">true</isMultiple>
+      <isDynamic type="boolean">false</isDynamic>
+      <listLabel type="string">Рабочий e-mail</listLabel>
+    </EMAIL>
+    <WEB type="object">
+      <type type="string">crm_multifield</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">true</isMultiple>
+      <isDynamic type="boolean">false</isDynamic>
+    </WEB>
+    <IM type="object">
+      <type type="string">crm_multifield</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">true</isMultiple>
+      <isDynamic type="boolean">false</isDynamic>
+    </IM>
+    <UF_CRM_1412875620 type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Ссылка на Архив</listLabel>
+      <formLabel type="string">Ссылка на Архив</formLabel>
+      <filterLabel type="string">Ссылка на Архив</filterLabel>
+    </UF_CRM_1412875620>
+    <UF_CRM_1413190884 type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">true</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Текущий Режим налогообложения</listLabel>
+      <formLabel type="string">Текущий Режим налогообложения</formLabel>
+      <filterLabel type="string">Текущий Режим налогообложения</filterLabel>
+    </UF_CRM_1413190884>
+    <UF_CRM_1413190910 type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string"></listLabel>
+      <formLabel type="string">Ответственный</formLabel>
+      <filterLabel type="string">Ответственный</filterLabel>
+    </UF_CRM_1413190910>
+    <UF_CRM_1413190999 type="object">
+      <type type="string">datetime</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Обучение по Диадоку</listLabel>
+      <formLabel type="string">Обучение по Диадоку</formLabel>
+      <filterLabel type="string">Обучение по Диадоку</filterLabel>
+    </UF_CRM_1413190999>
+    <UF_CRM_1413191009 type="object">
+      <type type="string">datetime</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Обучение Бухгалтерии</listLabel>
+      <formLabel type="string">Обучение Бухгалтерии</formLabel>
+      <filterLabel type="string">Обучение Бухгалтерии</filterLabel>
+    </UF_CRM_1413191009>
+    <UF_CRM_1413191031 type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">true</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Тарифный план</listLabel>
+      <formLabel type="string">Тарифный план</formLabel>
+      <filterLabel type="string">Тарифный план</filterLabel>
+    </UF_CRM_1413191031>
+    <UF_CRM_1413191079 type="object">
+      <type type="string">datetime</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Дата начала учета</listLabel>
+      <formLabel type="string">Дата начала учета</formLabel>
+      <filterLabel type="string">Дата начала учета</filterLabel>
+    </UF_CRM_1413191079>
+    <UF_CRM_1413199263 type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Название банка</listLabel>
+      <formLabel type="string">Название банка</formLabel>
+      <filterLabel type="string">Название банка</filterLabel>
+    </UF_CRM_1413199263>
+    <UF_CRM_1413199296 type="object">
+      <type type="string">datetime</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Дата договора</listLabel>
+      <formLabel type="string">Дата договора</formLabel>
+      <filterLabel type="string">Дата договора</filterLabel>
+    </UF_CRM_1413199296>
+    <UF_CRM_1413199306 type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Номер договора</listLabel>
+      <formLabel type="string">Номер договора</formLabel>
+      <filterLabel type="string">Номер договора</filterLabel>
+    </UF_CRM_1413199306>
+    <UF_CRM_1413202789 type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Расчетный счет</listLabel>
+      <formLabel type="string">Расчетный счет</formLabel>
+      <filterLabel type="string">Расчетный счет</filterLabel>
+    </UF_CRM_1413202789>
+    <UF_CRM_1413203139 type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">ИНН</listLabel>
+      <formLabel type="string">ИНН</formLabel>
+      <filterLabel type="string">ИНН</filterLabel>
+    </UF_CRM_1413203139>
+    <UF_CRM_1413203146 type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">КПП</listLabel>
+      <formLabel type="string">КПП</formLabel>
+      <filterLabel type="string">КПП</filterLabel>
+    </UF_CRM_1413203146>
+    <UF_CRM_1413203154 type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">ОГРН</listLabel>
+      <formLabel type="string">ОГРН</formLabel>
+      <filterLabel type="string">ОГРН</filterLabel>
+    </UF_CRM_1413203154>
+    <UF_CRM_1413203168 type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Расчетный счет</listLabel>
+      <formLabel type="string">Расчетный счет</formLabel>
+      <filterLabel type="string">Расчетный счет</filterLabel>
+    </UF_CRM_1413203168>
+    <UF_CRM_1413203190 type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Корреспондентский счет</listLabel>
+      <formLabel type="string">Корреспондентский счет</formLabel>
+      <filterLabel type="string">Корреспондентский счет</filterLabel>
+    </UF_CRM_1413203190>
+    <UF_CRM_1413203199 type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">БИК</listLabel>
+      <formLabel type="string">БИК</formLabel>
+      <filterLabel type="string">БИК</filterLabel>
+    </UF_CRM_1413203199>
+    <UF_CRM_1413536901 type="object">
+      <type type="string">enumeration</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <items type="array">
+        <item type="object">
+          <ID type="string">45</ID>
+          <VALUE type="string">Приведи друга (-15%)</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">47</ID>
+          <VALUE type="string">Клиент Альфа банка (-15%)</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">49</ID>
+          <VALUE type="string">Полгода за полцены ( -50%)</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">53</ID>
+          <VALUE type="string">Оплата за 6 месяцев (-10%)</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">55</ID>
+          <VALUE type="string">Оплата за 12 месяцев (-20%)</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">175</ID>
+          <VALUE type="string">Со своим ПО (-25%)</VALUE>
+        </item>
+      </items>
+      <listLabel type="string">Акция</listLabel>
+      <formLabel type="string">Акция</formLabel>
+      <filterLabel type="string">Акция</filterLabel>
+    </UF_CRM_1413536901>
+    <UF_CRM_1413537187 type="object">
+      <type type="string">employee</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Бухгалтер</listLabel>
+      <formLabel type="string">Бухгалтер</formLabel>
+      <filterLabel type="string">Бухгалтер</filterLabel>
+    </UF_CRM_1413537187>
+    <UF_CRM_1413537206 type="object">
+      <type type="string">employee</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Бухгалтер по ЗП</listLabel>
+      <formLabel type="string">Бухгалтер по ЗП</formLabel>
+      <filterLabel type="string">Бухгалтер по ЗП</filterLabel>
+    </UF_CRM_1413537206>
+    <UF_CRM_1413537232 type="object">
+      <type type="string">crm</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Контакт</listLabel>
+      <formLabel type="string">Контакт</formLabel>
+      <filterLabel type="string">Контакт</filterLabel>
+    </UF_CRM_1413537232>
+    <UF_CRM_1414671725 type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Код ИФНС</listLabel>
+      <formLabel type="string">Код ИФНС</formLabel>
+      <filterLabel type="string">Код ИФНС</filterLabel>
+    </UF_CRM_1414671725>
+    <UF_CRM_1414671735 type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Код ПФР</listLabel>
+      <formLabel type="string">Код ПФР</formLabel>
+      <filterLabel type="string">Код ПФР</filterLabel>
+    </UF_CRM_1414671735>
+    <UF_CRM_1414671769 type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">ФСС</listLabel>
+      <formLabel type="string">ФСС</formLabel>
+      <filterLabel type="string">ФСС</filterLabel>
+    </UF_CRM_1414671769>
+    <UF_CRM_1416817755 type="object">
+      <type type="string">datetime</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Дата начала Акции</listLabel>
+      <formLabel type="string">Дата начала Акции</formLabel>
+      <filterLabel type="string">Дата начала Акции</filterLabel>
+    </UF_CRM_1416817755>
+    <UF_CRM_1416817788 type="object">
+      <type type="string">datetime</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Дата окончания Акции</listLabel>
+      <formLabel type="string">Дата окончания Акции</formLabel>
+      <filterLabel type="string">Дата окончания Акции</filterLabel>
+    </UF_CRM_1416817788>
+    <UF_CRM_1417156255 type="object">
+      <type type="string">enumeration</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <items type="array">
+        <item type="object">
+          <ID type="string">429</ID>
+          <VALUE type="string">Пусто</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">127</ID>
+          <VALUE type="string">Несвоевременная оплата услуг</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">129</ID>
+          <VALUE type="string">Перешел к конкуренту</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">131</ID>
+          <VALUE type="string">Нанял штатного бухгалтера</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">133</ID>
+          <VALUE type="string">Ликвидация организации</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">135</ID>
+          <VALUE type="string">Невыясненная причина</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">185</ID>
+          <VALUE type="string">Финансовые трудности</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">187</ID>
+          <VALUE type="string">Недовольство обслуживанием</VALUE>
+        </item>
+      </items>
+      <listLabel type="string">Причина расторжения договора</listLabel>
+      <formLabel type="string">Причина расторжения договора</formLabel>
+      <filterLabel type="string">Причина расторжения договора</filterLabel>
+    </UF_CRM_1417156255>
+    <UF_CRM_1417162858 type="object">
+      <type type="string">boolean</type>
+      <isRequired type="boolean">true</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Расчет Зарплаты</listLabel>
+      <formLabel type="string">Расчет Зарплаты</formLabel>
+      <filterLabel type="string">Расчет Зарплаты</filterLabel>
+    </UF_CRM_1417162858>
+    <UF_CRM_1419976943 type="object">
+      <type type="string">enumeration</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <items type="array">
+        <item type="object">
+          <ID type="string">141</ID>
+          <VALUE type="string">ОСНО</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">143</ID>
+          <VALUE type="string">УСНд</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">145</ID>
+          <VALUE type="string">УСНд-р</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">147</ID>
+          <VALUE type="string">ЕНВД</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">149</ID>
+          <VALUE type="string">ЕСХН</VALUE>
+        </item>
+      </items>
+      <listLabel type="string">Режим налогообложения 2013</listLabel>
+      <formLabel type="string">Режим налогообложения 2013</formLabel>
+      <filterLabel type="string">Режим налогообложения 2013</filterLabel>
+    </UF_CRM_1419976943>
+    <UF_CRM_1419977413 type="object">
+      <type type="string">enumeration</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <items type="array">
+        <item type="object">
+          <ID type="string">151</ID>
+          <VALUE type="string">ОСНО</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">153</ID>
+          <VALUE type="string">УСНд</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">155</ID>
+          <VALUE type="string">УСНд-р</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">157</ID>
+          <VALUE type="string">ЕНВД</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">159</ID>
+          <VALUE type="string">ЕСХН</VALUE>
+        </item>
+      </items>
+      <listLabel type="string">Режим налогообложения 2014</listLabel>
+      <formLabel type="string">Режим налогообложения 2014</formLabel>
+      <filterLabel type="string">Режим налогообложения 2014</filterLabel>
+    </UF_CRM_1419977413>
+    <UF_CRM_1421067894 type="object">
+      <type type="string">datetime</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Срок действия БК/МД</listLabel>
+      <formLabel type="string">Срок действия БК/МД</formLabel>
+      <filterLabel type="string">Срок действия БК/МД</filterLabel>
+    </UF_CRM_1421067894>
+    <UF_CRM_1421527965 type="object">
+      <type type="string">datetime</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Дата текущего отчетного периода</listLabel>
+      <formLabel type="string">Дата текущего отчетного периода</formLabel>
+      <filterLabel type="string">Дата текущего отчетного периода</filterLabel>
+    </UF_CRM_1421527965>
+    <UF_CRM_1421734139 type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Логин в "Мое дело"</listLabel>
+      <formLabel type="string">Логин в "Мое дело"</formLabel>
+      <filterLabel type="string">Логин в "Мое дело"</filterLabel>
+    </UF_CRM_1421734139>
+    <UF_CRM_1421831283 type="object">
+      <type type="string">employee</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Доверенное лицо для сдачи отчетности</listLabel>
+      <formLabel type="string">Доверенное лицо для сдачи отчетности</formLabel>
+      <filterLabel type="string">Доверенное лицо для сдачи отчетности</filterLabel>
+    </UF_CRM_1421831283>
+    <UF_CRM_1423827393 type="object">
+      <type type="string">boolean</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Признак активности</listLabel>
+      <formLabel type="string">Признак активности</formLabel>
+      <filterLabel type="string">Признак активности</filterLabel>
+    </UF_CRM_1423827393>
+    <UF_CRM_1425368287 type="object">
+      <type type="string">datetime</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Дата расторжения договора</listLabel>
+      <formLabel type="string">Дата расторжения договора</formLabel>
+      <filterLabel type="string">Дата расторжения договора</filterLabel>
+    </UF_CRM_1425368287>
+    <UF_CRM_1428578354 type="object">
+      <type type="string">datetime</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Срок сертификата</listLabel>
+      <formLabel type="string">Срок сертификата</formLabel>
+      <filterLabel type="string">Срок сертификата</filterLabel>
+    </UF_CRM_1428578354>
+    <UF_CRM_1428579277 type="object">
+      <type type="string">enumeration</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <items type="array">
+        <item type="object">
+          <ID type="string">199</ID>
+          <VALUE type="string">Комфорт</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">201</ID>
+          <VALUE type="string">Максимальный</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">203</ID>
+          <VALUE type="string">Оптимальный</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">205</ID>
+          <VALUE type="string">Стандарт</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">618</ID>
+          <VALUE type="string">Стартовый</VALUE>
+        </item>
+      </items>
+      <listLabel type="string">Тариф БК</listLabel>
+      <formLabel type="string">Тариф БК</formLabel>
+      <filterLabel type="string">Тариф БК</filterLabel>
+    </UF_CRM_1428579277>
+    <UF_CRM_1430127560 type="object">
+      <type type="string">enumeration</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <items type="array">
+        <item type="object">
+          <ID type="string">213</ID>
+          <VALUE type="string">Дельта</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">215</ID>
+          <VALUE type="string">Сигма</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">217</ID>
+          <VALUE type="string">Гамма</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">219</ID>
+          <VALUE type="string">Бетта</VALUE>
+        </item>
+      </items>
+      <listLabel type="string">Таксопарк</listLabel>
+      <formLabel type="string">Таксопарк</formLabel>
+      <filterLabel type="string">Таксопарк</filterLabel>
+    </UF_CRM_1430127560>
+    <UF_CRM_1430279680 type="object">
+      <type type="string">enumeration</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <items type="array">
+        <item type="object">
+          <ID type="string">221</ID>
+          <VALUE type="string">БК</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">223</ID>
+          <VALUE type="string">БК+КЭ</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">225</ID>
+          <VALUE type="string">БК+КЭМБ</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">616</ID>
+          <VALUE type="string">БК(СТ)+МД</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">229</ID>
+          <VALUE type="string">МД</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">227</ID>
+          <VALUE type="string">МД+НП</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">231</ID>
+          <VALUE type="string">1С</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">233</ID>
+          <VALUE type="string">1С+МД</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">235</ID>
+          <VALUE type="string">1С+КЭМБ</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">620</ID>
+          <VALUE type="string">Эльба</VALUE>
+        </item>
+      </items>
+      <listLabel type="string">Программы для учета</listLabel>
+      <formLabel type="string">Программы для учета</formLabel>
+      <filterLabel type="string">Программы для учета</filterLabel>
+    </UF_CRM_1430279680>
+    <UF_CRM_1433491757 type="object">
+      <type type="string">double</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Баланс</listLabel>
+      <formLabel type="string">Баланс</formLabel>
+      <filterLabel type="string">Баланс</filterLabel>
+    </UF_CRM_1433491757>
+    <UF_CRM_1435818801 type="object">
+      <type type="string">datetime</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Дата договора</listLabel>
+      <formLabel type="string">Дата договора</formLabel>
+      <filterLabel type="string">Дата договора</filterLabel>
+    </UF_CRM_1435818801>
+    <UF_CRM_1436353288 type="object">
+      <type type="string">enumeration</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <items type="array">
+        <item type="object">
+          <ID type="string">325</ID>
+          <VALUE type="string">ОСНО</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">327</ID>
+          <VALUE type="string">УСНд</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">329</ID>
+          <VALUE type="string">УСНд-р</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">331</ID>
+          <VALUE type="string">ЕНВД</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">333</ID>
+          <VALUE type="string">ЕСХН</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">335</ID>
+          <VALUE type="string">ОСНО + ЕНВД</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">345</ID>
+          <VALUE type="string">ОСНО без НДС</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">337</ID>
+          <VALUE type="string">УСНд + ЕНВД</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">339</ID>
+          <VALUE type="string">УСНд-р + ЕНВД</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">341</ID>
+          <VALUE type="string">УСНд + НДС</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">343</ID>
+          <VALUE type="string">УСНд-р + НДС</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">427</ID>
+          <VALUE type="string">Патент</VALUE>
+        </item>
+      </items>
+      <listLabel type="string">Режим налогообложения 2015</listLabel>
+      <formLabel type="string">Режим налогообложения 2015</formLabel>
+      <filterLabel type="string">Режим налогообложения 2015</filterLabel>
+    </UF_CRM_1436353288>
+    <UF_CRM_1442299650 type="object">
+      <type type="string">employee</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Постановщик на обслуживание</listLabel>
+      <formLabel type="string">Постановщик на обслуживание</formLabel>
+      <filterLabel type="string">Постановщик на обслуживание</filterLabel>
+    </UF_CRM_1442299650>
+    <UF_CRM_55FBFBCA8300C type="object">
+      <type type="string">enumeration</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <items type="array">
+        <item type="object">
+          <ID type="string">500</ID>
+          <VALUE type="string">- не спросила-</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">502</ID>
+          <VALUE type="string">Таксисты (ASAP)</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">504</ID>
+          <VALUE type="string">Яндекс (Контекст)</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">506</ID>
+          <VALUE type="string">Гугл (Контекст)</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">508</ID>
+          <VALUE type="string">SEO (Поиск и продвижение)</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">510</ID>
+          <VALUE type="string">Сайт (Практик)</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">512</ID>
+          <VALUE type="string">Альфа банк (клуб Клиентов)</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">514</ID>
+          <VALUE type="string">СКБ Контур (заявки с БК)</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">516</ID>
+          <VALUE type="string">СКБ Контур (обзвон call-центра)</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">518</ID>
+          <VALUE type="string">СКБ Контур (БухгалтерияОнлайн) </VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">520</ID>
+          <VALUE type="string">СКБ Контур (общие)</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">522</ID>
+          <VALUE type="string">Троллейбусы</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">524</ID>
+          <VALUE type="string">Рекомендация друга</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">526</ID>
+          <VALUE type="string">Продажи Партнера</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">528</ID>
+          <VALUE type="string">Обзвон исходящий</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">530</ID>
+          <VALUE type="string">ХабраХабр</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">532</ID>
+          <VALUE type="string">Коворкинг центр</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">534</ID>
+          <VALUE type="string">Документовед</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">536</ID>
+          <VALUE type="string">Мое дело</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">538</ID>
+          <VALUE type="string">Мое дело (сайт)</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">540</ID>
+          <VALUE type="string">call - центр Вологда</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">542</ID>
+          <VALUE type="string">All-biz.ru</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">544</ID>
+          <VALUE type="string">семинар ГБУ</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">546</ID>
+          <VALUE type="string">Анкета на сайте FINGU.RU</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">548</ID>
+          <VALUE type="string">Вновь зарегистрированные в ИФНС №10</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">550</ID>
+          <VALUE type="string">Деловая среда (Сбербанк)</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">552</ID>
+          <VALUE type="string">Франшиза</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">554</ID>
+          <VALUE type="string">Таксопарк</VALUE>
+        </item>
+      </items>
+      <listLabel type="string">Исходная кампания</listLabel>
+      <formLabel type="string">Исходная кампания</formLabel>
+      <filterLabel type="string">Исходная кампания</filterLabel>
+    </UF_CRM_55FBFBCA8300C>
+    <UF_CRM_55FBFBCAABBFA type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">ПФР</listLabel>
+      <formLabel type="string">ПФР</formLabel>
+      <filterLabel type="string">ПФР</filterLabel>
+    </UF_CRM_55FBFBCAABBFA>
+    <UF_CRM_55FBFBCAB4C4C type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Прикрепленные файлы</listLabel>
+      <formLabel type="string">Прикрепленные файлы</formLabel>
+      <filterLabel type="string">Прикрепленные файлы</filterLabel>
+    </UF_CRM_55FBFBCAB4C4C>
+    <UF_CRM_55FBFBCABDD49 type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">ВИДЫ ДЕЯТЕЛЬНОСТИ</listLabel>
+      <formLabel type="string">ВИДЫ ДЕЯТЕЛЬНОСТИ</formLabel>
+      <filterLabel type="string">ВИДЫ ДЕЯТЕЛЬНОСТИ</filterLabel>
+    </UF_CRM_55FBFBCABDD49>
+    <UF_CRM_55FBFBCAC5BEC type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">СПОСОБ ПОЛУЧЕНИЯ РЕГИСТРАЦИОННЫХ ДОКУМЕНТОВ</listLabel>
+      <formLabel type="string">СПОСОБ ПОЛУЧЕНИЯ РЕГИСТРАЦИОННЫХ ДОКУМЕНТОВ</formLabel>
+      <filterLabel type="string">СПОСОБ ПОЛУЧЕНИЯ РЕГИСТРАЦИОННЫХ ДОКУМЕНТОВ</filterLabel>
+    </UF_CRM_55FBFBCAC5BEC>
+    <UF_CRM_1442834929 type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Особенности учета</listLabel>
+      <formLabel type="string">Особенности учета</formLabel>
+      <filterLabel type="string">Особенности учета</filterLabel>
+    </UF_CRM_1442834929>
+    <UF_CRM_5603A98047318 type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Режим налогообложения 2016</listLabel>
+      <formLabel type="string">Режим налогообложения 2016</formLabel>
+      <filterLabel type="string">Режим налогообложения 2016</filterLabel>
+    </UF_CRM_5603A98047318>
+    <UF_CRM_1443081595 type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Расчетный счет:</listLabel>
+      <formLabel type="string">Расчетный счет:</formLabel>
+      <filterLabel type="string">Расчетный счет:</filterLabel>
+    </UF_CRM_1443081595>
+    <UF_CRM_1443081602 type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Корреспондентский счет:</listLabel>
+      <formLabel type="string">Корреспондентский счет:</formLabel>
+      <filterLabel type="string">Корреспондентский счет:</filterLabel>
+    </UF_CRM_1443081602>
+    <UF_CRM_1443081606 type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Название банка:</listLabel>
+      <formLabel type="string">Название банка:</formLabel>
+      <filterLabel type="string">Название банка:</filterLabel>
+    </UF_CRM_1443081606>
+    <UF_CRM_1443081608 type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">БИК:</listLabel>
+      <formLabel type="string">БИК:</formLabel>
+      <filterLabel type="string">БИК:</filterLabel>
+    </UF_CRM_1443081608>
+    <UF_CRM_5604F7A6A73BE type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Режим налогообложения 2015</listLabel>
+      <formLabel type="string">Режим налогообложения 2015</formLabel>
+      <filterLabel type="string">Режим налогообложения 2015</filterLabel>
+    </UF_CRM_5604F7A6A73BE>
+    <UF_CRM_TIMESTAMP_X type="object">
+      <type type="string">datetime</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Дата изменения элемента</listLabel>
+      <formLabel type="string">Дата изменения элемента</formLabel>
+      <filterLabel type="string">Дата изменения элемента</filterLabel>
+    </UF_CRM_TIMESTAMP_X>
+    <UF_CRM_DATE_CREATE type="object">
+      <type type="string">datetime</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Дата создания элемента</listLabel>
+      <formLabel type="string">Дата создания элемента</formLabel>
+      <filterLabel type="string">Дата создания элемента</filterLabel>
+    </UF_CRM_DATE_CREATE>
+    <UF_CRM_ACTIVE_FROM type="object">
+      <type type="string">datetime</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Дата начала активности элемента</listLabel>
+      <formLabel type="string">Дата начала активности элемента</formLabel>
+      <filterLabel type="string">Дата начала активности элемента</filterLabel>
+    </UF_CRM_ACTIVE_FROM>
+    <UF_CRM_ACTIVE_TO type="object">
+      <type type="string">datetime</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Дата окончания активности элемента</listLabel>
+      <formLabel type="string">Дата окончания активности элемента</formLabel>
+      <filterLabel type="string">Дата окончания активности элемента</filterLabel>
+    </UF_CRM_ACTIVE_TO>
+    <UF_CRM_NAME type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Название элемента</listLabel>
+      <formLabel type="string">Название элемента</formLabel>
+      <filterLabel type="string">Название элемента</filterLabel>
+    </UF_CRM_NAME>
+    <UF_CRM_PREVIEW_TEXT type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Текст для предпросмотра</listLabel>
+      <formLabel type="string">Текст для предпросмотра</formLabel>
+      <filterLabel type="string">Текст для предпросмотра</filterLabel>
+    </UF_CRM_PREVIEW_TEXT>
+    <UF_CRM_DETAIL_TEXT type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Текст для просмотра</listLabel>
+      <formLabel type="string">Текст для просмотра</formLabel>
+      <filterLabel type="string">Текст для просмотра</filterLabel>
+    </UF_CRM_DETAIL_TEXT>
+    <UF_CRM_CODE type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Мнемонический код</listLabel>
+      <formLabel type="string">Мнемонический код</formLabel>
+      <filterLabel type="string">Мнемонический код</filterLabel>
+    </UF_CRM_CODE>
+    <UF_CRM_XML_ID type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Внешний ключ</listLabel>
+      <formLabel type="string">Внешний ключ</formLabel>
+      <filterLabel type="string">Внешний ключ</filterLabel>
+    </UF_CRM_XML_ID>
+    <UF_CRM_55FBFBCAD09F8 type="object">
+      <type type="string">file</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Фотография</listLabel>
+      <formLabel type="string">Фотография</formLabel>
+      <filterLabel type="string">Фотография</filterLabel>
+    </UF_CRM_55FBFBCAD09F8>
+    <UF_CRM_1436182746 type="object">
+      <type type="string">boolean</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Интеграция с банком</listLabel>
+      <formLabel type="string">Интеграция с банком</formLabel>
+      <filterLabel type="string">Интеграция с банком</filterLabel>
+    </UF_CRM_1436182746>
+    <UF_CRM_1438985437 type="object">
+      <type type="string">boolean</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Клиент по БК/МД проинструктирован?</listLabel>
+      <formLabel type="string">Клиент по БК/МД проинструктирован?</formLabel>
+      <filterLabel type="string">Клиент по БК/МД проинструктирован?</filterLabel>
+    </UF_CRM_1438985437>
+    <UF_CRM_1439909781 type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Число выдачи аванса по ЗП</listLabel>
+      <formLabel type="string">Число выдачи аванса по ЗП</formLabel>
+      <filterLabel type="string">Число выдачи аванса по ЗП</filterLabel>
+    </UF_CRM_1439909781>
+    <UF_CRM_1431524326 type="object">
+      <type type="string">boolean</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">НДС кв.</listLabel>
+      <formLabel type="string">НДС кв.</formLabel>
+      <filterLabel type="string">НДС кв.</filterLabel>
+    </UF_CRM_1431524326>
+    <UF_CRM_1431524413 type="object">
+      <type type="string">boolean</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">НДС мес.</listLabel>
+      <formLabel type="string">НДС мес.</formLabel>
+      <filterLabel type="string">НДС мес.</filterLabel>
+    </UF_CRM_1431524413>
+    <UF_CRM_1433229859 type="object">
+      <type type="string">boolean</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">НДС импорт (тамож. Союз)</listLabel>
+      <formLabel type="string">НДС импорт (тамож. Союз)</formLabel>
+      <filterLabel type="string">НДС импорт (тамож. Союз)</filterLabel>
+    </UF_CRM_1433229859>
+    <UF_CRM_1431524495 type="object">
+      <type type="string">boolean</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">НДС экспорт (тамож. Союз)</listLabel>
+      <formLabel type="string">НДС экспорт (тамож. Союз)</formLabel>
+      <filterLabel type="string">НДС экспорт (тамож. Союз)</filterLabel>
+    </UF_CRM_1431524495>
+    <UF_CRM_1431524689 type="object">
+      <type type="string">boolean</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">НДС импорт</listLabel>
+      <formLabel type="string">НДС импорт</formLabel>
+      <filterLabel type="string">НДС импорт</filterLabel>
+    </UF_CRM_1431524689>
+    <UF_CRM_1431524725 type="object">
+      <type type="string">boolean</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">НДС экспорт</listLabel>
+      <formLabel type="string">НДС экспорт</formLabel>
+      <filterLabel type="string">НДС экспорт</filterLabel>
+    </UF_CRM_1431524725>
+    <UF_CRM_1431524748 type="object">
+      <type type="string">boolean</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">НП кв.</listLabel>
+      <formLabel type="string">НП кв.</formLabel>
+      <filterLabel type="string">НП кв.</filterLabel>
+    </UF_CRM_1431524748>
+    <UF_CRM_1431524768 type="object">
+      <type type="string">boolean</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">НП мес.</listLabel>
+      <formLabel type="string">НП мес.</formLabel>
+      <filterLabel type="string">НП мес.</filterLabel>
+    </UF_CRM_1431524768>
+    <UF_CRM_1431524857 type="object">
+      <type type="string">boolean</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">УСН</listLabel>
+      <formLabel type="string">УСН</formLabel>
+      <filterLabel type="string">УСН</filterLabel>
+    </UF_CRM_1431524857>
+    <UF_CRM_1431524878 type="object">
+      <type type="string">boolean</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">ЕНВД</listLabel>
+      <formLabel type="string">ЕНВД</formLabel>
+      <filterLabel type="string">ЕНВД</filterLabel>
+    </UF_CRM_1431524878>
+    <UF_CRM_1431524990 type="object">
+      <type type="string">boolean</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">ЕСХН</listLabel>
+      <formLabel type="string">ЕСХН</formLabel>
+      <filterLabel type="string">ЕСХН</filterLabel>
+    </UF_CRM_1431524990>
+    <UF_CRM_1431525013 type="object">
+      <type type="string">boolean</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Бух отчетность (год)</listLabel>
+      <formLabel type="string">Бух отчетность (год)</formLabel>
+      <filterLabel type="string">Бух отчетность (год)</filterLabel>
+    </UF_CRM_1431525013>
+    <UF_CRM_1431525035 type="object">
+      <type type="string">boolean</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Бух отчетность (промежут)</listLabel>
+      <formLabel type="string">Бух отчетность (промежут)</formLabel>
+      <filterLabel type="string">Бух отчетность (промежут)</filterLabel>
+    </UF_CRM_1431525035>
+    <UF_CRM_1431525061 type="object">
+      <type type="string">boolean</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">ПФР</listLabel>
+      <formLabel type="string">ПФР</formLabel>
+      <filterLabel type="string">ПФР</filterLabel>
+    </UF_CRM_1431525061>
+    <UF_CRM_1431525076 type="object">
+      <type type="string">boolean</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">ФСС</listLabel>
+      <formLabel type="string">ФСС</formLabel>
+      <filterLabel type="string">ФСС</filterLabel>
+    </UF_CRM_1431525076>
+    <UF_CRM_1431525112 type="object">
+      <type type="string">boolean</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">НДФЛ</listLabel>
+      <formLabel type="string">НДФЛ</formLabel>
+      <filterLabel type="string">НДФЛ</filterLabel>
+    </UF_CRM_1431525112>
+    <UF_CRM_1431525231 type="object">
+      <type type="string">boolean</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Подтверждение ОКВЭД</listLabel>
+      <formLabel type="string">Подтверждение ОКВЭД</formLabel>
+      <filterLabel type="string">Подтверждение ОКВЭД</filterLabel>
+    </UF_CRM_1431525231>
+    <UF_CRM_1431525357 type="object">
+      <type type="string">boolean</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Взносы ПФР за ИП</listLabel>
+      <formLabel type="string">Взносы ПФР за ИП</formLabel>
+      <filterLabel type="string">Взносы ПФР за ИП</filterLabel>
+    </UF_CRM_1431525357>
+    <UF_CRM_1415967367 type="object">
+      <type type="string">boolean</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Транспортный</listLabel>
+      <formLabel type="string">Транспортный</formLabel>
+      <filterLabel type="string">Транспортный</filterLabel>
+    </UF_CRM_1415967367>
+    <UF_CRM_1415967430 type="object">
+      <type type="string">boolean</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Имущество</listLabel>
+      <formLabel type="string">Имущество</formLabel>
+      <filterLabel type="string">Имущество</filterLabel>
+    </UF_CRM_1415967430>
+    <UF_CRM_1431525937 type="object">
+      <type type="string">boolean</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Земельный</listLabel>
+      <formLabel type="string">Земельный</formLabel>
+      <filterLabel type="string">Земельный</filterLabel>
+    </UF_CRM_1431525937>
+    <UF_CRM_1431526415 type="object">
+      <type type="string">boolean</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Прочие отчеты в Росстат (юр.л)</listLabel>
+      <formLabel type="string">Прочие отчеты в Росстат (юр.л)</formLabel>
+      <filterLabel type="string">Прочие отчеты в Росстат (юр.л)</filterLabel>
+    </UF_CRM_1431526415>
+    <UF_CRM_1431526441 type="object">
+      <type type="string">boolean</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Прочие отчеты в Росстат (ИП)</listLabel>
+      <formLabel type="string">Прочие отчеты в Росстат (ИП)</formLabel>
+      <filterLabel type="string">Прочие отчеты в Росстат (ИП)</filterLabel>
+    </UF_CRM_1431526441>
+    <UF_CRM_1431526066 type="object">
+      <type type="string">boolean</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Согласование отчетов ИФНС с Клиентом</listLabel>
+      <formLabel type="string">Согласование отчетов ИФНС с Клиентом</formLabel>
+      <filterLabel type="string">Согласование отчетов ИФНС с Клиентом</filterLabel>
+    </UF_CRM_1431526066>
+    <UF_CRM_1431526505 type="object">
+      <type type="string">boolean</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Согласование отчетов ПФР с Клиентом</listLabel>
+      <formLabel type="string">Согласование отчетов ПФР с Клиентом</formLabel>
+      <filterLabel type="string">Согласование отчетов ПФР с Клиентом</filterLabel>
+    </UF_CRM_1431526505>
+    <UF_CRM_1431526792 type="object">
+      <type type="string">boolean</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Согласование отчетов ФСС с Клиентом</listLabel>
+      <formLabel type="string">Согласование отчетов ФСС с Клиентом</formLabel>
+      <filterLabel type="string">Согласование отчетов ФСС с Клиентом</filterLabel>
+    </UF_CRM_1431526792>
+    <UF_CRM_1431526812 type="object">
+      <type type="string">boolean</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Согласование отчетов Росстат с Клиентом</listLabel>
+      <formLabel type="string">Согласование отчетов Росстат с Клиентом</formLabel>
+      <filterLabel type="string">Согласование отчетов Росстат с Клиентом</filterLabel>
+    </UF_CRM_1431526812>
+    <UF_CRM_1432041382 type="object">
+      <type type="string">enumeration</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">true</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <items type="array">
+        <item type="object">
+          <ID type="string">237</ID>
+          <VALUE type="string">НДС кв.</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">239</ID>
+          <VALUE type="string">НДС мес.</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">241</ID>
+          <VALUE type="string">НДС тамож. Союз</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">243</ID>
+          <VALUE type="string">НДС импорт</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">245</ID>
+          <VALUE type="string">НДС экспорт</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">247</ID>
+          <VALUE type="string">НП кв.</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">249</ID>
+          <VALUE type="string">НП мес.</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">251</ID>
+          <VALUE type="string">УСН</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">253</ID>
+          <VALUE type="string">ЕНВД</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">255</ID>
+          <VALUE type="string">ЕСХН</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">257</ID>
+          <VALUE type="string">Бух отчетность (год)</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">259</ID>
+          <VALUE type="string">Бух отчетность (промежут)</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">261</ID>
+          <VALUE type="string">ПФР</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">263</ID>
+          <VALUE type="string">ФСС</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">265</ID>
+          <VALUE type="string">НДФЛ</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">267</ID>
+          <VALUE type="string">Подтверждение ОКВЭД</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">269</ID>
+          <VALUE type="string">Взносы ПФР за ИП</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">271</ID>
+          <VALUE type="string">Транспортный</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">273</ID>
+          <VALUE type="string">Имущество</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">275</ID>
+          <VALUE type="string">Земельный</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">277</ID>
+          <VALUE type="string">Прочие отчеты в Росстат (юр.л)</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">279</ID>
+          <VALUE type="string">Прочие отчеты в Росстат (ИП)</VALUE>
+        </item>
+      </items>
+      <listLabel type="string">Налоги и взносы</listLabel>
+      <formLabel type="string">Налоги и взносы</formLabel>
+      <filterLabel type="string">Налоги и взносы</filterLabel>
+    </UF_CRM_1432041382>
+    <UF_CRM_1438698078 type="object">
+      <type type="string">boolean</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Отчет по финансовому анализу</listLabel>
+      <formLabel type="string">Отчет по финансовому анализу</formLabel>
+      <filterLabel type="string">Отчет по финансовому анализу</filterLabel>
+    </UF_CRM_1438698078>
+    <UF_CRM_1436336155 type="object">
+      <type type="string">enumeration</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <items type="array">
+        <item type="object">
+          <ID type="string">293</ID>
+          <VALUE type="string">1кв</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">295</ID>
+          <VALUE type="string">2кв</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">297</ID>
+          <VALUE type="string">3кв</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">299</ID>
+          <VALUE type="string">4кв</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">301</ID>
+          <VALUE type="string">1</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">303</ID>
+          <VALUE type="string">2</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">305</ID>
+          <VALUE type="string">3</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">307</ID>
+          <VALUE type="string">4</VALUE>
+        </item>
+      </items>
+      <listLabel type="string">Отч - НДС</listLabel>
+      <formLabel type="string">Отч - НДС</formLabel>
+      <filterLabel type="string">Отч - НДС</filterLabel>
+    </UF_CRM_1436336155>
+    <UF_CRM_1436338327 type="object">
+      <type type="string">enumeration</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <items type="array">
+        <item type="object">
+          <ID type="string">317</ID>
+          <VALUE type="string">1кв</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">319</ID>
+          <VALUE type="string">2кв</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">321</ID>
+          <VALUE type="string">3кв</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">323</ID>
+          <VALUE type="string">4кв</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">309</ID>
+          <VALUE type="string">1</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">311</ID>
+          <VALUE type="string">2</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">313</ID>
+          <VALUE type="string">3</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">315</ID>
+          <VALUE type="string">4</VALUE>
+        </item>
+      </items>
+      <listLabel type="string">Отч - НП</listLabel>
+      <formLabel type="string">Отч - НП</formLabel>
+      <filterLabel type="string">Отч - НП</filterLabel>
+    </UF_CRM_1436338327>
+    <UF_CRM_1436448035 type="object">
+      <type type="string">enumeration</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <items type="array">
+        <item type="object">
+          <ID type="string">347</ID>
+          <VALUE type="string">1кв</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">349</ID>
+          <VALUE type="string">2кв</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">351</ID>
+          <VALUE type="string">3кв</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">353</ID>
+          <VALUE type="string">4кв</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">355</ID>
+          <VALUE type="string">1</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">357</ID>
+          <VALUE type="string">2</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">359</ID>
+          <VALUE type="string">3</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">361</ID>
+          <VALUE type="string">4</VALUE>
+        </item>
+      </items>
+      <listLabel type="string">Отч - ФСС</listLabel>
+      <formLabel type="string">Отч - ФСС</formLabel>
+      <filterLabel type="string">Отч - ФСС</filterLabel>
+    </UF_CRM_1436448035>
+    <UF_CRM_1436448096 type="object">
+      <type type="string">enumeration</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <items type="array">
+        <item type="object">
+          <ID type="string">363</ID>
+          <VALUE type="string">1кв</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">365</ID>
+          <VALUE type="string">2кв</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">367</ID>
+          <VALUE type="string">3кв</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">369</ID>
+          <VALUE type="string">4кв</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">371</ID>
+          <VALUE type="string">1</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">373</ID>
+          <VALUE type="string">2</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">375</ID>
+          <VALUE type="string">3</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">377</ID>
+          <VALUE type="string">4</VALUE>
+        </item>
+      </items>
+      <listLabel type="string">Отч - ПФР</listLabel>
+      <formLabel type="string">Отч - ПФР</formLabel>
+      <filterLabel type="string">Отч - ПФР</filterLabel>
+    </UF_CRM_1436448096>
+    <UF_CRM_1436448155 type="object">
+      <type type="string">enumeration</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <items type="array">
+        <item type="object">
+          <ID type="string">379</ID>
+          <VALUE type="string">1кв</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">381</ID>
+          <VALUE type="string">2кв</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">383</ID>
+          <VALUE type="string">3кв</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">385</ID>
+          <VALUE type="string">4кв</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">387</ID>
+          <VALUE type="string">1</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">389</ID>
+          <VALUE type="string">2</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">391</ID>
+          <VALUE type="string">3</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">393</ID>
+          <VALUE type="string">4</VALUE>
+        </item>
+      </items>
+      <listLabel type="string">Отч - УСНд</listLabel>
+      <formLabel type="string">Отч - УСНд</formLabel>
+      <filterLabel type="string">Отч - УСНд</filterLabel>
+    </UF_CRM_1436448155>
+    <UF_CRM_1436448245 type="object">
+      <type type="string">enumeration</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <items type="array">
+        <item type="object">
+          <ID type="string">395</ID>
+          <VALUE type="string">1кв</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">397</ID>
+          <VALUE type="string">2кв</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">399</ID>
+          <VALUE type="string">3кв</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">401</ID>
+          <VALUE type="string">4кв</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">403</ID>
+          <VALUE type="string">1</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">405</ID>
+          <VALUE type="string">2</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">407</ID>
+          <VALUE type="string">3</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">409</ID>
+          <VALUE type="string">4</VALUE>
+        </item>
+      </items>
+      <listLabel type="string">Отч - УСНд-р</listLabel>
+      <formLabel type="string">Отч - УСНд-р</formLabel>
+      <filterLabel type="string">Отч - УСНд-р</filterLabel>
+    </UF_CRM_1436448245>
+    <UF_CRM_1436448283 type="object">
+      <type type="string">enumeration</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <items type="array">
+        <item type="object">
+          <ID type="string">411</ID>
+          <VALUE type="string">1кв</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">413</ID>
+          <VALUE type="string">2кв</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">415</ID>
+          <VALUE type="string">3кв</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">417</ID>
+          <VALUE type="string">4кв</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">419</ID>
+          <VALUE type="string">1</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">421</ID>
+          <VALUE type="string">2</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">423</ID>
+          <VALUE type="string">3</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">425</ID>
+          <VALUE type="string">4</VALUE>
+        </item>
+      </items>
+      <listLabel type="string">Отч - ЕНВД</listLabel>
+      <formLabel type="string">Отч - ЕНВД</formLabel>
+      <filterLabel type="string">Отч - ЕНВД</filterLabel>
+    </UF_CRM_1436448283>
+    <UF_CRM_1438082063 type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Отч - НИ</listLabel>
+      <formLabel type="string">Отч - НИ</formLabel>
+      <filterLabel type="string">Отч - НИ</filterLabel>
+    </UF_CRM_1438082063>
+    <UF_CRM_1438082101 type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Отч - НТ</listLabel>
+      <formLabel type="string">Отч - НТ</formLabel>
+      <filterLabel type="string">Отч - НТ</filterLabel>
+    </UF_CRM_1438082101>
+    <UF_CRM_1438082767 type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Отч - НЗ</listLabel>
+      <formLabel type="string">Отч - НЗ</formLabel>
+      <filterLabel type="string">Отч - НЗ</filterLabel>
+    </UF_CRM_1438082767>
+    <UF_CRM_1435230775 type="object">
+      <type type="string">string</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Mailing</listLabel>
+      <formLabel type="string">Mailing</formLabel>
+      <filterLabel type="string">Mailing</filterLabel>
+    </UF_CRM_1435230775>
+    <UF_CRM_1437138819 type="object">
+      <type type="string">datetime</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Дата последнего запроса документов</listLabel>
+      <formLabel type="string">Дата последнего запроса документов</formLabel>
+      <filterLabel type="string">Дата последнего запроса документов</filterLabel>
+    </UF_CRM_1437138819>
+    <UF_CRM_1435933823 type="object">
+      <type type="string">enumeration</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <items type="array">
+        <item type="object">
+          <ID type="string">289</ID>
+          <VALUE type="string">Да</VALUE>
+        </item>
+        <item type="object">
+          <ID type="string">291</ID>
+          <VALUE type="string">Нет</VALUE>
+        </item>
+      </items>
+      <listLabel type="string">Звонок старшего бухгалтера</listLabel>
+      <formLabel type="string">Звонок старшего бухгалтера</formLabel>
+      <filterLabel type="string">Звонок старшего бухгалтера</filterLabel>
+    </UF_CRM_1435933823>
+    <UF_CRM_1441617382 type="object">
+      <type type="string">iblock_element</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">true</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Реестры</listLabel>
+      <formLabel type="string">Реестры</formLabel>
+      <filterLabel type="string">Реестры</filterLabel>
+    </UF_CRM_1441617382>
+    <UF_CRM_1450957412 type="object">
+      <type type="string">integer</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Количество работников</listLabel>
+      <formLabel type="string">Количество работников</formLabel>
+      <filterLabel type="string">Количество работников</filterLabel>
+    </UF_CRM_1450957412>
+    <UF_CRM_1450957412 type="object">
+      <type type="string">integer</type>
+      <isRequired type="boolean">false</isRequired>
+      <isReadOnly type="boolean">false</isReadOnly>
+      <isImmutable type="boolean">false</isImmutable>
+      <isMultiple type="boolean">false</isMultiple>
+      <isDynamic type="boolean">true</isDynamic>
+      <listLabel type="string">Количество документов за текущий месяц</listLabel>
+      <formLabel type="string">Количество документов за текущий месяц</formLabel>
+      <filterLabel type="string">Количество документов за текущий месяц</filterLabel>
+    </UF_CRM_1450957412>
+  </result>
+</root>

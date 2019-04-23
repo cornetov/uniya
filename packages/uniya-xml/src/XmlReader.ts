@@ -40,6 +40,7 @@ export abstract class XmlReader {
     //private _xml: string;
     private _depth: number = 0;
     //private _position: number = 0;
+    private _closed: boolean = false;
     private _normalize: boolean = true;
     private _attributeIndex: number = -1;
     private _options: XmlReaderOptions;
@@ -236,14 +237,14 @@ export abstract class XmlReader {
         this.clear();
 
         // parsing
-        if (pos === 0 && this.parseDocumentContent()) {
+        if (pos < 3 && this.parseDocumentContent()) {
             readed = true;
         } else if (this.parseElementContext()) {
             readed = true;
         }
 
         // decrement depth
-        if (readed && this.nodeType === XmlNodeType.EndElement) {
+        if (readed && (this.nodeType === XmlNodeType.EndElement || (this.nodeType === XmlNodeType.Element && this._closed))) {
             this._depth--;
         }
 
@@ -529,21 +530,39 @@ export abstract class XmlReader {
                 case "'":
                     quote1++;
                     ch = this.nextText(1);
-                    if (quote1 % 2 === 0 && (ch === ' ' || ch === '>')) {
+                    if (this.lastQuote(quote1, ch)) {
                         this.setPosition(this.getPosition() - 1);
                         break;
+                    }
+                    if (ch === "'") {
+                        this.setPosition(this.getPosition() - 1);
+                        continue;
                     }
                     s += ch;
                     continue;
                 case '"':
                     quote2++;
                     ch = this.nextText(1);
-                    if (quote2 % 2 === 0 && (ch === ' ' || ch === '?' || ch === '>')) {
+                    if (this.lastQuote(quote2, ch)) {
                         this.setPosition(this.getPosition() - 1);
                         break;
                     }
+                    if (ch === '"') {
+                        this.setPosition(this.getPosition() - 1);
+                        continue;
+                    }
                     s += ch;
                     continue;
+                //case '`':
+                //    quote3++;
+                //    ch = this.nextText(1);
+                //    if (quote3 % 2 === 0 && (ch === ' ' || ch === '?' || ch === '>')) {
+                //        this.setPosition(this.getPosition() - 1);
+                //        break;
+                //    }
+                //    if (ch === '`') break;      // empty context
+                //    s += ch;
+                //    continue;
                 case '<':
                     // attribute values cannot contain '<'
                     throw new XmlUnexpectedError(ch);
@@ -650,6 +669,9 @@ export abstract class XmlReader {
             this.setPosition(pos);
             return false;
         }
+    }
+    private lastQuote(quote: number, ch: string): boolean {
+        return quote % 2 === 0 && (ch === ' ' || ch === '?' || ch === '/' || ch === '>');
     }
     private parseAttributes() {
 
@@ -1107,65 +1129,57 @@ export abstract class XmlReader {
         // parses metadata
         let pos = this.getPosition();
         let nodeType = XmlNodeType.None;
-        let s: string | null = null;
-        let cnt = 2;
-        while (true) {
-            let ch = this.nextText(cnt);
-            switch (ch) {
-                case "":
-                    s = null;
-                    break;
-                case '<?':
-                    cnt = 1;
-                    s = "";
-                    continue;
-                case ' ':
-                    if (s !== null && s.length > 0) {
-                        switch (s.toLowerCase()) {
-                            case "pi":
-                                this._nodeName = "pi";
-                                nodeType = XmlNodeType.Meta;
-                                s = "";
-                                break;
-                            case "xml":
-                                this._nodeName = "xml";
+        let meta = this.nextText(2);
+        if (meta === '<?') {
+            let s = "";
+            while (true) {
+                let ch = this.nextText(1);
+                switch (ch) {
+                    case ' ':
+                        if (nodeType === XmlNodeType.None && s.length > 0) {
+                            if (s.toLowerCase().startsWith("xml")) {
                                 nodeType = XmlNodeType.XmlDeclaration;
-                                this.parseAttributes();
-                                s = "";
-                                break;
-                            default:
-                                s += ch;
-                                break;
+                            } else {
+                                nodeType = XmlNodeType.Meta;
+                            }
+                            this._nodeName = s.trim();
+                            this.parseAttributes();
+                            s = "";
+                        } else {
+                            s += ch;
                         }
-                    }
-                    continue;
-                case '?':
-                    let p = this.getPosition();
-                    if (this.nextText(1) === '>') {
-                        this._nodeType = nodeType;
-                        break;
-                    }
-                    this.setPosition(p);
-                    s += ch;
-                    continue;
-                default:
-                    if (s === null || ch.length === 0) {
-                        break;
-                    }
-                    s += ch;
-                    continue;
-            }
+                        continue;
+                    case '?':
+                        let p = this.getPosition();
+                        if (this.nextText(1) === '>') {
+                            this._nodeType = nodeType;
+                            break;
+                        }
+                        this.setPosition(p);
+                        s += ch;
+                        continue;
+                    default:
+                        if (s === null || ch.length === 0) {
+                            break;
+                        }
+                        s += ch;
+                        continue;
+                }
 
-            // if correctly then done
-            if (s !== null && nodeType !== XmlNodeType.None && this._nodeType === nodeType) {
-                this._nodeValue = s;
-                return true;
-            }
+                // if correctly then done
+                if (nodeType !== XmlNodeType.None && this._nodeType === nodeType) {
+                    this._nodeValue = s;
+                    return true;
+                }
 
-            // bad done, restore position
-            this.setPosition(pos);
-            return false;
+                // unexpected
+                break;
+            }
         }
+
+        // bad done, restore position
+        this.setPosition(pos);
+        return false;
     }
     private parseEndElement(): boolean {
 
@@ -1440,7 +1454,7 @@ export abstract class XmlReader {
                     break;
                 case '/':
                     // empty element
-                    this._nodeValue = "";
+                    this._closed = true;
                     continue;
                 case ' ':
                     this.parseAttributes();
