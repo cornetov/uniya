@@ -1,19 +1,26 @@
 {
-  "name": "uniya",
-  "version": "0.1.13",
-  "description": "Uniya framework",
-  "repository": "https://github.com/cornetov/uniya",
-  "homepage": "https://github.com/cornetov/uniya#readme",
-  "license": "MIT",
+  "name": "uniya-xml",
+  "version": "0.1.6",
+  "description": "XML framework",
   "author": {
     "name": "Simon Cornetov",
     "email": "cornetov@gmail.com"
   },
   "keywords": [
-    "uniya"
+    "json",
+    "xml"
   ],
   "main": "src/index.js",
   "typings": "src/index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc"
+  },
+  "jest": {
+    "//": "Comment goes here",
+    "testRegex": ".*-test\\.js$",
+    "verbose": true
+  },
   "dependencies": {
   },
   "devDependencies": {
@@ -21,7 +28,6 @@
     "typescript": "^3.4.3"
   },
   "files": [
-    "src/**/*.d.ts",
-    "src/**/*.js"
+    "dist/**/*"
   ]
 }

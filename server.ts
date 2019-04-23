@@ -110,12 +110,14 @@ async function main() {
         node = XmlNode.parse(data.toString()) as XmlNode;
         text = node.toXMLString()
         console.log(text.substr(0, Math.min(80, text.length)));
-        //let map = readXml(data.toString());
-        //if (map !== null && map.size > 0) {
-        //    for (var [key, value] of map) {
-        //        console.log(`${key}=${value}`);
-        //    }
-        //}
+        if (file === "ru.xml") {
+            let map = readXml(data.toString());
+            if (map !== null && map.size > 0) {
+                for (var [key, value] of map) {
+                    console.log(`${key}=${value}`);
+                }
+            }
+        }
         console.log(`Finish ${file}`);
     }
     //fs.readFile(__dirname + '/samples/xmls/ru.xml', function (err: string, data: object) {

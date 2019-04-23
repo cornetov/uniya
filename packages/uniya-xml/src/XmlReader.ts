@@ -1074,8 +1074,12 @@ export abstract class XmlReader {
                 return true;
             }
 
-            // bad done, restore position
-            this.setPosition(pos);
+            // not restore position for ignore empty characters at start
+            if (pos > 3) {
+                this.setPosition(pos);
+            }
+
+            // bad done
             return false;
         }
     }

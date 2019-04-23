@@ -13,7 +13,7 @@
     "resolveJsonModule": true,
     "declaration": true,
     "composite": true,
-    "outDir": "./dist",
+    "outDir": ".",
     "rootDir": ".",
     "baseUrl": ".",
     "paths": {

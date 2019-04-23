@@ -1,3 +1,6 @@
+
+
+
 <?xml version="1.0" encoding="utf-8" ?>
 <root>
     <data name="Error" xml:space="preserve">
@@ -5,6 +8,9 @@
     </data>
         <data name="Summary" xml:space="preserve">
             <value>&#x420;&#x435;&#x437;&#x44E;&#x43C;&#x435;</value>
+        </data>
+        <data name="Cancel" xml:space="preserve">
+            <value>&#x41E;&#x442;&#x43C;&#x435;&#x43D;&#x438;&#x442;&#x44C;</value>
         </data>
         <data name="#Register_PasswordNotMatching" xml:space="preserve">
             <value>&#x412;&#x435;&#x435;&#x434;&#x435;&#x43D;&#x43D;&#x44B;&#x439; &#x43F;&#x430;&#x440;&#x43E;&#x43B;&#x44C; &#x43D;&#x435; &#x43F;&#x43E;&#x434;&#x442;&#x432;&#x435;&#x440;&#x436;&#x434;&#x435;&#x43D;.</value>
@@ -21,8 +27,20 @@
         <data name="Overview" xml:space="preserve">
             <value>&#x41E;&#x431;&#x437;&#x43E;&#x440;</value>
         </data>
+        <data name="Language" xml:space="preserve">
+            <value>&#x42F;&#x437;&#x44B;&#x43A;</value>
+        </data>
         <data name="#Login_NewAccount" xml:space="preserve">
             <value>&#x421;&#x43E;&#x437;&#x434;&#x430;&#x442;&#x44C; &#x43D;&#x43E;&#x432;&#x44B;&#x439; &#x430;&#x43A;&#x43A;&#x430;&#x443;&#x43D;&#x442;</value>
+        </data>
+        <data name="OK" xml:space="preserve">
+            <value>&#x41E;&#x41A;</value>
+        </data>
+        <data name="#Language_@en-US" xml:space="preserve">
+            <value>&#x410;&#x43D;&#x433;&#x43B;&#x438;&#x439;&#x441;&#x43A;&#x438;&#x439;</value>
+        </data>
+        <data name="#Language_@ru-RU" xml:space="preserve">
+            <value>&#x420;&#x443;&#x441;&#x441;&#x43A;&#x438;&#x439;</value>
         </data>
         <data name="#Login_Required" xml:space="preserve">
             <value>&#x41F;&#x430;&#x440;&#x43E;&#x43B;&#x44C; &#x43E;&#x431;&#x44F;&#x437;&#x430;&#x442;&#x435;&#x43B;&#x435;&#x43D;</value>
@@ -38,6 +56,9 @@
         </data>
         <data name="About" xml:space="preserve">
             <value>&#x41C;&#x43E;&#x43B;&#x432;&#x430;</value>
+        </data>
+        <data name="Apply" xml:space="preserve">
+            <value>&#x41F;&#x440;&#x438;&#x43C;&#x435;&#x43D;&#x438;&#x442;&#x44C;</value>
         </data>
         <data name="Fetch" xml:space="preserve">
             <value>&#x41F;&#x43E;&#x43B;&#x443;&#x447;&#x430;&#x442;&#x44C;</value>

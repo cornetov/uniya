@@ -11,7 +11,8 @@
     "uniya",
     "xml",
     "data",
-    "odata"
+    "odata",
+    "graphgl"
   ],
   "contributors": [
     "Simon Cornetov <cornetov@gmail.com>"
