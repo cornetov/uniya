@@ -1,8 +1,9 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "outDir": "..",
-    "rootDir": "."
+    "outFile": "./dist/index.js",
+    "outDir": "./dist",
+    "rootDir": "./src"
   },
   "references": [
     { "path": "../uniya" }

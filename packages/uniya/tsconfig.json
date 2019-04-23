@@ -6,6 +6,6 @@
   },
   "include": [
     "./src",
-    "./__tests__"
+    "./__tests__", "../uniya-xml/index.js", "../uniya-xml/index.ts"
   ]
 }

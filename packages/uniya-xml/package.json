@@ -1,6 +1,6 @@
 {
   "name": "uniya-xml",
-  "version": "0.1.3",
+  "version": "0.1.6",
   "description": "XML framework",
   "author": {
     "name": "Simon Cornetov",
@@ -10,11 +10,11 @@
     "json",
     "xml"
   ],
-  "main": "index.js",
-  "typings": "src/index.d.ts",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "scripts": {
     "test": "jest",
-    "build": "tsc -p ."
+    "build": "tsc"
   },
   "jest": {
     "//": "Comment goes here",
@@ -26,5 +26,8 @@
   "devDependencies": {
     "@types/jest": "^24.0.11",
     "typescript": "^3.4.3"
-  }
+  },
+  "files": [
+    "dist/**/*"
+  ]
 }
