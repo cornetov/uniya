@@ -1,4 +1,4 @@
-import { XmlTextReader, XmlTextWriter, XmlNode, XmlNodeType } from "../src/index";
+﻿import { XmlTextReader, XmlTextWriter, XmlNode, XmlNodeType } from "../src/index";
 var fs = require('fs');
 
 //const testIfCondition = mySkipCondition ? test.skip : test;
@@ -141,6 +141,9 @@ describe("Base XML tests >>>", () => {
         it(`xml file should be contains terms`, () => {
             expect(terms.size).toBeGreaterThan(10);
         });
+        it(`xml file should be contains 'Error'='Ошибка' term`, () => {
+            expect(terms.get('Error')).toBe('Ошибка');
+        });
     });
 
     describe('read XML files using XmlTextReader...', () => {
@@ -217,7 +220,7 @@ describe("Base XML tests >>>", () => {
         });
     });
 
-    //let node = XmlNode.parse('<?xml version="1.0" encoding="utf-8"?><Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><Header standalone="no"><Description>˥믠흆���񡥮ꡱ������Ꭓ00ᡍX 𐱮崪𺮄escription><DocDate>28.07.2016</DocDate></Header></Root>');
+    //let node = XmlNode.parse('<?xml version="1.0" encoding="utf-8"?><Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><Header standalone="no"><Description>ЛҐлЇ нќ†ніЁоЇЈсЎҐ®кЎ±нІ¦н¶­кћі00бЎЌX рђ±®еґЄрє®„escription><DocDate>28.07.2016</DocDate></Header></Root>');
     //expect(node.childNodes.length).to.equal("1");
     //expect(node.childNodes[0].name).to.equal("Root");
 
