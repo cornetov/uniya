@@ -90,7 +90,7 @@ async function main() {
     //    console.log(error);
     //}
 
-    let xml = '<Header><DocDate>28.07.2016</DocDate></Header>';
+    const xml = '<Header><DocDate>28.07.2016</DocDate></Header>';
     let node = XmlNode.parse(xml) as XmlNode;
 
     let text = node.toXMLString()
@@ -103,17 +103,17 @@ async function main() {
     //xml = '<?xml version="1.0" encoding="utf-8" ?><root><data name="Error" xml: space = "preserve" > <value>&#x41E;&#x448;&#x438;&#x431;&#x43A;&#x430; </value></data > <data name="Summary" xml: space = "preserve" > <value>&#x420;&#x435;&#x437;&#x44E;&#x43C;&#x435; </value></data > </root>'
 
     const testFolder = __dirname + '\\packages\\uniya-xml\\__tests__\\xmls';
-    let files = fs.readdirSync(testFolder);
-    for (let file of files) {
-        let data = fs.readFileSync(`${testFolder}\\${file}`, 'utf8');
+    const files = fs.readdirSync(testFolder);
+    for (const file of files) {
+        const data = fs.readFileSync(`${testFolder}\\${file}`, 'utf8');
         console.log(`Start ${file}`);
         node = XmlNode.parse(data.toString()) as XmlNode;
         text = node.toXMLString()
         console.log(text.substr(0, Math.min(80, text.length)));
         if (file === "ru.xml") {
-            let map = readXml(data.toString());
+            const map = readXml(data.toString());
             if (map !== null && map.size > 0) {
-                for (var [key, value] of map) {
+                for (const [key, value] of map) {
                     console.log(`${key}=${value}`);
                 }
             }
@@ -145,20 +145,29 @@ async function main() {
     //    console.log(`${key}=${value}`);
     //}
 
-    await sleep(9000);
+    //await sleep(9000);
 
     // run test in node.js
-    cli.run();
+    try {
+        await cli.run();
+        console.log('Tests:');
+    } catch (error) {
+        console.log(error);
+    }
 
-    //for (let i = 0; i < 9; i++) {
-    //    console.log(`Index: ${i} `);
-    //    await sleep(1000);
-    //}
+    for (let i = 0; i < 9; i++) {
+        //console.log(`Index: ${i} `);
+        await sleep(9000);
+    }
 
-    console.log('Done.');
+    //await sleep(9000);
 
     // wait
-    await sleep(99000);
+    //for (let i = 0; i < 80; i++) {
+    //    await sleep(9000);
+    //    console.log('.');
+    //}
+    console.log('Done.');
 }
 
 try {

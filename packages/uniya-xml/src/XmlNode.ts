@@ -136,7 +136,7 @@ export class XmlNodeSet {
     private _parentNode: XmlNode;
     private _items: Set<XmlNode>;
 
-    // ** ctor
+    // ** constructor
     constructor(parent: XmlNode) {
         //
         this._parentNode = parent;
@@ -260,7 +260,7 @@ export class XmlNode {
      */
     public parentNode: XmlNode | null = null;
 
-    // ** ctor
+    // ** constructor
     constructor(type: XmlNodeType, name: string = "", value: string | null = null) {
         switch (type) {
             case XmlNodeType.Attribute:
@@ -305,7 +305,7 @@ export class XmlNode {
         return this._attributes;
     }
     /**
-     * Gets name of the current node or epmty string.
+     * Gets name of the current node or empty string.
      */
     public get nodeName(): string {
         return (!this._nodeName) ? "" : this._nodeName;
@@ -317,7 +317,7 @@ export class XmlNode {
         return this._nodeType;
     }
     /**
-     * Gets value of the current node or epmty string.
+     * Gets value of the current node or empty string.
      */
     public get nodeValue(): string {
         return (!this._nodeValue) ? "" : this._nodeValue;
@@ -371,7 +371,7 @@ export class XmlNode {
      * @param name {string} The name of the child node.
      * @param depth {number} The depth for search, by default 999 as infinity.
      */
-    public search(name: string, depth: number = 999): XmlNode | null {
+    public search(name: string, depth = 999): XmlNode | null {
         for (const node of this._childNodes.toSet()) {
             if (node.nodeName.toLowerCase() === name.trim().toLowerCase()) {
                 return node;

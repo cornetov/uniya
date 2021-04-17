@@ -22,20 +22,20 @@ export abstract class XmlWriter {
     //private _root: string = "";
     //private _meta: boolean = false;
     //private _cdata: boolean = false;
-    private _started_write: boolean = false;
+    private _startedWrite = false;
     //private _writer: Function;
     //private _writer_encoding = 'UTF-8';
     private _namespaces = new Map<string, string>();
 
-    // ** ctor
-    constructor(indent: string = "") {
+    // ** constructor
+    constructor(indent = "") {
         this._indent = indent;
     }
 
     // ** properties
 
     /**
-     * Gets indication of to use indens.
+     * Gets indication of to use indents.
      */
     get useIndent(): boolean {
         return this._indent.length > 0;
@@ -55,7 +55,7 @@ export abstract class XmlWriter {
      */
     flush() {
         while (this._stack.length > 0) {
-            let name = this._stack.pop();
+            const name = this._stack.pop();
             if (name !== null && name !== undefined && name.length > 0) {
                 this.endElement();
             }
@@ -68,14 +68,14 @@ export abstract class XmlWriter {
      * @param encoding The encoding that will be in XML file, by default not apply.
      * @param standalone The indication standalone the XML documnet, by default no.
      */
-    startDocument(version: string = "1.0", encoding: string = "", standalone: boolean = false): XmlWriter {
+    startDocument(version = "1.0", encoding = "", standalone = false): XmlWriter {
 
         // sanity
         if (this.depth > 0 || this._types.get(XmlNodeType.Attribute) as number > 0) {
             throw new XmlFormatError(`XML|${this.depth}`);
         }
 
-        // xml document meta
+        // XML document meta
         this.startMeta('xml');
         this.startAttribute('version');
         this.text(!version ? "1.0" : version);
@@ -157,10 +157,10 @@ export abstract class XmlWriter {
         }
 
         // indent spaces
-        if (this._started_write) {
+        if (this._startedWrite) {
             this.indenter();
         }
-        this._started_write = true;
+        this._startedWrite = true;
 
         // start
         this._types.set(XmlNodeType.Text, 0);
@@ -350,7 +350,7 @@ export abstract class XmlWriter {
 
         // indent spaces
         this.indenter();
-        this._started_write = true;
+        this._startedWrite = true;
 
         // start
         this._types.set(XmlNodeType.Comment, 1);
@@ -414,11 +414,10 @@ export abstract class XmlWriter {
         }
 
         // indent spaces
-        if (this._started_write) {
+        if (this._startedWrite) {
             this.indenter();
         }
-        this._started_write = true;
-
+        this._startedWrite = true;
 
         // start
         this._types.set(XmlNodeType.DocumentType, 1);
@@ -486,10 +485,10 @@ export abstract class XmlWriter {
         }
 
         // indent spaces
-        if (this._started_write) {
+        if (this._startedWrite) {
             this.indenter();
         }
-        this._started_write = true;
+        this._startedWrite = true;
 
         // start
         this._types.set(XmlNodeType.Meta, 1);
@@ -544,10 +543,10 @@ export abstract class XmlWriter {
         }
 
         // indent spaces
-        if (this._started_write) {
+        if (this._startedWrite) {
             this.indenter();
         }
-        this._started_write = true;
+        this._startedWrite = true;
 
         // start
         this._types.set(XmlNodeType.CDATA, 1);
@@ -582,7 +581,7 @@ export abstract class XmlWriter {
         return this.text(content);
     }
 
-    // ** abstact method for override
+    // ** abstract methods for override
 
     /**
      * Write some text arguments (for overrides).
@@ -600,7 +599,7 @@ export abstract class XmlWriter {
     private indenter() {
         if (this.useIndent) {
             this.write('\n');
-            for (var i = 1; i < this.depth; i++) {
+            for (let i = 1; i < this.depth; i++) {
                 this.write(this._indent);
             }
         }
@@ -613,7 +612,7 @@ export abstract class XmlWriter {
 
     private endAttributes(): XmlWriter {
 
-        let attrs = this._types.get(XmlNodeType.Attribute) as number;
+        const attrs = this._types.get(XmlNodeType.Attribute) as number;
         if (attrs > 0) {
 
             // close last attribute
@@ -644,7 +643,7 @@ export abstract class XmlWriter {
         }
 
         // write
-        let attrs = this._types.get(XmlNodeType.Attribute) as number;
+        const attrs = this._types.get(XmlNodeType.Attribute) as number;
         if (attrs > 1) {
 
             // attribute context
@@ -656,7 +655,7 @@ export abstract class XmlWriter {
 
             if (attrs > 0) {
 
-                // not clossed attributes
+                // not closed attributes
                 this.endAttributes();
             }
             if (this._types.get(XmlNodeType.Comment) as number > 0 || this._types.get(XmlNodeType.CDATA) as number > 0) {
@@ -671,7 +670,7 @@ export abstract class XmlWriter {
 
             // using text
             this._types.set(XmlNodeType.Text, 1);
-            this._started_write = true;
+            this._startedWrite = true;
         }
 
         // done
