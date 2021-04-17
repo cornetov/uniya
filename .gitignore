@@ -12,3 +12,7 @@ packages/**/*.js
 server.d.ts
 server.js
 packages/uniya/src/Collections.d.ts
+*.ts
+tsconfig.tsbuildinfo
+tsconfig.tsbuildinfo
+tsconfig.tsbuildinfo
