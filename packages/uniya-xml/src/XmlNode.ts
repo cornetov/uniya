@@ -395,7 +395,7 @@ export class XmlNode {
         }
         catch (ex) {
 
-            // unexpexted error
+            // unexpected error
             console.exception(ex);
 
             let node = new XmlNode(this.nodeType, this.nodeName, this.nodeValue);
@@ -412,7 +412,7 @@ export class XmlNode {
         return str;
     }
     /**
-     * Convert node to xml text (see: parse).
+     * Convert node to XML text (see: parse).
      * @param tabCount {number} The count of tabs in xml text format, by default -1 (not used).
      */
     public toXMLString(tabCount: number = -1): string {
