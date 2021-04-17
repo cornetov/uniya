@@ -10,3 +10,13 @@ node_modules
 packages/**/*.js
 server.d.ts
 server.js
+packages/uniya-xml/tsconfig.tsbuildinfo
+packages/uniya/tsconfig.tsbuildinfo
+tsconfig.tsbuildinfo
+packages/uniya/tsconfig.tsbuildinfo
+packages/uniya/src/Localizer.d.ts
+packages/uniya/src/Core.d.ts
+packages/uniya/src/Collections.d.ts
+packages/uniya-xml/src/XmlWriter.d.ts
+packages/uniya-xml/src/XmlReader.d.ts
+packages/uniya-xml/src/XmlNode.d.ts
