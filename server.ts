@@ -156,6 +156,8 @@ async function main() {
     //}
 
     console.log('Done.');
+
+    // wait
     await sleep(99000);
 }
 
