@@ -1,3 +1,5 @@
+/*eslint no-constant-condition: ["error", { "checkLoops": false }]*/
+
 import { XmlNodeType, XmlUnexpectedError } from "./XmlNode";
 
 /**
@@ -9,23 +11,23 @@ export class XmlReaderOptions {
     /**
      * Indicating whether to do character checking.
      */
-    check: boolean = true;
+    check = true;
     /**
      * Indicating whether to ignore comments.
      */
-    ignoreComments: boolean = true;
+    ignoreComments = true;
     /**
      * Indicating  whether to ignore meta (processing instructions).
      */
-    ignoreMeta: boolean = true;
+    ignoreMeta = true;
     /**
      * Indicating whether to ignore insignificant white space.
      */
-    ignoreWhitespace: boolean = true;
+    ignoreWhitespace = true;
     /**
      * The position offset. The default is 0.
      */
-    startOffset: number = 0;
+    startOffset = 0;
 }
 
 /**
@@ -38,19 +40,19 @@ export abstract class XmlReader {
 
     // ** fields
     //private _xml: string;
-    private _depth: number = 0;
+    private _depth = 0;
     //private _position: number = 0;
-    private _closed: boolean = false;
-    private _normalize: boolean = true;
-    private _attributeIndex: number = -1;
+    private _closed = false;
+    private _normalize = true;
+    private _attributeIndex = -1;
     private _options: XmlReaderOptions;
     private _nodeType: XmlNodeType = XmlNodeType.None;
-    private _nodeName: string = "";
-    private _nodeValue: string = "";
+    private _nodeName = "";
+    private _nodeValue = "";
     private _attributes = new Map<string, string>();
     private _namespaces = new Map<string, string>();
 
-    // ** ctor
+    // ** constructor
     constructor(options: XmlReaderOptions | undefined) {
         if (!options) {
             this._options = new XmlReaderOptions();
@@ -74,7 +76,7 @@ export abstract class XmlReader {
         return this._nodeType;
     }
     /**
-     * Gets value of the current node or epmty string.
+     * Gets value of the current node or empty string.
      */
     get value(): string {
         return (!this._nodeValue) ? "" : this._nodeValue;
@@ -86,7 +88,7 @@ export abstract class XmlReader {
         return this._depth;
     }
     /**
-     * Gets value of this node or epmty string.
+     * Gets value of this node or empty string.
      */
     get eof(): boolean {
         return this._nodeType === XmlNodeType.None && this.getPosition() > 0;
@@ -138,7 +140,7 @@ export abstract class XmlReader {
      * Gets the namespace URI of the current node; otherwise an empty string.
      */
     get namespaceURI(): string {
-        let prefix = this.prefix;
+        const prefix = this.prefix;
         if (prefix.length > 0 && this._namespaces.has(prefix)) {
             return this._namespaces.get(prefix) as string;
         }
@@ -161,9 +163,9 @@ export abstract class XmlReader {
      */
     getAttributeNS(localName: string, namespaceURI: string): string | null {
 
-        for (var [key, value] of this._namespaces) {
+        for (const [key, value] of this._namespaces) {
             if (value.toLowerCase() === namespaceURI.toLowerCase()) {
-                let name: string = key + ':' + localName;
+                const name = key + ':' + localName;
                 if (this._attributes.has(name)) {
                     return this._attributes.get(name) as string;
                 }
@@ -203,7 +205,7 @@ export abstract class XmlReader {
 
         // apply attribute
         let idx = 0;
-        for (var [key, value] of this._attributes) {
+        for (const [key, value] of this._attributes) {
             if (idx >= this._attributeIndex) {
 
                 // done
@@ -226,7 +228,7 @@ export abstract class XmlReader {
 
         // initialization
         let readed = false;
-        let pos = this.getPosition();
+        const pos = this.getPosition();
 
         // increment depth
         if (this.nodeType === XmlNodeType.Element && this.isEmptyElement) {
@@ -342,7 +344,7 @@ export abstract class XmlReader {
         this._nodeValue = "";
     }
     private nextCode(): number {
-        let ch = this.nextText(1);
+        const ch = this.nextText(1);
         if (ch.length > 0) {
             return ch.charCodeAt(0);
         }
@@ -380,11 +382,14 @@ export abstract class XmlReader {
     //    return true;
     //}
     private parseComment(): boolean {
-        let pos = this.getPosition();
+        const pos = this.getPosition();
         let s: string | null = null;
         let cnt = 4;
         while (true) {
-            let ch = this.nextText(cnt);
+
+            const ch = this.nextText(cnt);
+            const pi = this.getPosition();
+
             switch (ch) {
                 case "":
                     s = null;
@@ -394,12 +399,11 @@ export abstract class XmlReader {
                     s = "";
                     continue;
                 case '-':
-                    let p = this.getPosition();
                     if (this.nextText(2) === '->') {
                         this._nodeType = XmlNodeType.Comment;
                         break;
                     }
-                    this.setPosition(p);
+                    this.setPosition(pi);
                     s += ch;
                     continue;
                 default:
@@ -423,11 +427,15 @@ export abstract class XmlReader {
     }
     private parseCData() {
 
-        let pos = this.getPosition();
+        const pos = this.getPosition();
         let s: string | null = null;
         let cnt = 7;
+
         while (true) {
-            let ch = this.nextText(cnt);
+
+            const ch = this.nextText(cnt);
+            const pi = this.getPosition();
+
             switch (ch) {
                 case "":
                     s = null;
@@ -437,12 +445,11 @@ export abstract class XmlReader {
                     s = "";
                     continue;
                 case '-':
-                    let p = this.getPosition();
                     if (this.nextText(2) === '->') {
                         this._nodeType = XmlNodeType.CDATA;
                         break;
                     }
-                    this.setPosition(p);
+                    this.setPosition(pi);
                     s += ch;
                     continue;
                 default:
