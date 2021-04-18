@@ -10,7 +10,7 @@ export class XmlTextReader extends XmlReader {
     private _xml: string;
     private _position: number;
 
-    // ** ctor
+    // ** constructor
     constructor(xml: string, options: XmlReaderOptions | undefined = undefined) {
         super(options);
         this._xml = (!xml) ? "" : xml;
@@ -21,8 +21,8 @@ export class XmlTextReader extends XmlReader {
      * Gets next char in the XML reader (for overrides); otherwise (end read) empty string.
      * @param count The count of chars (using count changed the current position).
      */
-    protected nextText(count: number = 1): string {
-        let position = this._position;
+    protected nextText(count = 1): string {
+        const position = this._position;
         if (position + count <= this._xml.length) {
             this._position += count;
             return this._xml.substr(position, count);

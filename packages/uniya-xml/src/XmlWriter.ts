@@ -1,7 +1,7 @@
 import { XmlNodeType, XmlArgumentError, XmlFormatError, XmlUnexpectedError } from "./XmlNode";
 
 /**
- * @class Abstract wtite XML data.
+ * @class Abstract write XML data.
  * @name XmlWriter
  */
 export abstract class XmlWriter {
@@ -131,7 +131,7 @@ export abstract class XmlWriter {
      * Write a XML element of the namespace with URI.
      * @param prefix The namespace prefix of the name of the XML element.
      * @param localName The local name of the XML element.
-     * @param uri The URI oth the namespace for the XML element.
+     * @param uri The URI of the namespace for the XML element.
      * @param content The content of the XML element.
      */
     writeElementNS(prefix: string, localName: string, uri: string, content: string): XmlWriter {
@@ -190,7 +190,7 @@ export abstract class XmlWriter {
         // sanity namespaces
         if (!!uri && uri.length > 0) {
             if (this._namespaces.has(prefix)) {
-                let existUri = this._namespaces.get(prefix) as string;
+                const existUri = this._namespaces.get(prefix) as string;
                 if (existUri.toLowerCase() !== uri.toLowerCase()) {
                     throw new XmlArgumentError("uri");
                 }
@@ -230,7 +230,7 @@ export abstract class XmlWriter {
         }
 
         // end
-        let name = this._stack.pop();
+        const name = this._stack.pop();
         if (close && name !== undefined) {
             this.write('</', name, '>');
         }
@@ -293,7 +293,7 @@ export abstract class XmlWriter {
         // sanity namespaces
         if (!!uri && uri.length > 0) {
             if (this._namespaces.has(prefix)) {
-                let existUri = this._namespaces.get(prefix) as string;
+                const existUri = this._namespaces.get(prefix) as string;
                 if (existUri.toLowerCase() !== uri.toLowerCase()) {
                     throw new XmlArgumentError("uri");
                 }
@@ -384,7 +384,7 @@ export abstract class XmlWriter {
      * @param sysId The system identifier of the XML document.
      * @param subset The subset of the XML document.
      */
-    writeDocumentType(name: string, pubId: string = "", sysId: string = "", subset: string = ""): XmlWriter {
+    writeDocumentType(name: string, pubId = "", sysId = "", subset = ""): XmlWriter {
         return this.startDocumentType(name, pubId, sysId, subset).endDocumentType()
     }
     /**
@@ -684,9 +684,16 @@ export abstract class XmlWriter {
      * @param value {any} The value to text convert.
      */
     public static toXMLString(value: any): string {
+    //public static toXMLString(value: IXmlString | string | Date | number | undefined): string {
 
         // sanity
         if (value === undefined || value === null) return "";
+
+        // IXmlString
+        //if (value.isPrototypeOf())
+        //if (value.hasOwnProperty('toXMLString')) {
+        //    return value.toXMLString(-1);
+        //}
 
         // date
         if (value instanceof Date) {

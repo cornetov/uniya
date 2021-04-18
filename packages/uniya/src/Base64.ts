@@ -30,7 +30,7 @@ export class Base64 {
     public static decode(str: string): string {
 
         if (Core.isNode) {
-            let buffer = Buffer.from(str, 'base64');
+            const buffer = Buffer.from(str, 'base64');
             return buffer.toString('utf8');
         }
 

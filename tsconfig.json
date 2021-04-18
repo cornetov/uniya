@@ -14,7 +14,6 @@
     "declarationMap": false,
     "declaration": true,
     "composite": true,
-    "noEmit": true,
     "outDir": ".",
     "rootDir": ".",
     "baseUrl": ".",

@@ -1,5 +1,41 @@
 ﻿import { L } from './Localizer';
 
+
+//export class Checker {
+
+//    export implementsInterface(object: Object, target: Interface) {
+//        const objClass: Class = object.constructor && object.constructor.getClass();
+//        if (objClass && objClass.implements) { // not all object will have Reflection information.
+//            let found = false;
+//            for (let base of objClass.implements) {
+//                let found = interfaceExtends(base, target);
+//                if (found) {
+//                    return true;
+//                }
+//            }
+//        }
+//        return false;
+//    }
+
+//    // recursive interface inheritance check
+//    function interfaceExtends(i: Interface, target: Interface) {
+//        if (i === target) { // yes! we can always use strict equality checks with reflec-ts objects :)
+//            return true;
+//        }
+//        if (i.extends) {
+//            let found = false;
+//            for (let base of i.extends) {
+//                // do a recursive check on base interface...
+//                found = interfaceExtends(base, target);
+//                if (found) {
+//                    return true;
+//                }
+//            }
+//        }
+//        return false;
+//    }
+//}
+
 /**
  * 
  * @class XML exceptions.
@@ -195,12 +231,12 @@ export class StorageFail extends Exception {
 // ------------------------------------------------------------------------------------------------
 
 /**
- * The static core utilites for JavaScript/TypeScript.
+ * The static core utilities for JavaScript/TypeScript.
  */
 export class Core {
 
     /**
-     * Is Node.js enviromant ot no
+     * Is Node.js environment or no
      */
     public static get isNode(): boolean {
         if (typeof process === 'object') {
@@ -240,7 +276,7 @@ export class Core {
         }
         catch (ex) {
 
-            // unexpexted exception!
+            // unexpected exception!
             console.log(ex);
 
             // basis values
@@ -301,7 +337,7 @@ export class Core {
     //}
     /**
      * Repeat string or char for text.
-     * @param s The char or sring for a repeat.
+     * @param s The char or string for a repeat.
      * @param count How many times is need to repeat.
      * @param text The text for added, by default is empty.
      * @return {string} The text with repeated blocks.

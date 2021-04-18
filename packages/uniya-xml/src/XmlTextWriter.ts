@@ -7,10 +7,10 @@ import { XmlWriter } from "./XmlWriter";
 export class XmlTextWriter extends XmlWriter {
 
     // ** fields
-    private _output: string = "";
+    private _output = "";
 
-    // ** ctor
-    constructor(indent: string = "") {
+    // ** constructor
+    constructor(indent = "") {
         super(indent);
     }
 
@@ -19,7 +19,7 @@ export class XmlTextWriter extends XmlWriter {
      * @param args The array of text arguments.
      */
     protected write(...args: string[]) {
-        for (var i = 0; i < args.length; i++) {
+        for (let i = 0; i < args.length; i++) {
             this._output += args[i];
         }
     }

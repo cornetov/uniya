@@ -473,15 +473,15 @@ export abstract class XmlReader {
     }
     private parseAttribute(): boolean {
 
-        // read ont attribute (key and value)
-        let pos = this.getPosition();
-        let name: string = "";
-        let s: string = "";
-        let quote1: number = 0;
-        let quote2: number = 0;
+        // read attribute (key and value)
+        const pos = this.getPosition();
+        let name = "";
+        let s = "";
+        let quote1 = 0;
+        let quote2 = 0;
         while (true) {
             let ch = this.nextText(1);
-            let code = (ch.length == 1) ? ch.charCodeAt(0) : 0;
+            let code = (ch.length === 1) ? ch.charCodeAt(0) : 0;
             switch (code) {
                 case 0xA:
                     if (this._normalize) {
@@ -490,7 +490,7 @@ export abstract class XmlReader {
                     continue;
                 case 0xD:
                     code = this.nextCode();
-                    if (code == 0xA) {
+                    if (code === 0xA) {
                         if (this._normalize) {
                             s += ' ';
                         }
@@ -574,7 +574,7 @@ export abstract class XmlReader {
                     // attribute values cannot contain '<'
                     throw new XmlUnexpectedError(ch);
                 case '&':
-                    // TODO: entity referece
+                    // TODO: entity reference
                     //if (pos - ps.charPos > 0) {
                     //    stringBuilder.Append(chars, ps.charPos, pos - ps.charPos);
                     //}
@@ -658,7 +658,7 @@ export abstract class XmlReader {
                     //        pos = ps.charPos;
                     //        break;
                     //}
-                    console.log("entity referece position:" + this.getPosition());
+                    console.log("entity reference position:" + this.getPosition());
                     s += ch;
                     continue;
                 default:
@@ -963,20 +963,21 @@ export abstract class XmlReader {
 
         // parses a chunk of text, returns true when the whole value has been parsed,
         // otherwise return false when it needs to be called again to get a next chunk of value
-        let pos = this.getPosition();
-        let s: string = "";
+        const pos = this.getPosition();
+        let s = "";
         let spaces = 0;
-        let quote1: number = 0;
-        let quote2: number = 0;
+        let quote1 = 0;
+        let quote2 = 0;
         while (true) {
             let ch = this.nextText(1);
-            let code = (ch.length == 1) ? ch.charCodeAt(0) : 0;
+            let code = (ch.length === 1) ? ch.charCodeAt(0) : 0;
             switch (code) {
                 case 0xA:
                     continue;
                 case 0xD:
                     code = this.nextCode();
-                    if (code == 0xA) {
+                    if (code === 0xA) {
+                        // none
                     } else {
                         if (code < 0) {
                             this.setPosition(this.getPosition() - 1);
@@ -1094,11 +1095,12 @@ export abstract class XmlReader {
     private parseDocTypeDeclaration(): boolean {
 
         // parses DOCTYPE declaration
-        let pos = this.getPosition();
+        const pos = this.getPosition();
         let s: string | null = null;
         let cnt = 4;
         while (true) {
-            let ch = this.nextText(cnt);
+            const ch = this.nextText(cnt);
+            const p = this.getPosition();
             switch (ch) {
                 case "":
                     s = null;
@@ -1108,7 +1110,6 @@ export abstract class XmlReader {
                     s = "";
                     continue;
                 case '!':
-                    let p = this.getPosition();
                     if (this.nextText(1) === '>') {
                         this._nodeType = XmlNodeType.DocumentType;
                         break;
@@ -1137,14 +1138,15 @@ export abstract class XmlReader {
     }
     private parseMeta(): boolean {
 
-        // parses metadata
-        let pos = this.getPosition();
+        // parses meta-data
+        const pos = this.getPosition();
         let nodeType = XmlNodeType.None;
-        let meta = this.nextText(2);
+        const meta = this.nextText(2);
         if (meta === '<?') {
             let s = "";
             while (true) {
-                let ch = this.nextText(1);
+                const ch = this.nextText(1);
+                const p = this.getPosition();
                 switch (ch) {
                     case ' ':
                         if (nodeType === XmlNodeType.None && s.length > 0) {
@@ -1161,7 +1163,6 @@ export abstract class XmlReader {
                         }
                         continue;
                     case '?':
-                        let p = this.getPosition();
                         if (this.nextText(1) === '>') {
                             this._nodeType = nodeType;
                             break;
@@ -1195,11 +1196,11 @@ export abstract class XmlReader {
     private parseEndElement(): boolean {
 
         // parses end of element
-        let pos = this.getPosition();
+        const pos = this.getPosition();
         let s: string | null = null;
         let cnt = 2;
         while (true) {
-            let ch = this.nextText(cnt);
+            const ch = this.nextText(cnt);
             switch (ch) {
                 case "":
                     s = null;
@@ -1233,7 +1234,7 @@ export abstract class XmlReader {
     private parseElementContext(): boolean {
 
         // parse the element context
-        let pos = this.getPosition();
+        const pos = this.getPosition();
         while (true) {
             let ch = this.nextText(1);
             switch (ch) {
@@ -1328,7 +1329,7 @@ export abstract class XmlReader {
     private parseDocumentContent(): boolean { 
 
         // parses the document content
-        let pos = this.getPosition();
+        const pos = this.getPosition();
         while (true) {
             let ch = this.nextText(1);
             switch (ch) {
@@ -1447,10 +1448,10 @@ export abstract class XmlReader {
     private parseElement() { 
 
        // parses the element start tag 
-        let pos = this.getPosition();
+        const pos = this.getPosition();
         let name: string | null = null;
         while (true) {
-            let ch = this.nextText(1);
+            const ch = this.nextText(1);
             switch (ch) {
                 case '<':
                     // start element

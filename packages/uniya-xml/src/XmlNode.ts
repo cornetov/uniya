@@ -1,5 +1,14 @@
 import { XmlTextReader } from "./XmlTextReader";
 
+export interface IXmlString {
+
+    /**
+     * Convert object to XML text.
+     * @param tabCount {number} The count of tabs in XML text format, by default -1 (not used).
+     */
+    toXMLString(tabCount: number): string
+}
+
 /**
  * @enum XML node type.
  */
@@ -246,7 +255,7 @@ export class XmlNodeSet {
 /**
  * @class XML node.
  */
-export class XmlNode {
+export class XmlNode implements IXmlString {
 
     // ** fields
     private _nodeType: XmlNodeType = XmlNodeType.None;
@@ -413,9 +422,9 @@ export class XmlNode {
     }
     /**
      * Convert node to XML text (see: parse).
-     * @param tabCount {number} The count of tabs in xml text format, by default -1 (not used).
+     * @param tabCount {number} The count of tabs in XML text format, by default -1 (not used).
      */
-    public toXMLString(tabCount: number = -1): string {
+    public toXMLString(tabCount = -1): string {
 
         // initialization
         let format = (tabCount >= 0);
@@ -479,7 +488,7 @@ export class XmlNode {
         // body
         if (this.hasChildNodes) {
 
-            // childs
+            // children
             for (const node of this._childNodes.toSet()) {
                 str += node.toXMLString(format ? tabCount++ : -1);
             }
@@ -507,7 +516,7 @@ export class XmlNode {
 
     /**
      * The read and parse XML tree, if successfully then returns root XML node; otherwise null.
-     * @param xml The xml text for parsing.
+     * @param xml The XML text for parsing.
      */
     public static parse(xml: string): XmlNode | null {
 
