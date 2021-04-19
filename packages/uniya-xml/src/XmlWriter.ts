@@ -1,4 +1,4 @@
-import { XmlNodeType, XmlArgumentError, XmlFormatError, XmlUnexpectedError } from "./XmlNode";
+import { IXmlNode, XmlNodeType, XmlArgumentError, XmlFormatError, XmlUnexpectedError } from "./XmlNode";
 
 /**
  * @class Abstract write XML data.
@@ -682,18 +682,18 @@ export abstract class XmlWriter {
     /**
      * Convert any value to XML string.
      * @param value {any} The value to text convert.
+     * @param tabCount {number} The count of tabs in XML text format, by default -1 (not used).
      */
-    public static toXMLString(value: any): string {
-    //public static toXMLString(value: IXmlString | string | Date | number | undefined): string {
+    public static toXMLString(value: IXmlNode | string | Date | number | undefined, tabCount = -1): string {
 
         // sanity
         if (value === undefined || value === null) return "";
 
-        // IXmlString
-        //if (value.isPrototypeOf())
-        //if (value.hasOwnProperty('toXMLString')) {
-        //    return value.toXMLString(-1);
-        //}
+        // IXmlNode
+        const node = value as IXmlNode;
+        if (node !== null) {
+            return node.toXMLString(tabCount);
+        }
 
         // date
         if (value instanceof Date) {

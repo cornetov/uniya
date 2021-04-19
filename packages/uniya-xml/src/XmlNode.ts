@@ -1,6 +1,6 @@
 import { XmlTextReader } from "./XmlTextReader";
 
-export interface IXmlString {
+export interface IXmlNode {
 
     /**
      * Convert object to XML text.
@@ -255,7 +255,7 @@ export class XmlNodeSet {
 /**
  * @class XML node.
  */
-export class XmlNode implements IXmlString {
+export class XmlNode implements IXmlNode {
 
     // ** fields
     private _nodeType: XmlNodeType = XmlNodeType.None;
