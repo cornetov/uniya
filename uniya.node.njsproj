@@ -36,6 +36,14 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="packages\uniya-drawing\LICENSE" />
+    <Content Include="packages\uniya-drawing\package.json" />
+    <Content Include="packages\uniya-drawing\README.md" />
+    <Content Include="packages\uniya-drawing\tsconfig.json" />
+    <Content Include="packages\uniya-imaging\LICENSE" />
+    <Content Include="packages\uniya-imaging\package.json" />
+    <Content Include="packages\uniya-imaging\README.md" />
+    <Content Include="packages\uniya-imaging\tsconfig.json" />
     <Content Include="packages\uniya-xml\package.json" />
     <Content Include="packages\uniya-xml\README.md" />
     <Content Include="packages\uniya-xml\tsconfig.json" />
@@ -50,6 +58,14 @@
     <Content Include="LICENSE" />
     <Content Include="package.json" />
     <Content Include="README.md" />
+    <TypeScriptCompile Include="packages\uniya-drawing\src\index.ts" />
+    <TypeScriptCompile Include="packages\uniya-drawing\src\rendering.ts" />
+    <TypeScriptCompile Include="packages\uniya-drawing\__tests__\base.test.d.ts" />
+    <TypeScriptCompile Include="packages\uniya-drawing\__tests__\base.test.ts" />
+    <TypeScriptCompile Include="packages\uniya-imaging\src\index.ts" />
+    <TypeScriptCompile Include="packages\uniya-imaging\src\pngEncoder.ts" />
+    <TypeScriptCompile Include="packages\uniya-imaging\__tests__\base.test.d.ts" />
+    <TypeScriptCompile Include="packages\uniya-imaging\__tests__\base.test.ts" />
     <TypeScriptCompile Include="packages\uniya-xml\src\index.ts" />
     <TypeScriptCompile Include="packages\uniya-xml\src\XmlNode.ts" />
     <TypeScriptCompile Include="packages\uniya-xml\src\XmlReader.ts" />
@@ -67,6 +83,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="packages\" />
+    <Folder Include="packages\uniya-drawing\" />
+    <Folder Include="packages\uniya-drawing\src\" />
+    <Folder Include="packages\uniya-drawing\__tests__\" />
+    <Folder Include="packages\uniya-imaging\" />
+    <Folder Include="packages\uniya-imaging\src\" />
+    <Folder Include="packages\uniya-imaging\__tests__\" />
     <Folder Include="packages\uniya-xml\" />
     <Folder Include="packages\uniya-xml\src\" />
     <Folder Include="packages\uniya-xml\__tests__\" />
