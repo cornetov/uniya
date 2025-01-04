@@ -1,0 +1,55 @@
+﻿@inject IDialogService DialogService
+
+<div class="navmenu">
+    <FluentStack Orientation="Orientation.Horizontal" Style="height: 330px;">
+        <FluentAppBar Style="height: 100%;">
+            <FluentAppBarItem Href="/"
+                              Match="NavLinkMatch.All"
+                              IconRest="HomeIcon()"
+                              IconActive="HomeIcon(active: true)"
+                              Text="Home"
+                              OnClick="HandleOnClick" />
+            <FluentAppBarItem Href="/AppBar"
+                              IconRest="CrmIcon()"
+                              IconActive="CrmIcon(active: true)"
+                              Text="CRM"
+                              OnClick="HandleOnClick" />
+            <FluentAppBarItem Href="/Docflow"
+                              IconRest="DocflowIcon()"
+                              IconActive="DocflowIcon(active: true)"
+                              Text="Docflow"
+                              OnClick="HandleOnClick" />
+        </FluentAppBar>
+        <FluentNavMenu Width="250">
+            <FluentNavLink Icon="@(new Icons.Regular.Size24.Home())">Item 1</FluentNavLink>
+            <FluentNavLink Icon="@(new Icons.Regular.Size24.Cloud())">Item 2</FluentNavLink>
+            <FluentNavGroup Title="Item 3">
+                <FluentNavLink Icon="@(new Icons.Regular.Size24.LeafOne())">Item 3.1</FluentNavLink>
+                <FluentNavLink Icon="@(new Icons.Regular.Size24.LeafTwo())">Item 3.2</FluentNavLink>
+            </FluentNavGroup>
+            <FluentNavLink Icon="@(new Icons.Regular.Size24.CalendarAgenda())" Disabled="true">Item 4</FluentNavLink>
+        </FluentNavMenu>
+    </FluentStack>
+</div>
+
+@code {
+    private bool expanded = false;
+
+    private static Icon HomeIcon(bool active = false) =>
+        active ? new Icons.Filled.Size24.Home()
+               : new Icons.Regular.Size24.Home();
+
+    private static Icon CrmIcon(bool active = false) =>
+        active ? new Icons.Filled.Size24.CloudEdit()
+               : new Icons.Regular.Size24.CloudFlow();
+
+    private static Icon DocflowIcon(bool active = false) =>
+        active ? new Icons.Filled.Size24.DocumentEdit()
+               : new Icons.Regular.Size24.DocumentEdit();
+
+
+    private void HandleOnClick(IAppBarItem item)
+    {
+        //DemoLogger.WriteLine($"Clicked {item.Text}!");
+    }
+}

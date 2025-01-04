@@ -1,0 +1,74 @@
+﻿@inherits LayoutComponentBase
+<FluentLayout>
+    <FluentHeader>
+        <FluentStack HorizontalAlignment="@HorizontalAlignment.Start"
+                     VerticalAlignment="@VerticalAlignment.Center"
+                     Style="height: 48px;">
+            <FluentIcon id="myPopover" Value="@(Icon.FromImageUrl("_content/Uniya.Shared/images/uniya-white.svg"))"
+                        Width="40px" Color="Color.Success"
+                        OnClick="@(() => _visible = !_visible)" />
+        </FluentStack>
+        <FluentStack HorizontalAlignment="@HorizontalAlignment.Center"
+                     VerticalAlignment="@VerticalAlignment.Center"
+                     Style="height: 48px; padding-inline-end: 100px; ">
+            Home
+        </FluentStack>
+        <FluentStack HorizontalAlignment="@HorizontalAlignment.End"
+                     VerticalAlignment="@VerticalAlignment.Center"
+                     Style="height: 48px; padding-inline-end: 10px; ">
+            <FluentProfileMenu Initials="AD"
+                               Style="--fluent-profile-menu-hover: var(--neutral-stroke-focus); padding: 4px;">
+                <StartTemplate>
+                    Administrator
+                </StartTemplate>
+                <HeaderTemplate>
+                    <FluentLabel Typo="@Typography.Header">Login</FluentLabel>
+                </HeaderTemplate>
+                <ChildContent>
+                    <div style="width: 250px; height: 80px">
+                        <FluentLabel Typo="@Typography.Header" Style="font-weight: bold;">Administrator</FluentLabel>
+                        <FluentLabel>cornetov@triotour.com</FluentLabel>
+                    </div>
+                </ChildContent>
+                <FooterTemplate>
+                    <FluentStack>
+                        <FluentSpacer />
+                        <FluentAnchor Appearance="@Appearance.Hypertext"
+                                      Href="https://triotour.com"
+                                      Target="_blank">About</FluentAnchor>
+                    </FluentStack>
+                </FooterTemplate>
+            </FluentProfileMenu>
+        </FluentStack>
+    </FluentHeader>
+    <FluentStack Class="main" Orientation="Orientation.Horizontal" Width="100%">
+        <NavMenu />
+        <FluentBodyContent Class="body-content">
+            <div class="content">
+                @Body
+            </div>
+        </FluentBodyContent>
+    </FluentStack>
+    <FluentPopover Style="width: 300px;" VerticalThreshold="170" AnchorId="myPopover" @bind-Open="_visible">
+        <Body>
+            <LayoutMenu />
+        </Body>
+        <Footer>Layout Menu Footer</Footer>
+    </FluentPopover>
+    <FluentFooter>
+        Ready
+        <FluentSpacer />
+        <a href="https://triortour.com/" target="_blank">Triotour © 2025. All rights reserved.</a>
+    </FluentFooter>
+</FluentLayout>
+
+
+<div id="blazor-error-ui" data-nosnippet>
+    An unhandled error has occurred.
+    <a href="." class="reload">Reload</a>
+    <span class="dismiss">🗙</span>
+</div>
+
+@code {
+    bool _visible;
+}

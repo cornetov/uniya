@@ -1,0 +1,57 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uniya", "Blazor\Uniya\Uniya.csproj", "{896E12F3-CCAD-46B4-A104-1C5321536431}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uniya.Shared", "Blazor\Uniya.Shared\Uniya.Shared.csproj", "{BEE5C33A-911E-4717-BC9A-0EE5F38C77F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uniya.Web", "Blazor\Uniya.Web\Uniya.Web.csproj", "{94A11CD8-FF03-419E-A751-696E37B3D248}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uniya.CMS", "Shared\CMS\Uniya.CMS.csproj", "{DE7043D1-D83E-491B-922E-29B01B576049}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uniya.Connectors.MsSql", "Shared\Connectors\MsSql\Uniya.Connectors.MsSql.csproj", "{2BB52625-0025-4F29-B36B-0461B338EAAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uniya.Connectors.Npgsql", "Shared\Connectors\Npgsql\Uniya.Connectors.Npgsql.csproj", "{7F4B8FDC-3436-4247-B487-C9247E5059A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uniya.Connectors.Sqlite", "Shared\Connectors\Sqlite\Uniya.Connectors.Sqlite.csproj", "{262868D7-6F2D-4CC9-B79D-D0471A5419A2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{896E12F3-CCAD-46B4-A104-1C5321536431}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{896E12F3-CCAD-46B4-A104-1C5321536431}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{896E12F3-CCAD-46B4-A104-1C5321536431}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{896E12F3-CCAD-46B4-A104-1C5321536431}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEE5C33A-911E-4717-BC9A-0EE5F38C77F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEE5C33A-911E-4717-BC9A-0EE5F38C77F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEE5C33A-911E-4717-BC9A-0EE5F38C77F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEE5C33A-911E-4717-BC9A-0EE5F38C77F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94A11CD8-FF03-419E-A751-696E37B3D248}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94A11CD8-FF03-419E-A751-696E37B3D248}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94A11CD8-FF03-419E-A751-696E37B3D248}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94A11CD8-FF03-419E-A751-696E37B3D248}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE7043D1-D83E-491B-922E-29B01B576049}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE7043D1-D83E-491B-922E-29B01B576049}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE7043D1-D83E-491B-922E-29B01B576049}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE7043D1-D83E-491B-922E-29B01B576049}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BB52625-0025-4F29-B36B-0461B338EAAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BB52625-0025-4F29-B36B-0461B338EAAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BB52625-0025-4F29-B36B-0461B338EAAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BB52625-0025-4F29-B36B-0461B338EAAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F4B8FDC-3436-4247-B487-C9247E5059A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F4B8FDC-3436-4247-B487-C9247E5059A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F4B8FDC-3436-4247-B487-C9247E5059A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F4B8FDC-3436-4247-B487-C9247E5059A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{262868D7-6F2D-4CC9-B79D-D0471A5419A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{262868D7-6F2D-4CC9-B79D-D0471A5419A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{262868D7-6F2D-4CC9-B79D-D0471A5419A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{262868D7-6F2D-4CC9-B79D-D0471A5419A2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
