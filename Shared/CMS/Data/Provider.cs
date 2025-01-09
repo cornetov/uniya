@@ -199,7 +199,7 @@ public class XProvider
         if (_types == null)
         {
             var baseType = typeof(IReadonlyData);
-            _types = new Dictionary<string, Type>();
+            _types = [];
             foreach (var assembly in AppDomain.CurrentDomain.GetAssemblies())
             {
                 try

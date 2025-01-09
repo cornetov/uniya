@@ -11,7 +11,6 @@ using _Id = System.Int64;
 
 namespace Uniya.CMS
 {
-
     // ----------------------------------------------------------------------------------------
     #region ** XSet collection interface
 
@@ -217,17 +216,17 @@ namespace Uniya.CMS
         public XSet()
         {
             // base
-            AddSet(Persons = new XSetCollection<IPerson>());
-            AddSet(Users = new XSetCollection<IUser>());
-            AddSet(Roles = new XSetCollection<IRole>());
-            AddSet(UserRoles = new XSetCollection<IUserRole>());
-            AddSet(UserSessions = new XSetCollection<IUserSession>());
+            AddSet(Persons = []);
+            AddSet(Users = []);
+            AddSet(Roles = []);
+            AddSet(UserRoles = []);
+            AddSet(UserSessions = []);
 
-            AddSet(Connections = new XSetCollection<IConnection>());
-            AddSet(Tasks = new XSetCollection<ITask>());
+            AddSet(Connections = []);
+            AddSet(Tasks = []);
 
-            AddSet(Parameters = new XSetCollection<IParameter>());
-            AddSet(Scripts = new XSetCollection<IScript>());
+            AddSet(Parameters = []);
+            AddSet(Scripts = []);
         }
 
         void AddSet(INotifyCollectionChanged notify)
