@@ -13,7 +13,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace Uniya.CMS;
+namespace Uniya.CMS.Data;
 
 /// <summary>The proxy for all IDB interfaces.</summary>
 public static class XProxy
@@ -414,7 +414,7 @@ public static class XProxy
     /// <returns>Gets encrypted data buffer.</returns>
     public static byte[] Encrypt(byte[] data, string password, SymmetricAlgorithm sa)
     {
-        using (var ct = sa.CreateEncryptor((new PasswordDeriveBytes(password, null)).GetBytes(16), new byte[16]))
+        using (var ct = sa.CreateEncryptor(new PasswordDeriveBytes(password, null).GetBytes(16), new byte[16]))
         using (var ms = new MemoryStream())
         using (var cs = new CryptoStream(ms, ct, CryptoStreamMode.Write))
         {
@@ -461,7 +461,7 @@ public static class XProxy
         // decrypt
         try
         {
-            using (var ct = sa.CreateDecryptor((new PasswordDeriveBytes(password, null)).GetBytes(16), new byte[16]))
+            using (var ct = sa.CreateDecryptor(new PasswordDeriveBytes(password, null).GetBytes(16), new byte[16]))
             using (var ms = new MemoryStream(Convert.FromBase64String(text)))
             using (var cs = new CryptoStream(ms, ct, CryptoStreamMode.Read))
             using (var sr = new StreamReader(cs, Encoding.UTF8))
@@ -506,7 +506,7 @@ public static class XProxy
     {
         try
         {
-            using (var ct = sa.CreateDecryptor((new PasswordDeriveBytes(password, null)).GetBytes(16), new byte[16]))
+            using (var ct = sa.CreateDecryptor(new PasswordDeriveBytes(password, null).GetBytes(16), new byte[16]))
             using (var ms = new MemoryStream(data))
             using (var cs = new CryptoStream(ms, ct, CryptoStreamMode.Read))
             using (var br = new BinaryReader(cs))

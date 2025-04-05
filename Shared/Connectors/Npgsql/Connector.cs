@@ -8,8 +8,8 @@ using System.Reflection;
 using System.Diagnostics;
 
 using Npgsql;
-
-using Uniya.CMS;
+using Uniya.CMS.Model;
+using Uniya.CMS.Data;
 
 namespace Uniya.Connectors.Npgsql;
 

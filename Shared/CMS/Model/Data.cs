@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Threading.Tasks;
+using Uniya.CMS.Data;
+
+
+
 
 #if ID_GUID
 using _Id = System.Guid;
@@ -11,9 +15,9 @@ using _Id = System.Int64;
 #endif
 
 // C# 10
-namespace Uniya.CMS;
+namespace Uniya.CMS.Model;
 
-/*********************************************************************************************/
+// ----------------------------------------------------------------------------------------
 #region ** connector/timed
 
 /// <summary>
@@ -99,7 +103,7 @@ public interface INoteDB : IDB
 
 #endregion
 
-/*********************************************************************************************/
+// ----------------------------------------------------------------------------------------
 #region ** local database
 
 /// <summary>The type of a connector.</summary>
@@ -125,7 +129,7 @@ public interface ILocalDb
     /// <summary>Gets or sets name of database and file.</summary>
     string Name { get; set; }
     /// <summary>Gets design data interface.</summary>
-    ITransactedData Data { get;}
+    ITransactedData Data { get; }
 
     /// <summary>
     /// Create new database file using database name.
@@ -154,7 +158,7 @@ public interface ILocalDb
 
 #endregion
 
-/*********************************************************************************************/
+// ----------------------------------------------------------------------------------------
 #region ** data main
 
 public interface IEntitySet

@@ -8,8 +8,8 @@ using System.Reflection;
 using System.Diagnostics;
 
 using Microsoft.Data.SqlClient;
-
-using Uniya.CMS;
+using Uniya.CMS.Model;
+using Uniya.CMS.Data;
 
 namespace Uniya.Connectors.MsSql;
 
@@ -99,7 +99,7 @@ public class MsSqlConnector : SqlConnector, ITransactedData
         return collection;
     }
 
-    XEntity Read(string entityName, IDataReader reader)
+    private static XEntity Read(string entityName, IDataReader reader)
     {
         var entity = new XEntity(entityName);
         for (int i = 0; i < reader.FieldCount; i++)

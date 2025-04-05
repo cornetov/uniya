@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
-using Uniya.CMS;
+using Uniya.CMS.Data;
 
 namespace Uniya.Connectors.MsSql;
 

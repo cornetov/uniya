@@ -9,6 +9,7 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Reflection;
 using System.Diagnostics;
+using Uniya.CMS.Model;
 
 #if ID_GUID
 using _Id = System.Guid;
@@ -16,7 +17,7 @@ using _Id = System.Guid;
 using _Id = System.Int64;
 #endif
 
-namespace Uniya.CMS;
+namespace Uniya.CMS.Data;
 
 // -------------------------------------------------------------------------
 #region ** database schema
@@ -123,7 +124,7 @@ public partial class XSchema : ISchema
                 keys = new Dictionary<string, bool>();
                 foreach (var column in Tables[idx].Columns)
                 {
-                    var foreignTable = (column.ForeignTable != null) ? column.ForeignTable.ToLower() : string.Empty;
+                    var foreignTable = column.ForeignTable != null ? column.ForeignTable.ToLower() : string.Empty;
                     if ((column.Requirement & XRequirementOptions.ForeignKey) != 0 && !keys.ContainsKey(foreignTable))
                     {
                         var required = (column.Requirement & XRequirementOptions.Required) != 0
@@ -159,13 +160,13 @@ public partial class XSchema : ISchema
                     {
                         if ((column.Requirement & XRequirementOptions.ForeignKey) != 0)
                         {
-                            var foreignTable = (column.ForeignTable != null) ? column.ForeignTable.ToLower() : string.Empty;
+                            var foreignTable = column.ForeignTable != null ? column.ForeignTable.ToLower() : string.Empty;
                             if (tableName.Equals(foreignTable))
                             {
                                 // already sorted?
-                                cross = ((column.Requirement & XRequirementOptions.Required) != 0
+                                cross = (column.Requirement & XRequirementOptions.Required) != 0
                                     || (column.Requirement & XRequirementOptions.Recommended) != 0
-                                    || (column.Requirement & XRequirementOptions.UniqueKey) != 0);
+                                    || (column.Requirement & XRequirementOptions.UniqueKey) != 0;
                                 break;
                             }
                         }
@@ -248,9 +249,9 @@ public partial class XSchema : ISchema
         if (dataType1 == dataType2)
             return true;
         if (dataType1 == XDataType.Int64)
-            return (dataType2 == XDataType.Int32 || dataType2 == XDataType.Int16);
+            return dataType2 == XDataType.Int32 || dataType2 == XDataType.Int16;
         if (dataType1 == XDataType.Int32)
-            return (dataType2 == XDataType.Int16);
+            return dataType2 == XDataType.Int16;
         return false;
     }
 
@@ -280,7 +281,7 @@ public partial class XSchema : ISchema
             return XDataType.Decimal;
         if (type == typeof(float) || type == typeof(double))
             return XDataType.Double;
-        if (type == typeof(Guid))
+        if (type == typeof(_Id))
             return XDataType.Guid;
         //if (type == typeof(short) || type == typeof(ushort))
         //    return XDataType.Int16;
@@ -355,13 +356,13 @@ public partial class XSchema : ISchema
             case XDataType.DateTime: return typeof(DateTime);
             case XDataType.Decimal: return typeof(decimal);
             case XDataType.Double: return typeof(double);
-            case XDataType.Guid: return typeof(Guid);
+            case XDataType.Guid: return typeof(_Id);
             //case XDataType.Int16: return typeof(short);
             case XDataType.Int32: return typeof(int);
             case XDataType.Int64: return typeof(long);
             case XDataType.String: return typeof(string);
-            //case XDataType.Time: return typeof(DateTime);
-            //case XDataType.Xml: return typeof(XmlDocument);
+                //case XDataType.Time: return typeof(DateTime);
+                //case XDataType.Xml: return typeof(XmlDocument);
         }
 
         // default
@@ -519,7 +520,7 @@ public partial class XTableSchema : ITableSchema
     /// <returns>The column schema.</returns>
     public IColumnSchema GetColumnSchema(string itemName)
     {
-        foreach (var column in this.Columns)
+        foreach (var column in Columns)
         {
             if (itemName.Equals(column.Name))
             {

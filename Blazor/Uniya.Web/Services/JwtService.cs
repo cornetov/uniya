@@ -6,14 +6,14 @@ using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-
-using Uniya.CMS;
 using Uniya.Web.Models;
 using Uniya.Shared.Services;
+using Uniya.CMS.Model;
+using Uniya.CMS.Data;
 
 public interface IJwtService
 {
-    UserToken GenerateToken(IUser user);
+    XUserToken GenerateToken(IUser user);
     bool ValidateAccessToken(string? token, out string userName, out List<string> userRoles);
     bool ValidateRefreshToken(string? token, out Guid guid, out DateTime expires);
 }
@@ -22,21 +22,22 @@ public class JwtService(IOptions<AppSettings> appSettings) : IJwtService
 {
     private readonly AppSettings _appSettings = appSettings.Value;
 
-    public UserToken GenerateToken(IUser user)
+    public XUserToken GenerateToken(IUser user, params string[] roles)
     {
         // expires date and time
-        var dtNow = DateTime.Now;
+        var dtNow = DateTime.UtcNow;
         var expires = dtNow.AddMinutes(_appSettings.FastInMinutes);
 
         // user identifier and roles
-        List<Claim> claims = new List<Claim>
-        {
+        List<Claim> claims =
+        [
             new Claim(ClaimTypes.Name, user.Name),
-            new Claim(ClaimTypes.Role, XRole.Reader),
-            new Claim(ClaimTypes.Role, XRole.Writer),
-            new Claim(ClaimTypes.Role, XRole.Administrator),
             new Claim(ClaimTypes.Expired, expires.ToString("u"))
-        };
+        ];
+        foreach (var role in roles)
+        {
+            claims.Add(new Claim(ClaimTypes.Role, role));
+        }
 
         // access token
         var tokenHandler = new JwtSecurityTokenHandler();
@@ -76,7 +77,7 @@ public class JwtService(IOptions<AppSettings> appSettings) : IJwtService
         //var token = tokenHandler.CreateToken(tokenDescriptor);
         //return tokenHandler.WriteToken(token);
 
-        return new UserToken()
+        return new XUserToken()
         {
             AccessToken = tokenHandler.WriteToken(token),
             RefreshToken = Convert.ToBase64String(data)

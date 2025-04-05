@@ -3,10 +3,10 @@
 using Microsoft.Extensions.Options;
 
 using System.Security.Claims;
-
-using Uniya.CMS;
 using Uniya.Web.Models;
 using Uniya.Shared.Services;
+using Uniya.CMS.Model;
+using Uniya.CMS.Data;
 
 public class UserService : IUserService
 {
@@ -31,16 +31,24 @@ public class UserService : IUserService
     //}
 
     //public string Login(string login, string password)
-    public UserToken Login(IUser user)
+    public XUserToken Login(IUser user)
     {
+        // create session
+        var userToken = _jwtService.GenerateToken(user, );
+        return userToken;
+    }
+    public async Task<XUserToken> Login(string userEmail, string password)
+    {
+        _userContext.Users
+
         // create session
         var userToken = _jwtService.GenerateToken(user);
         return userToken;
     }
-    public UserToken Refresh(UserToken userToken)
+    public XUserToken Refresh(XUserToken userToken)
     {
         // update session
-        return new UserToken() { AccessToken = "", RefreshToken = "" };
+        return new XUserToken() { AccessToken = "", RefreshToken = "" };
     }
 
     public string GetMyName()

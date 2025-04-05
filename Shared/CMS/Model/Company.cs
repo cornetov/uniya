@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
+using Uniya.CMS.Model;
+
 
 #if ID_GUID
 using _Id = System.Guid;

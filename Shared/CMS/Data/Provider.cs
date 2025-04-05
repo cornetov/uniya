@@ -13,8 +13,9 @@ using System.Dynamic;
 using System.Text.Json.Serialization;
 using System.Xml.Linq;
 using System.Text.RegularExpressions;
+using Uniya.CMS.Model;
 
-namespace Uniya.CMS;
+namespace Uniya.CMS.Data;
 
 /// <summary>The data provider.</summary>
 public class XProvider
@@ -25,7 +26,7 @@ public class XProvider
     //string _id;
     private ISchema _schema;
     private ILocalDb _local;
-    private readonly ITransactedData _main;
+    private readonly ITransactedData _data;
     private Dictionary<string, KeyValuePair<IConnection, IReadonlyData>> _dbs = new();
 
     //private string _entityName;
@@ -33,12 +34,12 @@ public class XProvider
     //static ObservableCollection<KeyValuePair<string, string>> _names = new ObservableCollection<KeyValuePair<string, string>>();
 
     /// <summary>
-    /// The main database provider.
+    /// The database provider.
     /// </summary>
-    /// <param name="data"></param>
+    /// <param name="data">The trancacted database.</param>
     protected XProvider(ITransactedData data)
     {
-        _main = data;
+        _data = data;
     }
 
     #endregion
@@ -84,7 +85,7 @@ public class XProvider
         // initialization
         if (_dbs.Count == 0)
         {
-            foreach (var entity in await _main.Read("Connection"))
+            foreach (var entity in await _data.Read("Connection"))
             {
                 var connection = entity.To<IConnection>();
                 _dbs.Add(connection.Name, new KeyValuePair<IConnection, IReadonlyData>(connection, null));
@@ -111,7 +112,7 @@ public class XProvider
         var databases = await GetDatabases(database);
         if (databases.Count == 0)
         {
-            foreach (var entity in await _main.Read("Connection"))
+            foreach (var entity in await _data.Read("Connection"))
             {
                 var connection = entity.To<IConnection>();
                 _dbs.Add(connection.Name, new KeyValuePair<IConnection, IReadonlyData>(connection, null));
@@ -137,16 +138,18 @@ public class XProvider
     // ------------------------------------------------------------------------------------
     #region ** static object model
 
+    public static XProvider Main
+    {
+        get;
+        private set;
+    }
     public static async Task<XProvider> LocalDatabase(ILocalDb db)
     {
         // sanity
-        if (db == null)
-        {
-            throw new ArgumentNullException(nameof(db));
-        }
+        ArgumentNullException.ThrowIfNull(db);
 
         // schema
-        ISchema schema = null;
+        ISchema schema;
 
         // exist database?
         if (db.IsExist)
@@ -181,6 +184,7 @@ public class XProvider
             _schema = schema,
             _local = db
         };
+        Main ??= provider;
 
         // done
         return provider;

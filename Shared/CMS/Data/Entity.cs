@@ -17,8 +17,9 @@ using Microsoft.VisualBasic;
 using System.Data;
 using System.Linq;
 using System.Xml;
+using Uniya.CMS.Model;
 
-namespace Uniya.CMS;
+namespace Uniya.CMS.Data;
 
 // ----------------------------------------------------------------------------------------
 #region ** enumerations, flags and interfaces
@@ -62,9 +63,9 @@ public class XEntity : DynamicObject
     /// </summary>
     protected XEntity()
     {
-        this.Items = new XItemCollection();
-        this.OldItems = new XItemCollection();
-        this.Children = new List<XEntity>();
+        Items = new XItemCollection();
+        OldItems = new XItemCollection();
+        Children = new List<XEntity>();
     }
     /// <summary>
     /// Initialization using logical name of entities.
@@ -89,7 +90,7 @@ public class XEntity : DynamicObject
             // using table schema
             Schema = tableSchema;
         }
-        this.State = XEntityState.Created;
+        State = XEntityState.Created;
     }
     /// <summary>
     /// Initialization using logical name of entities.
@@ -98,8 +99,8 @@ public class XEntity : DynamicObject
     public XEntity(ITableSchema schema)
         : this()
     {
-        this.Schema = schema ?? throw new ArgumentNullException("schema");
-        this.State = XEntityState.Created;
+        Schema = schema ?? throw new ArgumentNullException("schema");
+        State = XEntityState.Created;
     }
 
     #endregion
@@ -130,9 +131,9 @@ public class XEntity : DynamicObject
         var itemName = binder.Name;
 
         // schema sanity
-        if (this.Schema != null)
+        if (Schema != null)
         {
-            var column = this.Schema.GetColumnSchema(itemName);
+            var column = Schema.GetColumnSchema(itemName);
             if (column == null)
             {
                 // bad done
@@ -196,7 +197,7 @@ public class XEntity : DynamicObject
             }
             catch { }
         }
-        return default(T);
+        return default;
     }
     /// <summary>
     /// Sets item (attribute) value.
@@ -214,9 +215,9 @@ public class XEntity : DynamicObject
         }
 
         // schema sanity
-        if (this.Schema != null)
+        if (Schema != null)
         {
-            var column = this.Schema.GetColumnSchema(itemName);
+            var column = Schema.GetColumnSchema(itemName);
             if (column == null)
             {
                 // bad done
@@ -240,11 +241,11 @@ public class XEntity : DynamicObject
         }
 
         // change state and save old value
-        if (this.State == XEntityState.Actual)
+        if (State == XEntityState.Actual)
         {
-            this.State = XEntityState.Modified;
+            State = XEntityState.Modified;
         }
-        if (this.State == XEntityState.Modified && !OldItems.ContainsKey(itemName))
+        if (State == XEntityState.Modified && !OldItems.ContainsKey(itemName))
         {
             OldItems.SetItem(itemName, old);
         }
@@ -284,8 +285,8 @@ public class XEntity : DynamicObject
     {
         get
         {
-            var value = Items.GetItem(this.PrimaryKey);
-            return (value != null) ? value.ToString() : string.Empty;
+            var value = Items.GetItem(PrimaryKey);
+            return value != null ? value.ToString() : string.Empty;
         }
         set
         {
@@ -339,12 +340,12 @@ public class XEntity : DynamicObject
     /// </summary>
     public string PrimaryKey
     {
-        get { return (Schema != null) ? Schema.PrimaryKey : GetPrimaryKey(EntityName, Items, GetTable(EntityName)); }
+        get { return Schema != null ? Schema.PrimaryKey : GetPrimaryKey(EntityName, Items, GetTable(EntityName)); }
     }
     /// <summary>Gets logical name of the entity.</summary>
     public string EntityName
     {
-        get { return (Schema != null) ? Schema.Name : _entityName; }
+        get { return Schema != null ? Schema.Name : _entityName; }
         protected set { _entityName = value; }
     }
 
@@ -504,7 +505,7 @@ public class XEntity : DynamicObject
         }
 
         // create
-        var entity = (schema != null) ? new XEntity(schema) : new XEntity(entityName);
+        var entity = schema != null ? new XEntity(schema) : new XEntity(entityName);
 
         // column cache
         var columns = new Dictionary<string, IColumnSchema>();
@@ -560,13 +561,13 @@ public class XEntity : DynamicObject
     {
         // all clone
         var zero = string.IsNullOrWhiteSpace(entityName);
-        var clone = (!zero && fast) ? this : (XEntity)MemberwiseClone();
+        var clone = !zero && fast ? this : (XEntity)MemberwiseClone();
 
         // children
         clone.Children = new List<XEntity>();
         if (!fast)
         {
-            foreach (var child in this.Children)
+            foreach (var child in Children)
                 clone.Children.Add(child.Clone());
         }
 
@@ -586,8 +587,8 @@ public class XEntity : DynamicObject
     /// <returns>A string that represents the current object.</returns>
     public override string ToString()
     {
-        var id = (EntityId != null) ? EntityId : string.Empty;
-        var name = (EntityName != null) ? EntityName : string.Empty;
+        var id = EntityId != null ? EntityId : string.Empty;
+        var name = EntityName != null ? EntityName : string.Empty;
         return string.Format("{0}[{1}]", name, id);
     }
 
@@ -617,7 +618,7 @@ public class XEntity : DynamicObject
     public string GetItemText(string itemName)
     {
         var value = GetItemValue(itemName);
-        return (value != null) ? new XElement("n", value).Value : string.Empty;
+        return value != null ? new XElement("n", value).Value : string.Empty;
     }
 
     /// <summary>
@@ -627,9 +628,9 @@ public class XEntity : DynamicObject
     public void Actualization(string entityName = null)
     {
         if (!string.IsNullOrEmpty(entityName))
-            this.EntityName = entityName;
-        this.State = XEntityState.Actual;
-        this.OldItems.Clear();
+            EntityName = entityName;
+        State = XEntityState.Actual;
+        OldItems.Clear();
     }
     /// <summary>
     /// Actualization data of this entity with set new entity name.
@@ -825,7 +826,7 @@ public class XEntity : DynamicObject
     {
         // sanity
         var primaryKey = "Id";
-        if (!string.IsNullOrEmpty(entityName) && ((items != null && items.Count > 0) || table != null))
+        if (!string.IsNullOrEmpty(entityName) && (items != null && items.Count > 0 || table != null))
         {
             // perhaps primary keys
             var lowerName = entityName.ToLower();
@@ -870,7 +871,7 @@ public class XEntity : DynamicObject
             }
 
             // use entity name
-            if (Char.IsLower(entityName, 0))
+            if (char.IsLower(entityName, 0))
             {
                 Debug.Assert(entityName.Equals(entityName.ToLower()));
                 primaryKey = string.Format("{0}id", entityName);
@@ -962,7 +963,7 @@ public class XEntity : DynamicObject
                     }
                 }
             }
-            if (Char.IsLower(entityName, 0))
+            if (char.IsLower(entityName, 0))
             {
                 Debug.Assert(entityName.Equals(entityName.ToLower()));
                 return string.Format("parent{0}id", entityName);
@@ -1208,7 +1209,7 @@ public class XEntity : DynamicObject
             // for next key
             while (idx < text.Length && text[idx] != '"')
             {
-                Debug.Assert(text[idx] == ',' || Char.IsWhiteSpace(text, idx));
+                Debug.Assert(text[idx] == ',' || char.IsWhiteSpace(text, idx));
                 idx++;
             }
 
@@ -1225,7 +1226,7 @@ public class XEntity : DynamicObject
             {
                 if (start == i)
                 {
-                    if (Char.IsWhiteSpace(text, i))
+                    if (char.IsWhiteSpace(text, i))
                     {
                         start = i;
                         continue;
@@ -1321,14 +1322,14 @@ public class XEntity : DynamicObject
         var number = false;
         for (int i = index; i < text.Length; i++)
         {
-            if (Char.IsWhiteSpace(text, i)) break;
-            if (Char.IsPunctuation(text, i))
+            if (char.IsWhiteSpace(text, i)) break;
+            if (char.IsPunctuation(text, i))
             {
                 if (!number || text[i] == ',') break;
             }
-            if (Char.IsNumber(text, i))
+            if (char.IsNumber(text, i))
             {
-                number |= (i == index);
+                number |= i == index;
             }
             length++;
         }
@@ -1465,7 +1466,7 @@ public class XEntity : DynamicObject
         // boolean?
         if (value is bool)
         {
-            return ((bool)value) ? "true" : "false";
+            return (bool)value ? "true" : "false";
         }
 
         // integer?
@@ -1489,7 +1490,7 @@ public class XEntity : DynamicObject
         // entity?
         if (value is XEntity)
         {
-            return XEntity.ToText((XEntity)value);
+            return ToText((XEntity)value);
         }
 
         // unknown?
@@ -1499,7 +1500,7 @@ public class XEntity : DynamicObject
 
     static bool IsZero(object value)
     {
-        if (value is Int16 || value is Int32 || value is Int64 || value is UInt16 || value is UInt32 || value is UInt64)
+        if (value is short || value is int || value is long || value is ushort || value is uint || value is ulong)
         {
             return Convert.ToInt64(value) == 0;
         }
@@ -1672,7 +1673,7 @@ public partial class XEntityCollection : XCollection<XEntity, string>, IEntitySe
     {
         // insert entity
         base.InsertItem(index, item);
-        
+
         // collection name
         if (string.IsNullOrEmpty(EntityName))
         {
@@ -1729,7 +1730,7 @@ public partial class XEntityCollection : XCollection<XEntity, string>, IEntitySe
                     for (int i = idx + 1; i < Count; i++)
                     {
                         var obj = this[i][primaryKey];
-                        var id = (obj is XEntityReference) ? ((XEntityReference)obj).Id : obj.ToString();
+                        var id = obj is XEntityReference ? ((XEntityReference)obj).Id : obj.ToString();
                         if (id.Equals(parentId))
                         {
                             // swap
@@ -1843,7 +1844,7 @@ public partial class XEntityCollection : XCollection<XEntity, string>, IEntitySe
         sb.Append("{#").Append(EntityName).Append('[');
 
         // body
-        for (int i = 0; i < this.Count; i++)
+        for (int i = 0; i < Count; i++)
         {
             if (i > 0) sb.Append(',');
             sb.Append(XEntity.ToText(this[i]));
@@ -2805,7 +2806,7 @@ internal class ODataQueryParser
                 {
                     throw new XSchemaException($"Incorrect expand", table);
                 }
-                var name = (ss.Length > 1) ? ss[1].Trim() : $"{table}Id";
+                var name = ss.Length > 1 ? ss[1].Trim() : $"{table}Id";
 
                 // test table
                 var tables = _schema.Tables as XCollection<ITableSchema, string>;
@@ -3162,11 +3163,11 @@ public static class CollectionExtensions
         where TKey : class
     {
         TValue value;
-        if (TryGetValue(collection, key, out value))
+        if (collection.TryGetValue(key, out value))
         {
             return value;
         }
-        return default(TValue);
+        return default;
     }
 
     public static void SetItem<TKey, TValue>(this IList<KeyValuePair<TKey, TValue>> collection, TKey key,
@@ -3221,7 +3222,7 @@ public static class CollectionExtensions
             return true;
         }
 
-        value = default(TValue);
+        value = default;
         return false;
     }
 

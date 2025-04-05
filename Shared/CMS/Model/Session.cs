@@ -4,13 +4,47 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
+
 #if ID_GUID
 using _Id = System.Guid;
 #else
 using _Id = System.Int64;
 #endif
 
-namespace Uniya.CMS;
+namespace Uniya.CMS.Model;
+
+// ----------------------------------------------------------------------------------------
+#region ** register and login support
+
+/// <summary>For user login.</summary>
+public class XLoginUser
+{
+    /// <summary>Gets or sets unique user name.</summary>
+    [Obsolete]
+    public string UserName { get; set; } = "";
+    /// <summary>Gets or sets unique user email.</summary>
+    public string UserEmail { get; set; } = "";
+    /// <summary>Gets or sets user password.</summary>
+    public string Password { get; set; } = "";
+}
+
+/// <summary>For user register.</summary>
+public class XRegisterUser
+{
+    /// <summary>Gets or sets user name.</summary>
+    public string Name { get; set; } = "";
+    /// <summary>Gets or sets unique user name.</summary>
+    [Obsolete]
+    public string UserName { get; set; } = "";
+    /// <summary>Gets or sets unique user email.</summary>
+    public string UserEmail { get; set; } = "";
+    /// <summary>Gets or sets user password.</summary>
+    public string Password { get; set; } = "";
+    /// <summary>Gets or sets user main role.</summary>
+    public string Role { get; set; } = "Guest";
+}
+
+#endregion
 
 // ----------------------------------------------------------------------------------------
 #region ** role support

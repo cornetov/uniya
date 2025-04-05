@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Threading.Tasks;
 
+
 #if ID_GUID
 using _Id = System.Guid;
 #else
@@ -11,7 +12,7 @@ using _Id = System.Int64;
 #endif
 
 // C# 10
-namespace Uniya.CMS;
+namespace Uniya.CMS.Model;
 
 /*********************************************************************************************/
 #region ** schema types

@@ -37,8 +37,8 @@ using System.Reflection;
 using System.Diagnostics;
 
 using Microsoft.Data.Sqlite;
-
-using Uniya.CMS;
+using Uniya.CMS.Model;
+using Uniya.CMS.Data;
 
 namespace Uniya.Connectors.Sqlite;
 
