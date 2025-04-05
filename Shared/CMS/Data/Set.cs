@@ -2,6 +2,10 @@
 using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 using System.Collections.Generic;
+using Uniya.CMS.Model;
+
+
+
 
 #if ID_GUID
 using _Id = System.Guid;
@@ -9,7 +13,7 @@ using _Id = System.Guid;
 using _Id = System.Int64;
 #endif
 
-namespace Uniya.CMS
+namespace Uniya.CMS.Data
 {
     // ----------------------------------------------------------------------------------------
     #region ** XSet collection interface
@@ -54,7 +58,7 @@ namespace Uniya.CMS
                     return this[idx];
             }
             XSet.Trace($"Not found a object for ID={id}", 'w');
-            return default(T);
+            return default;
         }
 
         // ** support ISetCollection
@@ -369,16 +373,16 @@ namespace Uniya.CMS
             switch (e.Action)
             {
                 case NotifyCollectionChangedAction.Add:
-                    newText = (e.NewItems[0] != null) ? e.NewItems[0].ToString() : "NULL";
+                    newText = e.NewItems[0] != null ? e.NewItems[0].ToString() : "NULL";
                     Trace($"Added new object: {newText}");
                     break;
                 case NotifyCollectionChangedAction.Remove:
-                    oldText = (e.OldItems[0] != null) ? e.OldItems[0].ToString() : "NULL";
+                    oldText = e.OldItems[0] != null ? e.OldItems[0].ToString() : "NULL";
                     Trace($"Removed the object: {oldText}");
                     break;
                 case NotifyCollectionChangedAction.Replace:
-                    newText = (e.NewItems[0] != null) ? e.NewItems[0].ToString() : "NULL";
-                    oldText = (e.OldItems[0] != null) ? e.OldItems[0].ToString() : "NULL";
+                    newText = e.NewItems[0] != null ? e.NewItems[0].ToString() : "NULL";
+                    oldText = e.OldItems[0] != null ? e.OldItems[0].ToString() : "NULL";
                     Trace($"Object {oldText} replaced ob object {newText}");
                     break;
             }
@@ -398,7 +402,7 @@ namespace Uniya.CMS
 
             person = XProxy.Get<IPerson>();
 #if ID_GUID
-            person.Id = Guid.Parse("d16f4eaf-1239-45b2-b212-3497cac73546");
+            person.Id = _Id.Parse("d16f4eaf-1239-45b2-b212-3497cac73546");
 #else
             person.Id = 1;
 #endif
@@ -415,7 +419,7 @@ namespace Uniya.CMS
 
             user = XProxy.Get<IUser>();
 #if ID_GUID
-            user.Id = Guid.Parse("64cb86fe-58cf-4c3a-bfe7-d54cbefbaf38");
+            user.Id = _Id.Parse("64cb86fe-58cf-4c3a-bfe7-d54cbefbaf38");
 #else
             user.Id = 1;
             //user.PersonId = 1;
@@ -437,9 +441,9 @@ namespace Uniya.CMS
 
             role = XProxy.Get<IRole>();
 #if ID_GUID
-            role.Id = Guid.Parse("ac9df305-4631-4a45-bb46-1e90d3775a14");
-            role.CreatedUserId = Guid.Parse("64cb86fe-58cf-4c3a-bfe7-d54cbefbaf38");
-            role.ModifiedUserId = Guid.Parse("64cb86fe-58cf-4c3a-bfe7-d54cbefbaf38");
+            role.Id = _Id.Parse("ac9df305-4631-4a45-bb46-1e90d3775a14");
+            role.CreatedUserId = _Id.Parse("64cb86fe-58cf-4c3a-bfe7-d54cbefbaf38");
+            role.ModifiedUserId = _Id.Parse("64cb86fe-58cf-4c3a-bfe7-d54cbefbaf38");
 #else
             role.Id = 1;
             role.CreatedUserId = 1;
@@ -455,10 +459,10 @@ namespace Uniya.CMS
 
             role = XProxy.Get<IRole>();
 #if ID_GUID
-            role.Id = Guid.Parse("b20f5556-d065-4ebd-923b-b0f6111be6d3");
-            role.ParentId = Guid.Parse("ac9df305-4631-4a45-bb46-1e90d3775a14");
-            role.CreatedUserId = Guid.Parse("64cb86fe-58cf-4c3a-bfe7-d54cbefbaf38");
-            role.ModifiedUserId = Guid.Parse("64cb86fe-58cf-4c3a-bfe7-d54cbefbaf38");
+            role.Id = _Id.Parse("b20f5556-d065-4ebd-923b-b0f6111be6d3");
+            role.ParentId = _Id.Parse("ac9df305-4631-4a45-bb46-1e90d3775a14");
+            role.CreatedUserId = _Id.Parse("64cb86fe-58cf-4c3a-bfe7-d54cbefbaf38");
+            role.ModifiedUserId = _Id.Parse("64cb86fe-58cf-4c3a-bfe7-d54cbefbaf38");
 #else
             role.Id = 2;
             role.ParentId = 1;
@@ -475,10 +479,10 @@ namespace Uniya.CMS
 
             role = XProxy.Get<IRole>();
 #if ID_GUID
-            role.Id = Guid.Parse("cc12dda6-c98a-4ec5-969b-793019c2ca3a");
-            role.ParentId = Guid.Parse("ac9df305-4631-4a45-bb46-1e90d3775a14");
-            role.CreatedUserId = Guid.Parse("64cb86fe-58cf-4c3a-bfe7-d54cbefbaf38");
-            role.ModifiedUserId = Guid.Parse("64cb86fe-58cf-4c3a-bfe7-d54cbefbaf38");
+            role.Id = _Id.Parse("cc12dda6-c98a-4ec5-969b-793019c2ca3a");
+            role.ParentId = _Id.Parse("ac9df305-4631-4a45-bb46-1e90d3775a14");
+            role.CreatedUserId = _Id.Parse("64cb86fe-58cf-4c3a-bfe7-d54cbefbaf38");
+            role.ModifiedUserId = _Id.Parse("64cb86fe-58cf-4c3a-bfe7-d54cbefbaf38");
 #else
             role.Id = 3;
             role.ParentId = 2;
@@ -498,11 +502,11 @@ namespace Uniya.CMS
 
             userRole = XProxy.Get<IUserRole>();
 #if ID_GUID
-            userRole.Id = Guid.Parse("df0d7cd1-60e2-4ab9-9caf-d11f7cdfd3ca");
-            userRole.UserId = Guid.Parse("717c4df0-a4b3-4d75-b2b8-925658823efb");
-            userRole.RoleId = Guid.Parse("cc12dda6-c98a-4ec5-969b-793019c2ca3a");
-            userRole.CreatedUserId = Guid.Parse("64cb86fe-58cf-4c3a-bfe7-d54cbefbaf38");
-            userRole.ModifiedUserId = Guid.Parse("64cb86fe-58cf-4c3a-bfe7-d54cbefbaf38");
+            userRole.Id = _Id.Parse("df0d7cd1-60e2-4ab9-9caf-d11f7cdfd3ca");
+            userRole.UserId = _Id.Parse("717c4df0-a4b3-4d75-b2b8-925658823efb");
+            userRole.RoleId = _Id.Parse("cc12dda6-c98a-4ec5-969b-793019c2ca3a");
+            userRole.CreatedUserId = _Id.Parse("64cb86fe-58cf-4c3a-bfe7-d54cbefbaf38");
+            userRole.ModifiedUserId = _Id.Parse("64cb86fe-58cf-4c3a-bfe7-d54cbefbaf38");
 #else
             userRole.Id = 1;
             userRole.UserId = 1;
@@ -521,9 +525,9 @@ namespace Uniya.CMS
 
             connection = XProxy.Get<IConnection>();
 #if ID_GUID
-            connection.Id = Guid.Parse("c774b6ec-5cb6-4174-93a5-d13af6bd72fa");
-            connection.CreatedUserId = Guid.Parse("64cb86fe-58cf-4c3a-bfe7-d54cbefbaf38");
-            connection.ModifiedUserId = Guid.Parse("64cb86fe-58cf-4c3a-bfe7-d54cbefbaf38");
+            connection.Id = _Id.Parse("c774b6ec-5cb6-4174-93a5-d13af6bd72fa");
+            connection.CreatedUserId = _Id.Parse("64cb86fe-58cf-4c3a-bfe7-d54cbefbaf38");
+            connection.ModifiedUserId = _Id.Parse("64cb86fe-58cf-4c3a-bfe7-d54cbefbaf38");
 #else
             connection.Id = 1;
             connection.CreatedUserId = 1;
@@ -545,9 +549,9 @@ namespace Uniya.CMS
 
             task = XProxy.Get<ITask>();
 #if ID_GUID
-            task.Id = Guid.Parse("7b6473dc-6e0b-446c-aff8-500e55e64127");
-            task.CreatedUserId = Guid.Parse("64cb86fe-58cf-4c3a-bfe7-d54cbefbaf38");
-            task.ModifiedUserId = Guid.Parse("64cb86fe-58cf-4c3a-bfe7-d54cbefbaf38");
+            task.Id = _Id.Parse("7b6473dc-6e0b-446c-aff8-500e55e64127");
+            task.CreatedUserId = _Id.Parse("64cb86fe-58cf-4c3a-bfe7-d54cbefbaf38");
+            task.ModifiedUserId = _Id.Parse("64cb86fe-58cf-4c3a-bfe7-d54cbefbaf38");
 #else
             task.Id = 1;
             task.CreatedUserId = 1;
@@ -568,9 +572,9 @@ namespace Uniya.CMS
 
             parameter = XProxy.Get<IParameter>();
 #if ID_GUID
-            parameter.Id = Guid.Parse("60130f07-9b04-480c-aec2-f790230e6b22");
-            parameter.CreatedUserId = Guid.Parse("64cb86fe-58cf-4c3a-bfe7-d54cbefbaf38");
-            parameter.ModifiedUserId = Guid.Parse("64cb86fe-58cf-4c3a-bfe7-d54cbefbaf38");
+            parameter.Id = _Id.Parse("60130f07-9b04-480c-aec2-f790230e6b22");
+            parameter.CreatedUserId = _Id.Parse("64cb86fe-58cf-4c3a-bfe7-d54cbefbaf38");
+            parameter.ModifiedUserId = _Id.Parse("64cb86fe-58cf-4c3a-bfe7-d54cbefbaf38");
 #else
             parameter.Id = 1;
             parameter.CreatedUserId = 1;

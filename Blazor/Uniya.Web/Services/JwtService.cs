@@ -6,10 +6,10 @@ using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-
-using Uniya.CMS;
 using Uniya.Web.Models;
 using Uniya.Shared.Services;
+using Uniya.CMS.Data;
+using Uniya.CMS.Model;
 
 public interface IJwtService
 {

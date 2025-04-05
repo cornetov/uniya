@@ -39,6 +39,8 @@ using System.Diagnostics;
 using Microsoft.Data.Sqlite;
 
 using Uniya.CMS;
+using Uniya.CMS.Data;
+using Uniya.CMS.Model;
 
 namespace Uniya.Connectors.Sqlite;
 

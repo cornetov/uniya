@@ -10,7 +10,9 @@ using _Id = System.Guid;
 using _Id = System.Int64;
 #endif
 
-namespace Uniya.CMS;
+using Uniya.CMS.Data;
+
+namespace Uniya.CMS.Model;
 
 // ----------------------------------------------------------------------------------------
 #region ** role support

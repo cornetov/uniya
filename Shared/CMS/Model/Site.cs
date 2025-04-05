@@ -4,13 +4,14 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
+
 #if ID_GUID
 using _Id = System.Guid;
 #else
 using _Id = System.Int64;
 #endif
 
-namespace Uniya.CMS;
+namespace Uniya.CMS.Model;
 
 // ----------------------------------------------------------------------------------------
 #region ** topics by categories support

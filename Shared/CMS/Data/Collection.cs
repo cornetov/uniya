@@ -4,7 +4,7 @@ using System.Collections.ObjectModel;
 using System.Reflection;
 using System.Text;
 
-namespace Uniya.CMS;
+namespace Uniya.CMS.Data;
 
 /// <summary>
 /// Observable not null able collection with map by key (first property).

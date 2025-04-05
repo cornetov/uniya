@@ -1,6 +1,6 @@
 ﻿namespace Uniya.Shared.Services;
 
-using Uniya.CMS;
+using Uniya.CMS.Model;
 
 public interface IUserService
 {

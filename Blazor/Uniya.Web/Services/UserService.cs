@@ -3,10 +3,9 @@
 using Microsoft.Extensions.Options;
 
 using System.Security.Claims;
-
-using Uniya.CMS;
 using Uniya.Web.Models;
 using Uniya.Shared.Services;
+using Uniya.CMS.Model;
 
 public class UserService : IUserService
 {

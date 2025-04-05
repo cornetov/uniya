@@ -13,8 +13,9 @@ using System.Dynamic;
 using System.Text.Json.Serialization;
 using System.Xml.Linq;
 using System.Text.RegularExpressions;
+using Uniya.CMS.Model;
 
-namespace Uniya.CMS;
+namespace Uniya.CMS.Data;
 
 /// <summary>The data provider.</summary>
 public class XProvider

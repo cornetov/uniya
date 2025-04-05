@@ -11,8 +11,9 @@ using System.Threading.Tasks;
 using System.Reflection;
 using System.Diagnostics;
 using System.Threading;
+using Uniya.CMS.Model;
 
-namespace Uniya.CMS;
+namespace Uniya.CMS.Data;
 
 /// <summary>
 /// Base connector support.
@@ -54,7 +55,7 @@ public abstract class XConnector : IConnetor
         // do stuff columns
         var tables = new Dictionary<Type, Dictionary<string, IColumnSchema>>();
         var indexes = new Dictionary<Type, Dictionary<string, List<IColumnSchema>>>();
-                  
+
         // all timed classes
         foreach (Type type in assembly.GetTypes().Where(type => type.GetInterfaces().Contains(typeof(IDB))))
         {

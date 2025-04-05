@@ -4,6 +4,9 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Threading.Tasks;
 
+
+
+
 #if ID_GUID
 using _Id = System.Guid;
 #else
@@ -11,7 +14,7 @@ using _Id = System.Int64;
 #endif
 
 // C# 10
-namespace Uniya.CMS;
+namespace Uniya.CMS.Model;
 
 /*********************************************************************************************/
 #region ** connector/timed
@@ -125,7 +128,7 @@ public interface ILocalDb
     /// <summary>Gets or sets name of database and file.</summary>
     string Name { get; set; }
     /// <summary>Gets design data interface.</summary>
-    ITransactedData Data { get;}
+    ITransactedData Data { get; }
 
     /// <summary>
     /// Create new database file using database name.

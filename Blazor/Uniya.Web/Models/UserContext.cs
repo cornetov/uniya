@@ -1,6 +1,6 @@
 namespace Uniya.Web.Models;
 
-using Uniya.CMS;
+using Uniya.CMS.Model;
 
 public class UserContext
 {

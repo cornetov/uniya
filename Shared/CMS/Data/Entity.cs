@@ -17,6 +17,8 @@ using Microsoft.VisualBasic;
 using System.Data;
 using System.Linq;
 using System.Xml;
+using Uniya.CMS.Data;
+using Uniya.CMS.Model;
 
 namespace Uniya.CMS;
 

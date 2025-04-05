@@ -10,6 +10,8 @@ using System.Diagnostics;
 using Npgsql;
 
 using Uniya.CMS;
+using Uniya.CMS.Data;
+using Uniya.CMS.Model;
 
 namespace Uniya.Connectors.Npgsql;
 
