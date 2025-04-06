@@ -13,7 +13,7 @@ using Uniya.CMS.Model;
 
 public interface IJwtService
 {
-    UserToken GenerateToken(IUser user);
+    XUserToken GenerateToken(IUser user);
     bool ValidateAccessToken(string? token, out string userName, out List<string> userRoles);
     bool ValidateRefreshToken(string? token, out Guid guid, out DateTime expires);
 }
@@ -22,7 +22,7 @@ public class JwtService(IOptions<AppSettings> appSettings) : IJwtService
 {
     private readonly AppSettings _appSettings = appSettings.Value;
 
-    public UserToken GenerateToken(IUser user)
+    public XUserToken GenerateToken(IUser user)
     {
         // expires date and time
         var dtNow = DateTime.Now;
@@ -76,7 +76,7 @@ public class JwtService(IOptions<AppSettings> appSettings) : IJwtService
         //var token = tokenHandler.CreateToken(tokenDescriptor);
         //return tokenHandler.WriteToken(token);
 
-        return new UserToken()
+        return new XUserToken()
         {
             AccessToken = tokenHandler.WriteToken(token),
             RefreshToken = Convert.ToBase64String(data)

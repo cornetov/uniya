@@ -4,13 +4,14 @@ using Uniya.CMS.Model;
 
 public interface IUserService
 {
-    string GetMyName();
-    string[] GetMyRoles();
-    UserToken Login(IUser user);
-    UserToken Refresh(UserToken userToken);
+    Task<string> GetMyName();
+    Task<string[]> GetMyRoles();
+    Task<XUserToken> Login(IUser user);
+    Task<XUserToken> Register(XRegisterUser user);
+    Task<XUserToken> Refresh(XUserToken userToken);
 }
 
-public class UserToken
+public class XUserToken
 {
     public string AccessToken { get; set; } = string.Empty;
     public string RefreshToken { get; set; } = string.Empty;

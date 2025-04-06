@@ -6,6 +6,7 @@ using System.Security.Claims;
 using Uniya.Web.Models;
 using Uniya.Shared.Services;
 using Uniya.CMS.Model;
+using Uniya.CMS.Data;
 
 public class UserService : IUserService
 {
@@ -29,37 +30,46 @@ public class UserService : IUserService
     //    _httpContextAccessor = httpContextAccessor;
     //}
 
-    //public string Login(string login, string password)
-    public UserToken Login(IUser user)
+    public async Task<XUserToken> Login(IUser user)
     {
+        //IUser user = XProxy.Get<IUser>();
+        //_userContext.Users
+
         // create session
         var userToken = _jwtService.GenerateToken(user);
         return userToken;
     }
-    public UserToken Refresh(UserToken userToken)
+
+    public async Task<XUserToken> Register(XRegisterUser user)
     {
         // update session
-        return new UserToken() { AccessToken = "", RefreshToken = "" };
+        return new XUserToken() { AccessToken = "", RefreshToken = "" };
     }
 
-    public string GetMyName()
+    public async Task<XUserToken> Refresh(XUserToken userToken)
+    {
+        // update session
+        return new XUserToken() { AccessToken = "", RefreshToken = "" };
+    }
+
+    public async Task<string> GetMyName()
     {
         return GetMyName(_httpContext);
         //return GetMyName(_httpContextAccessor.HttpContext);
     }
-    public string[] GetMyRoles()
+    public async Task<string[]> GetMyRoles()
     {
         return GetMyRoles(_httpContext);
     }
 
     static string GetMyName(HttpContext? httpContext)
     {
-        var result = string.Empty;
+        string result = string.Empty;
         if (httpContext != null && httpContext.User != null)
         {
             result = httpContext.User.FindFirstValue(ClaimTypes.Name);
         }
-        return result;
+        return result ?? string.Empty;
     }
     static string[] GetMyRoles(HttpContext? httpContext)
     {
