@@ -2,6 +2,7 @@
 using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using Uniya.CMS.Model;
 
 
@@ -41,8 +42,8 @@ namespace Uniya.CMS.Data
         // ------------------------------------------------------------------------------------
         #region ** dynamic object model
 
-        private Dictionary<_Id, int> _cache = new();
-        private List<T> _deleted = new();
+        private Dictionary<_Id, int> _cache = [];
+        private readonly List<T> _deleted = [];
 
         /// <summary>
         /// Gets object by identifier.
@@ -342,11 +343,10 @@ namespace Uniya.CMS.Data
         //}
 
         /// <summary>
-        /// 
+        /// Commit this set chenges.
         /// </summary>
-        /// <param name="data"></param>
-        /// <returns></returns>
-        public async System.Threading.Tasks.Task CommitChanges(ITransactedData data)
+        /// <param name="data">The transacted data.</param>
+        public async Task CommitChanges(ITransactedData data)
         {
             await data.Transaction(this);
         }
