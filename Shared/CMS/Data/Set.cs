@@ -215,7 +215,7 @@ namespace Uniya.CMS.Data
         // ------------------------------------------------------------------------------------
         #region ** general object model
 
-        private List<INotifyCollectionChanged> _list = new List<INotifyCollectionChanged>();
+        private readonly List<INotifyCollectionChanged> _list = new List<INotifyCollectionChanged>();
         public static ISchema Schema = XConnector.GetSchema();
 
         public XSet()
